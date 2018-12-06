@@ -1,0 +1,26 @@
+# /etc/conf.d/bitcornd: config file for /etc/init.d/bitcornd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/bitcorn/bitcorn.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/bitcornd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bitcornd.pid"
+
+# Where to write bitcornd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/bitcornd"
+
+# User and group to own bitcornd process
+#BITCOIND_USER="bitcorn"
+#BITCOIND_GROUP="bitcorn"
+
+# Path to bitcornd executable
+#BITCOIND_BIN="/usr/bin/bitcornd"
+
+# Nice value to run bitcornd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

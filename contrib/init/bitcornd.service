@@ -1,0 +1,26 @@
+[Unit]
+Description=BitCorn's distributed currency daemon
+After=network.target
+
+[Service]
+User=bitcorn
+Group=bitcorn
+
+Type=forking
+PIDFile=/var/lib/bitcornd/bitcornd.pid
+
+ExecStart=/usr/bin/bitcornd -daemon -pid=/var/lib/bitcornd/bitcornd.pid \
+          -conf=/etc/bitcorn/bitcorn.conf -datadir=/var/lib/bitcornd
+
+ExecStop=-/usr/bin/bitcorn-cli -conf=/etc/bitcorn/bitcorn.conf \
+         -datadir=/var/lib/bitcornd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

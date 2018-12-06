@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BitCorn
+Comment=BitCorn P2P Cryptocurrency
+Comment[fr]=BitCorn, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BitCorn, eşten eşe kriptografik sanal para birimi
+Exec=bitcorn-qt %u
+Terminal=false
+Type=Application
+Icon=bitcorn128
+MimeType=x-scheme-handler/bitcorn;
+Categories=Office;Finance;
