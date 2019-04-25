@@ -88,7 +88,7 @@ static std::string FormatVersion(int nVersion)
 
 std::string FormatFullVersion()
 {
-    return "1.1.0-core";
+    return "1.2.0-core";
 }
 
 /** 
