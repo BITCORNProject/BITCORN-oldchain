@@ -48,16 +48,24 @@ Main Website: https://bitcorntimes.com/bitcorn/
 
 Bitcorn Hub Dashboard: https://dashboard.bitcorntimes.com/
 
+BITCORN Discord: https://discord.gg/KnKDTqP
+
 Twitch Channel: https://www.twitch.tv/cryptotraderstv
 
 Block Explorer: https://explorer.bitcorntimes.com/
 
 Bitcorn Helpdesk: https://bitcorn.zendesk.com/hc/en-us
 
+LinkedIn: https://www.linkedin.com/company/BITCORN
+
+Reddit: https://www.reddit.com/r/bitcorn
+
 Wallet Downloads: https://github.com/BITCORNProject/bitcorn/releases/
 
-Whitepaper: https://cornpaper.nyc3.cdn.digitaloceanspaces.com/BitCornPaper.pdf
+Whitepaper: https://bitcorntimes.com/cornpaper/
 
-Masternode Installation Guide: https://github.com/BITCORNtimes/BitCorn-MN-Script/blob/master/README.md
+BITCORN Faucet: https://bitcornfaucet.com/
 
+Masternode Installation Guide: https://github.com/BITCORNProject/BITCORN-Masternode-script/blob/master/README.md
 
+Bitcorn Multinode Script: https://github.com/BITCORNProject/BITCORN-Multinode
