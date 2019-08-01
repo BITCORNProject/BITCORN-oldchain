@@ -135,16 +135,16 @@ void ReceiveRequestDialog::update()
     ui->btnSaveAs->setEnabled(false);
     QString html;
     html += "<html><font face='verdana, arial, helvetica, sans-serif'>";
-    html += "<b>" + tr("Payment information") + "</b><br>";
-    html += "<b>" + tr("URI") + "</b>: ";
-    html += "<a style=\"color:#00CD8D;\" href=\"" + uri + "\">" + GUIUtil::HtmlEscape(uri) + "</a><br>";
-    html += "<b>" + tr("Address") + "</b>: " + GUIUtil::HtmlEscape(info.address) + "<br>";
+    html += "<b style=\"color:#fff;\">" + tr("Payment information") + "</b><br>";
+    html += "<b style=\"color:#fff;\">" + tr("URI") + "</b>: ";
+    html += "<a style=\"color:#c9c9c9;\" href=\"" + uri + "\">" + GUIUtil::HtmlEscape(uri) + "</a><br>";
+    html += "<b style=\"color:#fff;\">" + tr("Address") + "</b>: <b style=\"color:#fff;\">" + GUIUtil::HtmlEscape(info.address) + "</b><br>";
     if (info.amount)
-        html += "<b>" + tr("Amount") + "</b>: " + BitcoinUnits::formatWithUnit(model->getDisplayUnit(), info.amount) + "<br>";
+        html += "<b style=\"color:#fff;\">" + tr("Amount") + "</b>: <b style=\"color:#fff;\">" + BitcoinUnits::formatWithUnit(model->getDisplayUnit(), info.amount) + "</b><br>";
     if (!info.label.isEmpty())
-        html += "<b>" + tr("Label") + "</b>: " + GUIUtil::HtmlEscape(info.label) + "<br>";
+        html += "<b style=\"color:#fff;\">" + tr("Label") + "</b>: <b style=\"color:#fff;\">" + GUIUtil::HtmlEscape(info.label) + "</b><br>";
     if (!info.message.isEmpty())
-        html += "<b>" + tr("Message") + "</b>: " + GUIUtil::HtmlEscape(info.message) + "<br>";
+        html += "<b style=\"color:#fff;\">" + tr("Message") + "</b>: <b style=\"color:#fff;\">" + GUIUtil::HtmlEscape(info.message) + "</b><br>";
     ui->outUri->setText(html);
 
 #ifdef USE_QRCODE

@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your BitCorn addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun BitCorn osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your BITCORN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun BITCORN osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your BitCorn addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun BitCorn osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your BITCORN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun BITCORN osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>BitCorn will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
-        <translation>BitCorn sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella BITCORNien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
+        <translation>BITCORN sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella BITCORNien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a BitCorn Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä BitCorn osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä BITCORN osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The BitCorn address to sign the message with</source>
-        <translation>BitCorn osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The BITCORN address to sign the message with</source>
+        <translation>BITCORN osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän BitCorn osoitteen</translation>
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän BITCORN osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>BitCorn osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>BITCORN osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified BitCorn address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla BitCorn osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla BITCORN osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,12 +591,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Ydin</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a BitCorn address</source>
-        <translation>Lähetä kolikkoja BitCorn osoitteeseen</translation>
+        <source>Send coins to a BITCORN address</source>
+        <translation>Lähetä kolikkoja BITCORN osoitteeseen</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcorn: URIs)</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About BitCorn Core</source>
-        <translation>BitCorn Core &amp;ytimestä</translation>
+        <source>&amp;About BITCORN</source>
+        <translation>BITCORN &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about BitCorn Core</source>
-        <translation>Näytä tietoja BitCorn Ytimestä</translation>
+        <source>Show information about BITCORN</source>
+        <translation>Näytä tietoja BITCORN Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for BitCorn</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja BitCorn:lle</translation>
+        <source>Modify configuration options for BITCORN</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja BITCORN:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your BitCorn addresses to prove you own them</source>
+        <source>Sign messages with your BITCORN addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified BitCorn addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä BitCorn osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified BITCORN addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä BITCORN osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a BitCorn: URI or payment request</source>
-        <translation>Avaa BitCorn: URI tai pyydä maksua</translation>
+        <source>Open a BITCORN: URI or payment request</source>
+        <translation>Avaa BITCORN: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the BitCorn Core help message to get a list with possible BitCorn command-line options</source>
-        <translation>Näytä BitCorn Ydin apuviesti saadaksesi lista mahdollisista BitCorn komentolinja komennoista.</translation>
+        <source>Show the BITCORN help message to get a list with possible BITCORN command-line options</source>
+        <translation>Näytä BITCORN Ydin apuviesti saadaksesi lista mahdollisista BITCORN komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>BitCorn Core client</source>
-        <translation>BitCorn Ydin asiakasohjelma</translation>
+        <source>BITCORN client</source>
+        <translation>BITCORN Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Ydin</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to BitCorn Core.</source>
-        <translation>Tervetuloa BitCorn Ytimeen.</translation>
+        <source>Welcome to BITCORN.</source>
+        <translation>Tervetuloa BITCORN Ytimeen.</translation>
     </message>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Ydin</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1136,11 +1136,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Use 2 separate masternodes to mix funds up to 10000 BITCORN</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 BitCorn</translation>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 BITCORN</translation>
     </message>
     <message>
         <source>Use 8 separate masternodes to mix funds up to 10000 BITCORN</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 BitCorn</translation>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 BITCORN</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1148,11 +1148,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>This option is the quickest and will cost about ~0.025 BITCORN to anonymize 10000 BITCORN</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 BITCORN anonymoidaksesi 10000 BitCorn</translation>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 BITCORN anonymoidaksesi 10000 BITCORN</translation>
     </message>
     <message>
         <source>This option is moderately fast and will cost about 0.05 BITCORN to anonymize 10000 BITCORN</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 BitCorn anonymoidaksesi 10000 BitCorn</translation>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 BITCORN anonymoidaksesi 10000 BITCORN</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1160,7 +1160,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>0.1 BITCORN per 10000 BITCORN you anonymize.</source>
-        <translation>0.1 per 10000 BitCorn, jotka anonymisoit.</translation>
+        <translation>0.1 per 10000 BITCORN, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,12 +1209,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start BitCorn after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä BitCorn kun kirjaudut sisään.</translation>
+        <source>Automatically start BITCORN after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä BITCORN kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start BitCorn on system login</source>
-        <translation>&amp;Aloita BitCorn järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start BITCORN on system login</source>
+        <translation>&amp;Aloita BITCORN järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1233,12 +1233,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting BitCorn.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting BITCORN.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the BitCorn network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä BitCorn verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the BITCORN network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä BITCORN verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1542,8 +1542,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the BitCorn debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa BitCorn debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the BITCORN debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa BITCORN debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1654,8 +1654,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the BitCorn RPC console.</source>
-        <translation>Tervetuloa BitCorn RPC konsoliin.</translation>
+        <source>Welcome to the BITCORN RPC console.</source>
+        <translation>Tervetuloa BITCORN RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1697,12 +1697,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BitCorn network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana BitCorn verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BITCORN network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana BITCORN verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the BitCorn network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana BitCorn  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the BITCORN network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana BITCORN  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1982,8 +1982,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid BitCorn address</source>
-        <translation>Varoitus: Virheellinen BitCorn osoite</translation>
+        <source>Warning: Invalid BITCORN address</source>
+        <translation>Varoitus: Virheellinen BITCORN osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2029,8 +2029,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The BitCorn address to send the payment to</source>
-        <translation>BitCorn osoite johon maksu lähetetään</translation>
+        <source>The BITCORN address to send the payment to</source>
+        <translation>BITCORN osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2072,8 +2072,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BitCorn Core is shutting down...</source>
-        <translation>BitCorn core sammuu...</translation>
+        <source>BITCORN is shutting down...</source>
+        <translation>BITCORN core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2091,8 +2091,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The BitCorn address to sign the message with</source>
-        <translation>BitCorn osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The BITCORN address to sign the message with</source>
+        <translation>BITCORN osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2123,16 +2123,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän BitCorn osoitteen</translation>
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän BITCORN osoitteen</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>BitCorn osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>BITCORN osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified BitCorn address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla BitCorn osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla BITCORN osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2214,8 +2214,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Ydin</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2230,8 +2230,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The BitCorn Core developers</source>
-        <translation>BitCorn core kehittäjät</translation>
+        <source>The BITCORN developers</source>
+        <translation>BITCORN core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2591,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of BitCorn Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version BitCorn Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of BITCORN</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version BITCORNsta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres BitCorn jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres BITCORN jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,12 +518,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>BitCorn Core</source>
-        <translation>&amp;Rdzeń BitCorn</translation>
+        <source>BITCORN</source>
+        <translation>&amp;Rdzeń BITCORN</translation>
     </message>
     <message>
-        <source>Send coins to a BitCorn address</source>
-        <translation>Wyślij monety do adresu BitCorn</translation>
+        <source>Send coins to a BITCORN address</source>
+        <translation>Wyślij monety do adresu BITCORN</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcorn: URIs)</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About BitCorn Core</source>
+        <source>&amp;About BITCORN</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about BitCorn Core</source>
+        <source>Show information about BITCORN</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for BitCorn</source>
-        <translation>Modyfikuj opcje konfiguracji BitCorn</translation>
+        <source>Modify configuration options for BITCORN</source>
+        <translation>Modyfikuj opcje konfiguracji BITCORN</translation>
     </message>
     <message>
-        <source>Sign messages with your BitCorn addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami BitCorn, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your BITCORN addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami BITCORN, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified BitCorn addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu BitCorn</translation>
+        <source>Verify messages to ensure they were signed with specified BITCORN addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu BITCORN</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,7 +582,7 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a BitCorn: URI or payment request</source>
+        <source>Open a BITCORN: URI or payment request</source>
         <translation>OtwórzCORNX: URI i żądanie zapłaty</translation>
     </message>
     <message>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the BitCorn Core help message to get a list with possible BitCorn command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia BitCorn, aby dostać listę możliwych opcji BitCorn command-line</translation>
+        <source>Show the BITCORN help message to get a list with possible BITCORN command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia BITCORN, aby dostać listę możliwych opcji BITCORN command-line</translation>
     </message>
     <message>
-        <source>BitCorn Core client</source>
-        <translation>Rdzeń BitCorn klient</translation>
+        <source>BITCORN client</source>
+        <translation>Rdzeń BITCORN klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>&amp;Rdzeń BitCorn</translation>
+        <source>BITCORN</source>
+        <translation>&amp;Rdzeń BITCORN</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>BitCorn Core</source>
-        <translation>&amp;Rdzeń BitCorn</translation>
+        <source>BITCORN</source>
+        <translation>&amp;Rdzeń BITCORN</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start BitCorn after logging in to the system.</source>
-        <translation>Automatycznie uruchom BitCorn po zalogowaniu do systemu</translation>
+        <source>Automatically start BITCORN after logging in to the system.</source>
+        <translation>Automatycznie uruchom BITCORN po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start BitCorn on system login</source>
-        <translation>&amp;Uruchom BitCorn podczas logowania do systemu</translation>
+        <source>&amp;Start BITCORN on system login</source>
+        <translation>&amp;Uruchom BITCORN podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,8 +1212,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting BitCorn.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie BitCorn</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting BITCORN.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie BITCORN</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1222,8 +1222,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</source>
 https://www.transifex.com/bitcorn-project/bitcorn-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the BitCorn network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią BitCorn poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the BITCORN network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią BITCORN poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations </transla
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a BitCorn address (e.g. %1)</source>
-        <translation>Wprowadź adres BitCorn (np. %1)</translation>
+        <source>Enter a BITCORN address (e.g. %1)</source>
+        <translation>Wprowadź adres BITCORN (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations </transla
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres BitCorn jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres BITCORN jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations </transla
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>&amp;Rdzeń BitCorn</translation>
+        <source>BITCORN</source>
+        <translation>&amp;Rdzeń BITCORN</translation>
     </message>
     </context>
 <context>

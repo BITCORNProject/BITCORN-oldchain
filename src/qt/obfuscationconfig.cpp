@@ -41,7 +41,7 @@ void ObfuscationConfig::clickBasic()
         model->getOptionsModel()->getDisplayUnit(), GetMstrNodCollateral(chainActive.Height())*COIN));
     QMessageBox::information(this, tr("Obfuscation Configuration"),
         tr(
-            "Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening BitCorn's configuration screen.")
+            "Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening BITCORN's configuration screen.")
             .arg(strAmount));
 
     close();
@@ -55,7 +55,7 @@ void ObfuscationConfig::clickHigh()
         model->getOptionsModel()->getDisplayUnit(), GetMstrNodCollateral(chainActive.Height())*COIN));
     QMessageBox::information(this, tr("Obfuscation Configuration"),
         tr(
-            "Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening BitCorn's configuration screen.")
+            "Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening BITCORN's configuration screen.")
             .arg(strAmount));
 
     close();
@@ -69,7 +69,7 @@ void ObfuscationConfig::clickMax()
         model->getOptionsModel()->getDisplayUnit(), GetMstrNodCollateral(chainActive.Height())*COIN));
     QMessageBox::information(this, tr("Obfuscation Configuration"),
         tr(
-            "Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening BitCorn's configuration screen.")
+            "Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening BITCORN's configuration screen.")
             .arg(strAmount));
 
     close();

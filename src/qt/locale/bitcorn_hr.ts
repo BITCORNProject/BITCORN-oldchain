@@ -115,8 +115,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>BitCorn adresa s kojom je potpisana poruka</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>BITCORN adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -150,8 +150,8 @@
         <translation>Otvori konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Core</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -162,8 +162,8 @@
         <translation>&amp;BIP38 alat</translation>
     </message>
     <message>
-        <source>BitCorn Core client</source>
-        <translation>BitCorn Core klijent</translation>
+        <source>BITCORN client</source>
+        <translation>BITCORN klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -256,15 +256,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Core</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Core</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN</translation>
     </message>
     <message>
         <source>Error</source>
@@ -597,8 +597,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BitCorn Core is shutting down...</source>
-        <translation>BitCorn Core se gasi...</translation>
+        <source>BITCORN is shutting down...</source>
+        <translation>BITCORN se gasi...</translation>
     </message>
     </context>
 <context>
@@ -620,8 +620,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>BitCorn adresa s kojom je potpisana poruka</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>BITCORN adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -635,8 +635,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Core</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN</translation>
     </message>
     <message>
         <source>Version %1</source>

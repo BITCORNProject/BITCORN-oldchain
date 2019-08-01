@@ -27,22 +27,13 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
 {
 
     // define text to place
-    QString titleText = tr("BitCORN Core");
+    QString titleText = tr("BITCORN");
     QString titleAddText = networkStyle->getTitleAddText();
 
     QString font = QApplication::font().toString();
 
     // load the bitmap for writing some text over it
     pixmap = networkStyle->getSplashImage();
-
-
-    _label = new QLabel(this);
-    _label->setGeometry(0,0,400,756);
-
-    QTimer *timer = new QTimer();
-    timer->setInterval(70);
-    QObject::connect(timer, SIGNAL(timeout()), this, SLOT(tick()));
-    timer->start();
 
     // Set window title
     setWindowTitle(titleText + " " + titleAddText);
@@ -59,22 +50,6 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle) 
 SplashScreen::~SplashScreen()
 {
     unsubscribeFromCoreSignals();
-}
-
-void SplashScreen::tick()
-{
-    QPixmap mypix(QString(":/images/open-%1").arg(curframe, 2, 10, QChar('0')));
-    _label->clear();
-    _label->setPixmap(mypix);
-    curframe = curframe + 1;
-    if(curframe >= 42){
-        curframe = 42;
-        animended = true;
-        if(walletloaded == true){
-            Q_UNUSED(this);
-            this->hide();
-        }
-    }
 }
 
 void SplashScreen::slotFinish(QWidget* mainWin)

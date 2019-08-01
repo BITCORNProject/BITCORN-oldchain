@@ -24,7 +24,6 @@ public:
     explicit SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle);
     ~SplashScreen();
 
-    QWidget* animSplashWin;
 
 protected:
     void paintEvent(QPaintEvent* event);
@@ -33,7 +32,6 @@ protected:
 public slots:
     /** Slot to call finish() method as it's not defined as slot */
     void slotFinish(QWidget* mainWin);
-    void tick();
 
     /** Show message and progress */
     void showMessage(const QString& message, int alignment, const QColor& color);
@@ -51,7 +49,6 @@ private:
     QPixmap pixmap;
     QString curMessage;
     QColor curColor;
-    QLabel* _label;
     int curAlignment;
 };
 

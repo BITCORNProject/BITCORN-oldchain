@@ -58,12 +58,12 @@
         <translation>Mottagar adresser</translation>
     </message>
     <message>
-        <source>These are your BitCorn addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Det här är dina BitCorn adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
+        <source>These are your BITCORN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Det här är dina BITCORN adresser för att sända betalningar. Kontrollera alltid summan och mottagaradressen före du sänder mynt.</translation>
     </message>
     <message>
-        <source>These are your BitCorn addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Det här är dina BitCorn adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
+        <source>These are your BITCORN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Det här är dina BITCORN adresser för att ta emot betalningar. Det är rekomenderat att använda en ny mottagaradress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -160,8 +160,8 @@
         <translation>Bekräfta plånboks krypering</translation>
     </message>
     <message>
-        <source>BitCorn will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
-        <translation>BitCorn kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina BITCORNs från att bli stulna av skadeprogram som infekterat din dator.</translation>
+        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
+        <translation>BITCORN kommer att stängas ner nu för att färdigställa kryperingsprocessen. Kom ihåg att kryptering av din plånbok inte kan säkerställa dina BITCORNs från att bli stulna av skadeprogram som infekterat din dator.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -223,8 +223,8 @@
         <translation>BIP 38 Kryptering</translation>
     </message>
     <message>
-        <source>Enter a BitCorn Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Ange en BitCorn adress som du vill kryptera med BIP 38.
+        <source>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Ange en BITCORN adress som du vill kryptera med BIP 38.
 Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
     </message>
     <message>
@@ -232,8 +232,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Adress:</translation>
     </message>
     <message>
-        <source>The BitCorn address to sign the message with</source>
-        <translation>BitCorn adressen för signera meddelandet med</translation>
+        <source>The BITCORN address to sign the message with</source>
+        <translation>BITCORN adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -264,8 +264,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna BitCorn adress</translation>
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna BITCORN adress</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,12 +288,12 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Ange BIP 38 krypterade privata nyckeln. Ange lösenfrasen i med mittersta boxen. Tryck på krypetra nyckel för att beräkna den privata nyckeln. Efter att nyckeln är avkrypterad, Tryck på 'Importera Adress' kommer att lägga till denna privata nyckel till plånboken.</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>BitCorn adressen meddelandet blev signerat med</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>BITCORN adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified BitCorn address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika BitCorn adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika BITCORN adressen.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -583,12 +583,12 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Kärna</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN Kärna</translation>
     </message>
     <message>
-        <source>Send coins to a BitCorn address</source>
-        <translation>Skicka mynt till en BitCorn adress</translation>
+        <source>Send coins to a BITCORN address</source>
+        <translation>Skicka mynt till en BITCORN adress</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcorn: URIs)</source>
@@ -603,24 +603,24 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About BitCorn Core</source>
-        <translation>Om BitCorn Kärnan</translation>
+        <source>&amp;About BITCORN</source>
+        <translation>Om BITCORN Kärnan</translation>
     </message>
     <message>
-        <source>Show information about BitCorn Core</source>
-        <translation>Visa information om BitCorn Kärnan</translation>
+        <source>Show information about BITCORN</source>
+        <translation>Visa information om BITCORN Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for BitCorn</source>
-        <translation>Ändra konfigurationsval för BitCorn</translation>
+        <source>Modify configuration options for BITCORN</source>
+        <translation>Ändra konfigurationsval för BITCORN</translation>
     </message>
     <message>
-        <source>Sign messages with your BitCorn addresses to prove you own them</source>
-        <translation>Signera meddelanden med din BitCorn adress för att visa att du äger dem</translation>
+        <source>Sign messages with your BITCORN addresses to prove you own them</source>
+        <translation>Signera meddelanden med din BITCORN adress för att visa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified BitCorn addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika BitCorn adressen.</translation>
+        <source>Verify messages to ensure they were signed with specified BITCORN addresses</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika BITCORN adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -631,8 +631,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>BitCorn Core client</source>
-        <translation>BitCorn kärn klient</translation>
+        <source>BITCORN client</source>
+        <translation>BITCORN kärn klient</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -837,15 +837,15 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Kärna</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Kärna</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN Kärna</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1157,8 +1157,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The BitCorn address to sign the message with</source>
-        <translation>BitCorn adressen för signera meddelandet med</translation>
+        <source>The BITCORN address to sign the message with</source>
+        <translation>BITCORN adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1181,16 +1181,16 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna BitCorn adress</translation>
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna BITCORN adress</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>BitCorn adressen meddelandet blev signerat med</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>BITCORN adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified BitCorn address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika BitCorn adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika BITCORN adressen.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1232,8 +1232,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Kärna</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN Kärna</translation>
     </message>
     </context>
 <context>

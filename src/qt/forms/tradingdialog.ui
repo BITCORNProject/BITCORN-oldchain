@@ -2941,7 +2941,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate BitCorn Deposit Address</string>
+      <string>Generate BITCORN  Deposit Address</string>
      </property>
      <property name="icon">
       <iconset resource="../bitcorn.qrc">

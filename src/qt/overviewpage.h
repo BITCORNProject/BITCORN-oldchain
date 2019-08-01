@@ -73,8 +73,6 @@ private:
 	void updateWatchOnlyLabels(bool showWatchOnly);
 	void updatBlockChainInfo();
 	void updateMasternodeInfo();
-	void on_pushButton_Twitter_clicked();
-	void on_pushButton_Twitch_clicked();
 };
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H

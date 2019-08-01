@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The BitCorn developers
+// Copyright (c) 2017 The BITCORN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -133,11 +133,6 @@ filter(0)
 {
 	nDisplayUnit = 0; // just make sure it's not unitialized
 	ui->setupUi(this);
-
-	ui->pushButton_Twitter->setIcon(QIcon(":/icons/twitter"));
-	ui->pushButton_Twitter->setStatusTip(tr("BitCorn Twitter"));
-	ui->pushButton_Twitch->setIcon(QIcon(":/icons/twitch"));
-	ui->pushButton_Twitch->setStatusTip(tr("BitCorn Twitch"));
 	// Recent transactions
 	ui->listTransactions->setItemDelegate(txdelegate);
 	ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
@@ -195,7 +190,6 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
 
 	szCORNPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
 	sBITCORNPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
-
 }
 
 void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance,
@@ -359,7 +353,7 @@ void OverviewPage::updateMasternodeInfo()
 			ui->roi_11->setText(mn1 == 0 ? "-" : QString::number(roi1, 'f', 0).append("  |"));
 			ui->roi_12->setText(mn1 == 0 ? " " : QString::number(10000000 / roi1, 'f', 1).append(" days"));
 		}
-		CAmount tNodesSumm = mn1 * 10000000;
+		CAmount tNodesSumm = static_cast<CAmount>(mn1) * 10000000;
 		double tLocked = 100 * static_cast<double>(tNodesSumm) / static_cast<double>(chainActive.Tip()->nMoneySupply / COIN);
 		ui->label_LockedCoin_value->setText(QString::number(tNodesSumm).append(" (" + QString::number(tLocked, 'f', 1) + "%)"));
 
@@ -403,12 +397,4 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
 	ui->labelWalletStatus->setVisible(fShow);
 	ui->labelTransactionsStatus->setVisible(fShow);
-}
-
-void OverviewPage::on_pushButton_Twitter_clicked() {
-	QDesktopServices::openUrl(QUrl("https://twitter.com/BITCORNtimes", QUrl::TolerantMode));
-}
-
-void OverviewPage::on_pushButton_Twitch_clicked() {
-	QDesktopServices::openUrl(QUrl("https://www.twitch.tv/CryptoTradersTV", QUrl::TolerantMode));
 }

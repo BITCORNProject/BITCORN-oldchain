@@ -117,7 +117,7 @@ void AskPassphraseDialog::accept()
                 if (model->setWalletEncrypted(true, newpass1)) {
                     QMessageBox::warning(this, tr("Wallet encrypted"),
                         "<qt>" +
-                            tr("BitCorn will close now to finish the encryption process. "
+                            tr("BITCORN will close now to finish the encryption process. "
                                "Remember that encrypting your wallet cannot fully protect "
                                "your BITCORNs from being stolen by malware infecting your computer.") +
                             "<br><br><b>" +

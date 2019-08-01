@@ -152,8 +152,8 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>BitCorn will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
-        <translation>BitCorn va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos BITCORNs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
+        <translation>BITCORN va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos BITCORNs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -211,16 +211,16 @@
         <translation>BIP 38 crypter</translation>
     </message>
     <message>
-        <source>Enter a BitCorn Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Entrez une adresse BitCorn que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
+        <source>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Entrez une adresse BITCORN que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>The BitCorn address to sign the message with</source>
-        <translation>L'adresse BitCorn avec laquelle signer le message</translation>
+        <source>The BITCORN address to sign the message with</source>
+        <translation>L'adresse BITCORN avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -251,8 +251,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse BitCorn</translation>
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse BITCORN</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -271,12 +271,12 @@
         <translation>BIP 38 Décrypter</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>L'adresse BitCorn avec laquelle le message a été signé</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>L'adresse BITCORN avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified BitCorn address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse BitCorn renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse BITCORN renseignée</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -534,8 +534,8 @@
         <translation>&amp;Aide</translation>
     </message>
     <message>
-        <source>Send coins to a BitCorn address</source>
-        <translation>Envoyer des pièces à une adresse BitCorn</translation>
+        <source>Send coins to a BITCORN address</source>
+        <translation>Envoyer des pièces à une adresse BITCORN</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -546,16 +546,16 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>Modify configuration options for BitCorn</source>
-        <translation>Modifier les options de configuration pour BitCorn</translation>
+        <source>Modify configuration options for BITCORN</source>
+        <translation>Modifier les options de configuration pour BITCORN</translation>
     </message>
     <message>
-        <source>Sign messages with your BitCorn addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse BitCorn pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your BITCORN addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse BITCORN pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified BitCorn addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse BitCorn spécifié</translation>
+        <source>Verify messages to ensure they were signed with specified BITCORN addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse BITCORN spécifié</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -854,8 +854,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid BitCorn address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse BitCorn valide</translation>
+        <source>The entered address "%1" is not a valid BITCORN address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse BITCORN valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1524,8 +1524,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The BitCorn address to send the payment to</source>
-        <translation>L'adresse BitCorn à laquelle envoyer le paiement</translation>
+        <source>The BITCORN address to send the payment to</source>
+        <translation>L'adresse BITCORN à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1570,8 +1570,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The BitCorn address to sign the message with</source>
-        <translation>L'adresse BitCorn avec laquelle signer le message</translation>
+        <source>The BITCORN address to sign the message with</source>
+        <translation>L'adresse BITCORN avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1598,16 +1598,16 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse BitCorn</translation>
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse BITCORN</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>L'adresse BitCorn avec laquelle le message a été signé</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>L'adresse BITCORN avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified BitCorn address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse BitCorn renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse BITCORN renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

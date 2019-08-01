@@ -120,7 +120,7 @@ spinnerFrame(0)
 
 	GUIUtil::restoreWindowGeometry("nWindow", QSize(850, 550), this);
 
-	QString windowTitle = tr("BitCorn Core") + " - ";
+	QString windowTitle = tr("BITCORN") + " - ";
 #ifdef ENABLE_WALLET
 	/* if compiled with wallet support, -disablewallet can still disable the wallet */
 	enableWallet = !GetBoolArg("-disablewallet", false);
@@ -200,7 +200,7 @@ spinnerFrame(0)
 	labelEncryptionIcon->setMaximumSize(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE);
 	labelConnectionsIcon = new QPushButton();
 	labelConnectionsIcon->setFlat(true); // Make the button look like a label, but clickable
-	labelConnectionsIcon->setStyleSheet(".QPushButton { background-color: rgba(255, 255, 255, 0);}");
+	labelConnectionsIcon->setStyleSheet(".QPushButton { background-color: rgba(255, 255, 255, 0); border:node;}");
 	labelConnectionsIcon->setMaximumSize(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE);
 	labelBlocksIcon = new QLabel();
 
@@ -220,6 +220,7 @@ spinnerFrame(0)
 
 	// Progress bar and label for blocks download
 	progressBarLabel = new QLabel();
+	progressBarLabel->setObjectName(QStringLiteral("labelProgressBarText"));
 	progressBarLabel->setVisible(true);
 	progressBar = new GUIUtil::ProgressBar();
 	progressBar->setAlignment(Qt::AlignCenter);
@@ -305,7 +306,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 	tabGroup->addAction(overviewAction);
 
 	sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send"), this);
-	sendCoinsAction->setStatusTip(tr("Send coins to a BitCorn address"));
+	sendCoinsAction->setStatusTip(tr("Send coins to a BITCORN address"));
 	sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
 	sendCoinsAction->setCheckable(true);
 #ifdef Q_OS_MAC
@@ -371,8 +372,8 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 	quitAction->setStatusTip(tr("Quit application"));
 	quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
 	quitAction->setMenuRole(QAction::QuitRole);
-	aboutAction = new QAction(networkStyle->getAppIcon(), tr("&About BitCorn Core"), this);
-	aboutAction->setStatusTip(tr("Show information about BitCorn Core"));
+	aboutAction = new QAction(networkStyle->getAppIcon(), tr("&About BITCORN"), this);
+	aboutAction->setStatusTip(tr("Show information about BITCORN"));
 	aboutAction->setMenuRole(QAction::AboutRole);
 #if QT_VERSION < 0x050000
 	aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
@@ -382,7 +383,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 	aboutQtAction->setStatusTip(tr("Show information about Qt"));
 	aboutQtAction->setMenuRole(QAction::AboutQtRole);
 	optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-	optionsAction->setStatusTip(tr("Modify configuration options for BitCorn"));
+	optionsAction->setStatusTip(tr("Modify configuration options for BITCORN "));
 	optionsAction->setMenuRole(QAction::PreferencesRole);
 	toggleHideAction = new QAction(networkStyle->getAppIcon(), tr("&Show / Hide"), this);
 	toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
@@ -398,9 +399,9 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 	unlockWalletAction->setToolTip(tr("Unlock wallet"));
 	lockWalletAction = new QAction(tr("&Lock Wallet"), this);
 	signMessageAction = new QAction(QIcon(":/icons/edit"), tr("Sign &message..."), this);
-	signMessageAction->setStatusTip(tr("Sign messages with your BitCorn addresses to prove you own them"));
+	signMessageAction->setStatusTip(tr("Sign messages with your BITCORN addresses to prove you own them"));
 	verifyMessageAction = new QAction(QIcon(":/icons/transaction_0"), tr("&Verify message..."), this);
-	verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified BitCorn addresses"));
+	verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified BITCORN addresses"));
 	bip38ToolAction = new QAction(QIcon(":/icons/key"), tr("&BIP38 tool"), this);
 	bip38ToolAction->setToolTip(tr("Encrypt and decrypt private keys using a passphrase"));
 	multiSendAction = new QAction(QIcon(":/icons/edit"), tr("&MultiSend"), this);
@@ -437,13 +438,13 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 	multisigSignAction->setStatusTip(tr("Sign with a multisignature address"));
 
 	openAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_FileIcon), tr("Open &URI..."), this);
-	openAction->setStatusTip(tr("Open a BitCorn: URI or payment request"));
+	openAction->setStatusTip(tr("Open a BITCORN : URI or payment request"));
 	openBlockExplorerAction = new QAction(QIcon(":/icons/explorer"), tr("&Blockchain explorer"), this);
 	openBlockExplorerAction->setStatusTip(tr("Block explorer window"));
 
 	showHelpMessageAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_MessageBoxInformation), tr("&Command-line options"), this);
 	showHelpMessageAction->setMenuRole(QAction::NoRole);
-	showHelpMessageAction->setStatusTip(tr("Show the BitCorn Core help message to get a list with possible BitCorn command-line options"));
+	showHelpMessageAction->setStatusTip(tr("Show the BITCORN help message to get a list with possible BITCORN command-line options"));
 
 	connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
 	connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
@@ -556,6 +557,7 @@ void BitcoinGUI::createToolBars()
 		iframe = new WebFrame(this);
 		iframe->setProperty("class", "iframe");
 		iframe->setObjectName(QStringLiteral("webFrame"));
+		iframe->setStyleSheet("#webFrame {background-color: #1b2032; }");
 		iframe->setMinimumWidth(180);
 		iframe->setMaximumWidth(180);
 		iframe->setCursor(Qt::PointingHandCursor);
@@ -715,7 +717,7 @@ void BitcoinGUI::createTrayIcon(const NetworkStyle* networkStyle)
 {
 #ifndef Q_OS_MAC
 	trayIcon = new QSystemTrayIcon(this);
-	QString toolTip = tr("BitCorn Core client") + " " + networkStyle->getTitleAddText();
+	QString toolTip = tr("BITCORN client") + " " + networkStyle->getTitleAddText();
 	trayIcon->setToolTip(toolTip);
 	trayIcon->setIcon(networkStyle->getAppIcon());
 	trayIcon->show();
@@ -926,7 +928,7 @@ void BitcoinGUI::setNumConnections(int count)
 	}
 	QIcon connectionItem = QIcon(icon).pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE);
 	labelConnectionsIcon->setIcon(connectionItem);
-	labelConnectionsIcon->setToolTip(tr("%n active connection(s) to BitCorn network", "", count));
+	labelConnectionsIcon->setToolTip(tr("%n active connection(s) to BITCORN network", "", count));
 }
 
 void BitcoinGUI::setNumBlocks(int count)
@@ -939,6 +941,7 @@ void BitcoinGUI::setNumBlocks(int count)
 
 	// Acquire current block source
 	enum BlockSource blockSource = clientModel->getBlockSource();
+
 	switch (blockSource) {
 	case BLOCK_SOURCE_NETWORK:
 		progressBarLabel->setText(tr("Synchronizing with network..."));
@@ -1061,7 +1064,7 @@ void BitcoinGUI::setNumBlocks(int count)
 
 void BitcoinGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret)
 {
-	QString strTitle = tr("BitCorn Core"); // default title
+	QString strTitle = tr("BITCORN"); // default title
 										   // Default to information icon
 	int nMBoxIcon = QMessageBox::Information;
 	int nNotifyIcon = Notificator::Information;
@@ -1087,7 +1090,7 @@ void BitcoinGUI::message(const QString& title, const QString& message, unsigned 
 			break;
 		}
 	}
-	// Append title to "BitCorn - "
+	// Append title to "BITCORN - "
 	if (!msgType.isEmpty())
 		strTitle += " - " + msgType;
 

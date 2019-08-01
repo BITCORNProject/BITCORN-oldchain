@@ -110,7 +110,7 @@ void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a BitCorn address (e.g. %1)").arg("CV7AeX9sYDiL2GSX9PhQzKFTgzmPUQnxX3"));
+    widget->setPlaceholderText(QObject::tr("Enter a BITCORN address (e.g. %1)").arg("CV7AeX9sYDiL2GSX9PhQzKFTgzmPUQnxX3"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -127,7 +127,7 @@ void setupAmountWidget(QLineEdit* widget, QWidget* parent)
 
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 {
-    // return if URI is not valid or is no BitCorn: URI
+    // return if URI is not valid or is no BITCORN: URI
     if (!uri.isValid() || uri.scheme() != QString(URI_SCHEME))
         return false;
 
@@ -586,7 +586,7 @@ boost::filesystem::path static StartupShortcutPath()
 
 bool GetStartOnSystemStartup()
 {
-    // check for BitCorn.lnk
+    // check for BITCORN.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 

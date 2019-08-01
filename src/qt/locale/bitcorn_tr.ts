@@ -62,12 +62,12 @@
         <translation>Alıcı Adres</translation>
     </message>
     <message>
-        <source>These are your BitCorn addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödemeleri göndermek için olan BitCorn adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
+        <source>These are your BITCORN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için olan BITCORN adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
     </message>
     <message>
-        <source>These are your BitCorn addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödemeleri almak için olan BitCorn adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
+        <source>These are your BITCORN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için olan BITCORN adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>BitCorn will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
-        <translation>BitCorn şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, BITCORN'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
+        <translation>BITCORN şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, BITCORN'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -242,8 +242,8 @@
         <translation>&amp;BIP 38 şifrele</translation>
     </message>
     <message>
-        <source>Enter a BitCorn Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38'i kullanarak şifrelemek istediğiniz bir BitCorn Adresi girin. Orta kutuya bir parola girin. Şifreli özel anahtarı hesaplamak için şifreleme tuşuna basın.
+        <source>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38'i kullanarak şifrelemek istediğiniz bir BITCORN Adresi girin. Orta kutuya bir parola girin. Şifreli özel anahtarı hesaplamak için şifreleme tuşuna basın.
 </translation>
     </message>
     <message>
@@ -251,8 +251,8 @@
         <translation>adres</translation>
     </message>
     <message>
-        <source>The BitCorn address to sign the message with</source>
-        <translation>Ile mesaj imzalamak için BitCorn adresi
+        <source>The BITCORN address to sign the message with</source>
+        <translation>Ile mesaj imzalamak için BITCORN adresi
 </translation>
     </message>
     <message>
@@ -289,8 +289,8 @@
 </translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Bu BitCorn adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Bu BITCORN adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
 </translation>
     </message>
     <message>
@@ -316,12 +316,12 @@
         <translation>BIP 38 şifreli özel anahtarını girin. Orta kutuya şifreyi  girin. Özel anahtarı hesaplamak için Anahtarın Çözülmesini tıklayın. Anahtar çözüldükten sonra 'Alma Adresi'ni tıklamak, bu özel anahtarı cüzdana ekleyecektir.</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>Mesajın imzalandığı BitCorn adresi</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>Mesajın imzalandığı BITCORN adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified BitCorn address</source>
-        <translation>Belirtilen BitCorn adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
+        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
+        <translation>Belirtilen BITCORN adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -613,12 +613,12 @@
         <translation>Sekme tablosu</translation>
     </message>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn CORE</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN CORE</translation>
     </message>
     <message>
-        <source>Send coins to a BitCorn address</source>
-        <translation>Koinleri BitCorn adresine gönder</translation>
+        <source>Send coins to a BITCORN address</source>
+        <translation>Koinleri BITCORN adresine gönder</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcorn: URIs)</source>
@@ -637,24 +637,24 @@
         <translation>Masternodları ara</translation>
     </message>
     <message>
-        <source>&amp;About BitCorn Core</source>
+        <source>&amp;About BITCORN</source>
         <translation>Pıvx core Hakkında</translation>
     </message>
     <message>
-        <source>Show information about BitCorn Core</source>
+        <source>Show information about BITCORN</source>
         <translation>Pıvx Core hakkında bilgi göster</translation>
     </message>
     <message>
-        <source>Modify configuration options for BitCorn</source>
-        <translation>BitCorn için yapılandırma seçeneklerini değiştirin</translation>
+        <source>Modify configuration options for BITCORN</source>
+        <translation>BITCORN için yapılandırma seçeneklerini değiştirin</translation>
     </message>
     <message>
-        <source>Sign messages with your BitCorn addresses to prove you own them</source>
-        <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı BitCorn adresleriyle imzalayın</translation>
+        <source>Sign messages with your BITCORN addresses to prove you own them</source>
+        <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı BITCORN adresleriyle imzalayın</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified BitCorn addresses</source>
-        <translation>Belirtilen BitCorn adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
+        <source>Verify messages to ensure they were signed with specified BITCORN addresses</source>
+        <translation>Belirtilen BITCORN adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -686,8 +686,8 @@
         <translation>Açık Masternode yapılandırma dosyası</translation>
     </message>
     <message>
-        <source>Open a BitCorn: URI or payment request</source>
-        <translation>Bir BitCorn: URI veya ödeme isteği açın</translation>
+        <source>Open a BITCORN: URI or payment request</source>
+        <translation>Bir BITCORN: URI veya ödeme isteği açın</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -698,12 +698,12 @@
         <translation>Kaşif penceresini engelle</translation>
     </message>
     <message>
-        <source>Show the BitCorn Core help message to get a list with possible BitCorn command-line options</source>
-        <translation>Olası BitCorn komut satırı seçeneklerine sahip bir liste almak için BitCorn Core yardım mesajını gösterin</translation>
+        <source>Show the BITCORN help message to get a list with possible BITCORN command-line options</source>
+        <translation>Olası BITCORN komut satırı seçeneklerine sahip bir liste almak için BITCORN yardım mesajını gösterin</translation>
     </message>
     <message>
-        <source>BitCorn Core client</source>
-        <translation>BitCorn Core istemci</translation>
+        <source>BITCORN client</source>
+        <translation>BITCORN istemci</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1121,8 +1121,8 @@ Adres: %4</translation>
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn CORE</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN CORE</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -1144,16 +1144,16 @@ Adres: %4</translation>
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to BitCorn Core.</source>
-        <translation>BitCorn Core'a hoşgeldiniz.</translation>
+        <source>Welcome to BITCORN.</source>
+        <translation>BITCORN'a hoşgeldiniz.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Varsayılan veri dosyasını kullanınız</translation>
     </message>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn CORE</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN CORE</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1508,8 +1508,8 @@ Adres: %4</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The BitCorn address to sign the message with</source>
-        <translation>Ile mesaj imzalamak için BitCorn adresi
+        <source>The BITCORN address to sign the message with</source>
+        <translation>Ile mesaj imzalamak için BITCORN adresi
 </translation>
     </message>
     <message>
@@ -1538,17 +1538,17 @@ Adres: %4</translation>
 </translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Bu BitCorn adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Bu BITCORN adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
 </translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>Mesajın imzalandığı BitCorn adresi</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>Mesajın imzalandığı BITCORN adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified BitCorn address</source>
-        <translation>Belirtilen BitCorn adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
+        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
+        <translation>Belirtilen BITCORN adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1587,8 +1587,8 @@ Adres: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn CORE</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN CORE</translation>
     </message>
     </context>
 <context>

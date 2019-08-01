@@ -346,7 +346,7 @@ void AddressTableModel::updateEntry(const QString& address,
     const QString& purpose,
     int status)
 {
-    // Update address book model from BitCorn core
+    // Update address book model from BITCORN core
     priv->updateEntry(address, label, isMine, purpose, status);
 }
 

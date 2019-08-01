@@ -16,7 +16,7 @@ BITCOIND_USER=${BITCOIND_USER:-bitcorn}
 BITCOIND_GROUP=${BITCOIND_GROUP:-bitcorn}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/bitcornd}
 
-name="BitCorn Core Daemon"
+name="BITCORN Daemon"
 description="BitCorn crypto-currency p2p network daemon"
 
 command="/usr/bin/bitcornd"

@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your BitCorn addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše BitCorn adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your BITCORN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše BITCORN adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your BitCorn addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše BitCorn adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your BITCORN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše BITCORN adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>BitCorn will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
-        <translation>BitCorn sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše BITCORN pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
+        <translation>BITCORN sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše BITCORN pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a BitCorn Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu BitCorn, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu BITCORN, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The BitCorn address to sign the message with</source>
-        <translation>Adresa BitCorn, ktorou chcete správu podpísať</translation>
+        <source>The BITCORN address to sign the message with</source>
+        <translation>Adresa BITCORN, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto BitCorn adresy</translation>
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto BITCORN adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>BitCorn adresa, ktorou bola správa podpísaná</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>BITCORN adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified BitCorn address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou BitCorn adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou BITCORN adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,12 +598,12 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Core</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN</translation>
     </message>
     <message>
-        <source>Send coins to a BitCorn address</source>
-        <translation>Odoslať mince na adresu BitCorn</translation>
+        <source>Send coins to a BITCORN address</source>
+        <translation>Odoslať mince na adresu BITCORN</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcorn: URIs)</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About BitCorn Core</source>
-        <translation>O BitCorn Core</translation>
+        <source>&amp;About BITCORN</source>
+        <translation>O BITCORN</translation>
     </message>
     <message>
-        <source>Show information about BitCorn Core</source>
-        <translation>Zobraziť informácie o BitCorn Core</translation>
+        <source>Show information about BITCORN</source>
+        <translation>Zobraziť informácie o BITCORN</translation>
     </message>
     <message>
-        <source>Modify configuration options for BitCorn</source>
-        <translation>Zmeňte možnosti konfigurácie pre BitCorn</translation>
+        <source>Modify configuration options for BITCORN</source>
+        <translation>Zmeňte možnosti konfigurácie pre BITCORN</translation>
     </message>
     <message>
-        <source>Sign messages with your BitCorn addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy BitCorn, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your BITCORN addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy BITCORN, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified BitCorn addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými BitCorn adresami</translation>
+        <source>Verify messages to ensure they were signed with specified BITCORN addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými BITCORN adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a BitCorn: URI or payment request</source>
-        <translation>Otvorte BitCorn: URI alebo žiadosť o platbu</translation>
+        <source>Open a BITCORN: URI or payment request</source>
+        <translation>Otvorte BITCORN: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the BitCorn Core help message to get a list with possible BitCorn command-line options</source>
-        <translation>Zobraziť pomocnú správu programu BitCorn Core a získajte zoznam možností príkazového riadka BitCorn</translation>
+        <source>Show the BITCORN help message to get a list with possible BITCORN command-line options</source>
+        <translation>Zobraziť pomocnú správu programu BITCORN a získajte zoznam možností príkazového riadka BITCORN</translation>
     </message>
     <message>
-        <source>BitCorn Core client</source>
-        <translation>BitCorn Core klient</translation>
+        <source>BITCORN client</source>
+        <translation>BITCORN klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -904,15 +904,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Core</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Core</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1136,8 +1136,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The BitCorn address to sign the message with</source>
-        <translation>Adresa BitCorn, ktorou chcete správu podpísať</translation>
+        <source>The BITCORN address to sign the message with</source>
+        <translation>Adresa BITCORN, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1160,16 +1160,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BitCorn address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto BitCorn adresy</translation>
+        <source>Sign the message to prove you own this BITCORN address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto BITCORN adresy</translation>
     </message>
     <message>
-        <source>The BitCorn address the message was signed with</source>
-        <translation>BitCorn adresa, ktorou bola správa podpísaná</translation>
+        <source>The BITCORN address the message was signed with</source>
+        <translation>BITCORN adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified BitCorn address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou BitCorn adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou BITCORN adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1207,8 +1207,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BitCorn Core</source>
-        <translation>BitCorn Core</translation>
+        <source>BITCORN</source>
+        <translation>BITCORN</translation>
     </message>
     </context>
 <context>

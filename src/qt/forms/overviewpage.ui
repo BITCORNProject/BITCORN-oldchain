@@ -216,10 +216,10 @@
                        <cursorShape>WhatsThisCursor</cursorShape>
                       </property>
                       <property name="toolTip">
-                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BitCorn network after a connection is established, but this process has not completed yet.</string>
+                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BITCORN network after a connection is established, but this process has not completed yet.</string>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">QLabel { color: red; }</string>
+                       <string notr="true">QLabel { color: #e9a825; }</string>
                       </property>
                       <property name="text">
                        <string notr="true">(out of sync)</string>
@@ -326,6 +326,9 @@
                     </item>
                     <item row="4" column="0" colspan="2">
                      <widget class="Line" name="lineSpendableBalance">
+                      <property name="styleSheet">
+                       <string notr="true">color:#ffffff</string>
+                      </property>
                       <property name="orientation">
                        <enum>Qt::Horizontal</enum>
                       </property>
@@ -559,7 +562,7 @@
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>350</height>
+                   <height>220</height>
                   </size>
                  </property>
                  <property name="layoutDirection">
@@ -589,6 +592,12 @@
                   </property>
                   <item>
                    <widget class="QFrame" name="frameMnInfo">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>60</height>
+                     </size>
+                    </property>
                     <property name="frameShape">
                      <enum>QFrame::StyledPanel</enum>
                     </property>
@@ -612,7 +621,7 @@
                          <property name="maximumSize">
                           <size>
                            <width>16777215</width>
-                           <height>16777215</height>
+                           <height>20</height>
                           </size>
                          </property>
                          <property name="text">
@@ -635,7 +644,7 @@
                          <property name="sizeHint" stdset="0">
                           <size>
                            <width>40</width>
-                           <height>16</height>
+                           <height>20</height>
                           </size>
                          </property>
                         </spacer>
@@ -651,7 +660,7 @@
                          <property name="maximumSize">
                           <size>
                            <width>16777215</width>
-                           <height>16777215</height>
+                           <height>20</height>
                           </size>
                          </property>
                          <property name="text">
@@ -666,6 +675,18 @@
                      </item>
                      <item>
                       <widget class="QFrame" name="frameMnInfoLevels">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>35</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>50</height>
+                        </size>
+                       </property>
                        <property name="frameShape">
                         <enum>QFrame::StyledPanel</enum>
                        </property>
@@ -722,7 +743,7 @@
                           <property name="maximumSize">
                            <size>
                             <width>16777215</width>
-                            <height>16777215</height>
+                            <height>30</height>
                            </size>
                           </property>
                           <property name="text">
@@ -741,6 +762,12 @@
                   </item>
                   <item>
                    <widget class="QFrame" name="frameBlockchainInfo">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>150</height>
+                     </size>
+                    </property>
                     <property name="frameShape">
                      <enum>QFrame::StyledPanel</enum>
                     </property>
@@ -755,6 +782,12 @@
                       <layout class="QHBoxLayout">
                        <item>
                         <widget class="QLabel" name="label_blockchaininfo">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>20</height>
+                          </size>
+                         </property>
                          <property name="font">
                           <font>
                            <pointsize>12</pointsize>
@@ -788,6 +821,12 @@
                        </item>
                        <item>
                         <widget class="QLabel" name="label_24hblockchaininfo">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>20</height>
+                          </size>
+                         </property>
                          <property name="font">
                           <font>
                            <pointsize>12</pointsize>
@@ -1068,99 +1107,6 @@
                         </item>
                        </layout>
                       </widget>
-                     </item>
-                     <item>
-                      <spacer name="verticalSpacer">
-                       <property name="orientation">
-                        <enum>Qt::Vertical</enum>
-                       </property>
-                       <property name="sizeHint" stdset="0">
-                        <size>
-                         <width>20</width>
-                         <height>40</height>
-                        </size>
-                       </property>
-                      </spacer>
-                     </item>
-                     <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_3">
-                       <property name="spacing">
-                        <number>6</number>
-                       </property>
-                       <property name="bottomMargin">
-                        <number>0</number>
-                       </property>
-                       <item>
-                        <widget class="QPushButton" name="pushButton_Twitch">
-                         <property name="minimumSize">
-                          <size>
-                           <width>217</width>
-                           <height>80</height>
-                          </size>
-                         </property>
-                         <property name="maximumSize">
-                          <size>
-                           <width>217</width>
-                           <height>80</height>
-                          </size>
-                         </property>
-                         <property name="cursor">
-                          <cursorShape>PointingHandCursor</cursorShape>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true"/>
-                         </property>
-                         <property name="text">
-                          <string/>
-                         </property>
-                         <property name="icon">
-                          <iconset>
-                           <normaloff>:/icons/twitch</normaloff>:/icons/twitch</iconset>
-                         </property>
-                         <property name="iconSize">
-                          <size>
-                           <width>217</width>
-                           <height>80</height>
-                          </size>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
-                        <widget class="QPushButton" name="pushButton_Twitter">
-                         <property name="minimumSize">
-                          <size>
-                           <width>217</width>
-                           <height>80</height>
-                          </size>
-                         </property>
-                         <property name="maximumSize">
-                          <size>
-                           <width>217</width>
-                           <height>80</height>
-                          </size>
-                         </property>
-                         <property name="cursor">
-                          <cursorShape>PointingHandCursor</cursorShape>
-                         </property>
-                         <property name="styleSheet">
-                          <string notr="true"/>
-                         </property>
-                         <property name="text">
-                          <string/>
-                         </property>
-                         <property name="icon">
-                          <iconset>
-                           <normaloff>:/icons/twitter</normaloff>:/icons/twitter</iconset>
-                         </property>
-                         <property name="iconSize">
-                          <size>
-                           <width>217</width>
-                           <height>80</height>
-                          </size>
-                         </property>
-                        </widget>
-                       </item>
-                      </layout>
                      </item>
                     </layout>
                    </widget>
@@ -1603,38 +1549,6 @@
                    <bool>true</bool>
                   </property>
                  </widget>
-                 <widget class="QFrame" name="frame_3">
-                  <property name="geometry">
-                   <rect>
-                    <x>0</x>
-                    <y>150</y>
-                    <width>465</width>
-                    <height>201</height>
-                   </rect>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                 </widget>
-                 <widget class="QFrame" name="frame_4">
-                  <property name="geometry">
-                   <rect>
-                    <x>0</x>
-                    <y>0</y>
-                    <width>465</width>
-                    <height>171</height>
-                   </rect>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                 </widget>
                 </widget>
                </item>
               </layout>
@@ -1671,10 +1585,10 @@
                        <cursorShape>WhatsThisCursor</cursorShape>
                       </property>
                       <property name="toolTip">
-                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BitCorn network after a connection is established, but this process has not completed yet.</string>
+                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BITCORN network after a connection is established, but this process has not completed yet.</string>
                       </property>
                       <property name="styleSheet">
-                       <string notr="true">QLabel { color: red; }</string>
+                       <string notr="true">QLabel { color: #e9A825; }</string>
                       </property>
                       <property name="text">
                        <string notr="true">(out of sync)</string>

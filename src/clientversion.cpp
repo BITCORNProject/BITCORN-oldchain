@@ -13,7 +13,7 @@
  * for both bitcornd and bitcorn-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("BitCorn Core");
+const std::string CLIENT_NAME("BITCORN");
 
 /**
  * Client version number
@@ -88,7 +88,7 @@ static std::string FormatVersion(int nVersion)
 
 std::string FormatFullVersion()
 {
-    return "1.2.0-core";
+    return "1.3.0-core";
 }
 
 /** 

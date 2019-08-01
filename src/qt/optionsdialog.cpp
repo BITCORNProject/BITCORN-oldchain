@@ -278,7 +278,7 @@ void OptionsDialog::on_cancelButton_clicked()
 
 void OptionsDialog::showRestartWarning(bool fPersistent)
 {
-    ui->statusLabel->setStyleSheet("QLabel { color: red; }");
+    ui->statusLabel->setStyleSheet("QLabel { color: #e9a825; }");
 
     if (fPersistent) {
         ui->statusLabel->setText(tr("Client restart required to activate changes."));
@@ -306,7 +306,7 @@ void OptionsDialog::doProxyIpChecks(QValidatedLineEdit* pUiProxyIp, int nProxyPo
     if (!(fProxyIpValid = LookupNumeric(strAddrProxy.c_str(), addrProxy))) {
         disableOkButton();
         pUiProxyIp->setValid(false);
-        ui->statusLabel->setStyleSheet("QLabel { color: red; }");
+        ui->statusLabel->setStyleSheet("QLabel { color: #e9a825; }");
         ui->statusLabel->setText(tr("The supplied proxy address is invalid."));
     } else {
         enableOkButton();
