@@ -44,15 +44,15 @@ BITCORN is forked from the PIVX Blockchain and has the following specifications:
 
 ----------------
 
-Main Website: https://bitcorntimes.com/bitcorn/
+Main Website: https://bitcornproject.com/
 
-Bitcorn Hub Dashboard: https://dashboard.bitcorntimes.com/
+Bitcorn Hub Dashboard: https://dashboard.bitcornproject.com
 
 BITCORN Discord: https://discord.gg/KnKDTqP
 
 Twitch Channel: https://www.twitch.tv/cryptotraderstv
 
-Block Explorer: https://explorer.bitcorntimes.com/
+Block Explorer: https://explorer.bitcornproject.com/
 
 Bitcorn Helpdesk: https://bitcorn.zendesk.com/hc/en-us
 
@@ -62,7 +62,7 @@ Reddit: https://www.reddit.com/r/bitcorn
 
 Wallet Downloads: https://github.com/BITCORNProject/bitcorn/releases/
 
-Whitepaper: https://bitcorntimes.com/cornpaper/
+Whitepaper: https://bitcornproject.com/cornpaper/
 
 BITCORN Faucet: https://bitcornfaucet.com/
 
