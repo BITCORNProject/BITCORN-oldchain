@@ -20,9 +20,6 @@ QT_TRANSLATE_NOOP("bitcorn-core", ""
 "single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or "
 "a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"An error occurred while setting up the RPC address %s port %u for listening: "
-"%s"),
-QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Bind to given address and always listen on it. Use [host]:port notation for "
 "IPv6"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
@@ -35,7 +32,7 @@ QT_TRANSLATE_NOOP("bitcorn-core", ""
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Calculated accumulator checkpoint is not what is recorded by block index"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"Cannot obtain a lock on data directory %s. BITCORN is probably already "
+"Cannot obtain a lock on data directory %s. BITCORN Core is probably already "
 "running."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
@@ -50,24 +47,34 @@ QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Delete all wallet transactions and only recover those parts of the "
 "blockchain through -rescan on startup"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"Disable all BITCORN specific functionality (Masternodes, Obfuscation, SwiftX, "
+"Delete all zerocoin spends and mints that have been recorded to the "
+"blockchain database and reindex them (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Disable all BITCORN specific functionality (Masternodes, Zerocoin, SwiftX, "
 "Budgeting) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Distributed under the MIT software license, see the accompanying file "
 "COPYING or <http://www.opensource.org/licenses/mit-license.php>."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Enable automatic wallet backups triggered after each zCORN minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"Enable spork administration functionality with the appropriate private key."),
+"Enable or disable staking functionality for CORN inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"Enable SwiftX, show confirmations for locked transactions (bool, default: "
-"%s)"),
+"Enable or disable staking functionality for zCORN inputs (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Enable spork administration functionality with the appropriate private key."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Enter regression test mode, which uses a special chain in which blocks can "
 "be solved instantly."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Error: Listening for incoming connections failed (listen returned error %s)"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Error: The transaction is larger than the maximum allowed transaction size!"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Error: The transaction was rejected! This might happen if some of the coins "
 "in your wallet were already spent, such as if you used a copy of wallet.dat "
@@ -90,20 +97,25 @@ QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Execute command when the best block changes (%s in cmd is replaced by block "
 "hash)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"Fees (in BITCORN/Kb) smaller than this are considered zero fee for relaying "
+"Execute command when the best block changes and its size is over (%s in cmd "
+"is replaced by block hash, %d with the block size)"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Failed to find coin set amongst held coins with less than maxNumber of Spends"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Fees (in CORN/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"Fees (in BITCORN/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in CORN/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
 "(default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"Found unconfirmed denominated outputs, will wait till they confirm to "
-"continue."),
-QT_TRANSLATE_NOOP("bitcorn-core", ""
 "If paytxfee is not set, include enough fee so transactions begin "
 "confirmation on average within n blocks (default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
+"In rare cases, a spend with 7 coins exceeds our maximum allowable "
+"transaction size, please retry spend using 6 or less coins"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "In this mode -genproclimit controls how many blocks are generated "
 "immediately."),
@@ -121,8 +133,13 @@ QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Maintain a full transaction index, used by the getrawtransaction rpc call "
 "(default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Maximum average size of an index occurrence in the block spam filter "
+"(default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Maximum size of data in data carrier transactions we relay and mine "
 "(default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Maximum size of the list of indexes in the block spam filter (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Maximum total fees to use in a single wallet transaction, setting too low "
 "may abort large transactions (default: %s)"),
@@ -149,6 +166,9 @@ QT_TRANSLATE_NOOP("bitcorn-core", ""
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Set maximum size of high-priority/low-fee transactions in bytes (default: %d)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Set the number of included blocks to precompute per cycle. (minimum: %d) "
+"(maximum: %d) (default: %d)"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Set the number of script verification threads (%u to %d, 0 = auto, <0 = "
 "leave that many cores free, default: %d)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
@@ -158,10 +178,24 @@ QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Specify custom backup path to add a copy of any automatic zCORN backup. If "
+"set as dir, every backup generates a timestamped file. If set as file, will "
+"rewrite to that file every backup. If backuppath is set as well, 4 backups "
+"will happen"),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
+"Specify custom backup path to add a copy of any wallet backup. If set as "
+"dir, every backup generates a timestamped file. If set as file, will rewrite "
+"to that file every backup."),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Support filtering of blocks and transaction with bloom filters (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"SwiftX requires inputs with at least 6 confirmations, you might need to "
-"wait a few minutes and try again."),
+"SwiftX requires inputs with at least 6 confirmations, you might need to wait "
+"a few minutes and try again."),
+QT_TRANSLATE_NOOP("bitcorn-core", ""
+"The block database contains a block which appears to be from the future. "
+"This may be due to your computer's date and time being set incorrectly. Only "
+"rebuild the block database if you are sure that your computer's date and "
+"time are correct"),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "This is a pre-release test build - use at your own risk - do not use for "
 "staking or merchant applications!"),
@@ -170,28 +204,18 @@ QT_TRANSLATE_NOOP("bitcorn-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"To use bitcornd, or the -server option to bitcorn-qt, you must set an rpcpassword "
-"in the configuration file:\n"
-"%s\n"
-"It is recommended you use the following random password:\n"
-"rpcuser=bitcornrpc\n"
-"rpcpassword=%s\n"
-"(you do not need to remember this password)\n"
-"The username and password MUST NOT be the same.\n"
-"If the file does not exist, create it with owner-readable-only file "
-"permissions.\n"
-"It is also recommended to set alertnotify so you are notified of problems;\n"
-"for example: alertnotify=echo %%s | mail -s \"BITCORN Alert\" admin@foo.com\n"),
+"Total length of network version string (%i) exceeds maximum length (%i). "
+"Reduce the number or size of uacomments."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
-"Unable to bind to %s on this computer. BITCORN is probably already running."),
+"Unable to bind to %s on this computer. BITCORN Core is probably already running."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 BITCORN."),
+"transaction that are not equal 10000 CORN."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"BITCORN."),
+"CORN."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -203,7 +227,7 @@ QT_TRANSLATE_NOOP("bitcorn-core", ""
 "pay if you send a transaction."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong BITCORN will not work properly."),
+"your clock is wrong BITCORN Core will not work properly."),
 QT_TRANSLATE_NOOP("bitcorn-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
@@ -234,36 +258,34 @@ QT_TRANSLATE_NOOP("bitcorn-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Accept public REST requests (default: %u)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Acceptable ciphers (default: %s)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Add a node to connect to and attempt to keep the connection open"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Adding Wrapped Serials supply..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Allow DNS lookups for -addnode, -seednode and -connect"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Already have that input."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Always query for peer addresses via DNS lookup (default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Append comment to the user agent string"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Attempt to force blockchain corruption recovery"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Attempt to recover private keys from a corrupt wallet.dat"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Automatically create Tor hidden service (default: %d)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Block creation options:"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Calculating missing accumulators..."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Can't denominate: no compatible inputs left."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Can't find random Masternode."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Can't mix while sync in progress."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Cannot create public spend input"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Cannot downgrade wallet"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Cannot resolve -bind address: '%s'"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Cannot resolve -externalip address: '%s'"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Cannot resolve -whitebind address: '%s'"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Cannot write default address"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Collateral not valid."),
+QT_TRANSLATE_NOOP("bitcorn-core", "CoinSpend: Accumulator witness does not verify"),
+QT_TRANSLATE_NOOP("bitcorn-core", "CoinSpend: failed check"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Connect only to the specified node(s)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Connect through SOCKS5 proxy"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Connect to a node to retrieve peer addresses, and disconnect"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Connection options:"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Copyright (C) 2015-%i The PIVX Core Developers"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Copyright (C) 2017-%i The BITCORN Developers"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Copyright (C) 2015-%i The BITCORN Core Developers"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Corrupted block database detected"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Could not parse -rpcbind value %s as network address"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Could not parse masternode.conf"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Couldn't generate the accumulator witness"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Debugging/Testing options:"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Delete blockchain folders and resync from scratch"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Disable OS notifications for incoming transactions (default: %u)"),
@@ -275,6 +297,7 @@ QT_TRANSLATE_NOOP("bitcorn-core", "Do not load the wallet and disable wallet RPC
 QT_TRANSLATE_NOOP("bitcorn-core", "Do you want to rebuild the block database now?"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Done loading"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Enable precomputation of zCORN spends and stakes (0-1, default %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Enable publish hash block in <address>"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Enable publish hash transaction in <address>"),
@@ -283,49 +306,47 @@ QT_TRANSLATE_NOOP("bitcorn-core", "Enable publish raw transaction (locked via Sw
 QT_TRANSLATE_NOOP("bitcorn-core", "Enable publish raw transaction in <address>"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Enable staking functionality (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Enable the client to act as a masternode (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Entries are full."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Error connecting to Masternode."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error initializing block database"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error initializing wallet database environment %s!"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Error loading wallet.dat: Wallet requires newer version of BITCORN"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Error loading wallet.dat: Wallet requires newer version of BITCORN Core"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error recovering public key."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Error writing zerocoinDB to disk"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error: A fatal internal error occured, see debug.log for details"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Error: Can't select current denominated inputs"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Error: A fatal internal error occurred, see debug.log for details"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error: Disk space is low!"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Error: No valid utxo!"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error: Unsupported argument -tor found, use -onion."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Error: Wallet locked, unable to create transaction!"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Error: You already have pending entries in the Obfuscation pool"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Failed to calculate accumulator checkpoint"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Failed to create mint"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Failed to find Zerocoins in wallet.dat"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Failed to listen on any port. Use -listen=0 if you want this."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Failed to read block index"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Failed to parse host:port string"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Failed to parse public spend"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Failed to read block"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Failed to write block index"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Fee (in BITCORN/kB) to add to transactions you send (default: %s)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Finalizing transaction."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Failed to select a zerocoin"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Failed to wipe zerocoinDB"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Failed to write coin serial number into wallet"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Fee (in CORN/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Force safe mode (default: %u)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Found enough users, signing ( waiting %s )"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Found enough users, signing ..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Generate coins (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "How many blocks to check at startup (default: %u, 0 = all)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "If <category> is not supplied, output all debugging information."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Importing..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Imports blocks from external blk000??.dat file"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Include IP addresses in debug output (default: %u)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Incompatible mode."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Incompatible version."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Information"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Initialization sanity check failed. BITCORN is shutting down."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Input is not valid."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Initialization sanity check failed. BITCORN Core is shutting down."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Insufficient funds"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Insufficient funds."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Invalid -onion address or hostname: '%s'"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Invalid -proxy address or hostname: '%s'"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Invalid amount for -maxtxfee=<amount>: '%s'"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Invalid amount for -minrelaytxfee=<amount>: '%s'"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Invalid amount for -mintxfee=<amount>: '%s'"),
@@ -337,11 +358,7 @@ QT_TRANSLATE_NOOP("bitcorn-core", "Invalid masternodeprivkey. Please see documen
 QT_TRANSLATE_NOOP("bitcorn-core", "Invalid netmask specified in -whitelist: '%s'"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Invalid port detected in masternode.conf"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Invalid private key."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Invalid script detected."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Last Obfuscation was too recent."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Last successful Obfuscation action was too recent."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Less than 3 mints added, unable to create spend"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Limit size of signature cache to <n> entries (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Line: %d"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Listen for JSON-RPC connections on <port> (default: %u or testnet: %u)"),
@@ -354,47 +371,41 @@ QT_TRANSLATE_NOOP("bitcorn-core", "Loading masternode payment cache..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Loading sporks..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Loading wallet... (%3.2f %%)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Loading wallet..."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Lock is already in place."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Location of the auth cookie (default: data dir)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Lock masternodes from masternode configuration file (default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Lookup(): Invalid -proxy address or hostname: '%s'"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Maintain at most <n> connections to peers (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Masternode options:"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Masternode queue is full."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Masternode:"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Maximum per-connection receive buffer, <n>*1000 bytes (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Maximum per-connection send buffer, <n>*1000 bytes (default: %u)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Missing input transaction information."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Mixing in progress..."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Mint did not make it into blockchain"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Need address because change is not exact"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Need to specify a port with -whitebind: '%s'"),
-QT_TRANSLATE_NOOP("bitcorn-core", "No Masternodes detected."),
-QT_TRANSLATE_NOOP("bitcorn-core", "No compatible Masternode found."),
-QT_TRANSLATE_NOOP("bitcorn-core", "No funds detected in need of denominating."),
-QT_TRANSLATE_NOOP("bitcorn-core", "No matching denominations found for mixing."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Node relay options:"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Non-standard public key detected."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Not compatible with existing transactions."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Not enough file descriptors available."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Not in the Masternode list."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Number of automatic wallet backups (default: 10)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Obfuscation is idle."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Obfuscation request complete:"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Obfuscation request incomplete:"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Number of custom location backups to retain (default: %d)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Only accept block chain matching built-in checkpoints (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Only connect to nodes in network <net> (ipv4, ipv6 or onion)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Options:"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Password for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Percentage of automatically minted Zerocoin  (10-100, default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Percentage of automatically minted Zerocoin  (1-100, default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Preparing for resync..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Prepend debug output with timestamp (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Print version and exit"),
-QT_TRANSLATE_NOOP("bitcorn-core", "RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Pubcoin not found in mint tx"),
 QT_TRANSLATE_NOOP("bitcorn-core", "RPC server options:"),
-QT_TRANSLATE_NOOP("bitcorn-core", "RPC support for HTTP persistent connections (default: %d)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Randomly drop 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Rebuild block chain index from current blk000??.dat files"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Recalculating coin supply may take 30-60 minutes..."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Recalculating supply statistics may take 30-60 minutes..."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Recalculating CORN supply..."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Recalculating minted ZCORN..."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Recalculating spent ZCORN..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Receive and display P2P network alerts (default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Reindex the CORN and zCORN money supply statistics"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Reindex the accumulator database"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Reindexing zerocoin database..."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Reindexing zerocoin failed"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Relay and mine data carrier transactions (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Relay non-P2SH multisig (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Rescan the block chain for missing wallet transactions"),
@@ -403,10 +414,8 @@ QT_TRANSLATE_NOOP("bitcorn-core", "ResetMintZerocoin finished: "),
 QT_TRANSLATE_NOOP("bitcorn-core", "ResetSpentZerocoin finished: "),
 QT_TRANSLATE_NOOP("bitcorn-core", "Run a thread to flush wallet periodically (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Run in the background as a daemon and accept commands"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Selected coins value is less than payment target"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Send transactions as zero-fee transactions if possible (default: %u)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Server certificate file (default: %s)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Server private key (default: %s)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Session not complete!"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Session timed out."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Set database cache size in megabytes (%d to %d, default: %d)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Set external address:port to get to this masternode (example: %s)"),
@@ -429,12 +438,11 @@ QT_TRANSLATE_NOOP("bitcorn-core", "Specify masternode configuration file (defaul
 QT_TRANSLATE_NOOP("bitcorn-core", "Specify pid file (default: %s)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Specify wallet file (within data directory)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Specify your own public address"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Spend Valid"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Spend unconfirmed change when sending transactions (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Staking options:"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Stop running after importing blocks from disk (default: %u)"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Submitted following entries to masternode: %u / %d"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Submitted to masternode, waiting for more entries ( %u / %d ) %s"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Submitted to masternode, waiting in queue %s"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Support the zerocoin light node protocol (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "SwiftX options:"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Synchronization failed"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Synchronization finished"),
@@ -443,52 +451,55 @@ QT_TRANSLATE_NOOP("bitcorn-core", "Synchronizing budgets..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Synchronizing masternode winners..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Synchronizing sporks..."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Syncing zCORN wallet..."),
+QT_TRANSLATE_NOOP("bitcorn-core", "The coin spend has been used"),
+QT_TRANSLATE_NOOP("bitcorn-core", "The transaction did not verify"),
 QT_TRANSLATE_NOOP("bitcorn-core", "This help message"),
 QT_TRANSLATE_NOOP("bitcorn-core", "This is experimental software."),
 QT_TRANSLATE_NOOP("bitcorn-core", "This is intended for regression testing tools and app development."),
-QT_TRANSLATE_NOOP("bitcorn-core", "This is not a Masternode."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Threshold for disconnecting misbehaving peers (default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Too many spends needed"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Tor control port password (default: empty)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Tor control port to use if onion listening enabled (default: %s)"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Transaction Created"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Transaction Mint Started"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Transaction amount too small"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Transaction amounts must be positive"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Transaction created successfully."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Transaction fees are too high."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Transaction not valid."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Transaction too large for fee policy"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Transaction too large"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Transmitting final transaction."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Trying to spend an already spent serial #, try again."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Unable to bind to %s on this computer (bind returned error %s)"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Unable to find transaction containing mint %s"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Unable to find transaction containing mint, txHash: %s"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Unable to sign spork message, wrong key?"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Unable to start HTTP server. See debug log for details."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Unknown network specified in -onlynet: '%s'"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Unknown state: id = %u"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Upgrade wallet to latest format"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Use OpenSSL (https) for JSON-RPC connections"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Use UPnP to map the listening port (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Use UPnP to map the listening port (default: 1 when listening)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Use a custom max chain reorganization depth (default: %u)"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Use block spam filter (default: %u)"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Use the test network"),
+QT_TRANSLATE_NOOP("bitcorn-core", "User Agent comment (%s) contains unsafe characters."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Value more than Obfuscation pool maximum allows."),
+QT_TRANSLATE_NOOP("bitcorn-core", "Value is below the smallest available denomination (= 1) of zCORN"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Wallet %s resides outside data directory %s"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Wallet is locked."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Wallet needed to be rewritten: restart BITCORN to complete"),
+QT_TRANSLATE_NOOP("bitcorn-core", "Wallet needed to be rewritten: restart BITCORN Core to complete"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Wallet window title"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Warning"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Warning: This version is obsolete, upgrade required!"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Warning: Unsupported argument -benchmark ignored, use -debug=bench."),
 QT_TRANSLATE_NOOP("bitcorn-core", "Warning: Unsupported argument -debugnet ignored, use -debug=net."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Will retry..."),
+QT_TRANSLATE_NOOP("bitcorn-core", "You don't have enough Zerocoins in your wallet"),
 QT_TRANSLATE_NOOP("bitcorn-core", "You need to rebuild the database using -reindex to change -txindex"),
-QT_TRANSLATE_NOOP("bitcorn-core", "Your entries added successfully."),
-QT_TRANSLATE_NOOP("bitcorn-core", "Your transaction was accepted into the pool!"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Zapping all transactions from wallet..."),
 QT_TRANSLATE_NOOP("bitcorn-core", "ZeroMQ notification options:"),
 QT_TRANSLATE_NOOP("bitcorn-core", "Zerocoin options:"),
-QT_TRANSLATE_NOOP("bitcorn-core", "failed to validate zerocoin"),
+QT_TRANSLATE_NOOP("bitcorn-core", "could not get lock on cs_spendcache"),
+QT_TRANSLATE_NOOP("bitcorn-core", "isValid(): Invalid -proxy address or hostname: '%s'"),
 QT_TRANSLATE_NOOP("bitcorn-core", "on startup"),
 QT_TRANSLATE_NOOP("bitcorn-core", "wallet.dat corrupt, salvage failed"),
 };

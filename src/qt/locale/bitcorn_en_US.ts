@@ -176,16 +176,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
-        <translation>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</translation>
+        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CORNs from being stolen by malware infecting your computer.</source>
+        <translation>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CORNs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCORN&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCORN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CORN&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CORN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,8 +239,8 @@
         <translation>&amp;BIP 38 Encrypt</translation>
     </message>
     <message>
-        <source>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
+        <source>Enter a Bitcorn Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Enter a Bitcorn Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
     </message>
     <message>
         <source>Address:</source>
@@ -602,8 +602,8 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>Send coins to a BITCORN address</source>
@@ -622,12 +622,12 @@
         <translation>Browse masternodes</translation>
     </message>
     <message>
-        <source>&amp;About BITCORN</source>
-        <translation>&amp;About BITCORN</translation>
+        <source>&amp;About BITCORN Core</source>
+        <translation>&amp;About BITCORN Core</translation>
     </message>
     <message>
-        <source>Show information about BITCORN</source>
-        <translation>Show information about BITCORN</translation>
+        <source>Show information about BITCORN Core</source>
+        <translation>Show information about BITCORN Core</translation>
     </message>
     <message>
         <source>Modify configuration options for BITCORN</source>
@@ -682,12 +682,12 @@
         <translation>Block explorer window</translation>
     </message>
     <message>
-        <source>Show the BITCORN help message to get a list with possible BITCORN command-line options</source>
-        <translation>Show the BITCORN help message to get a list with possible BITCORN command-line options</translation>
+        <source>Show the BITCORN Core help message to get a list with possible BITCORN command-line options</source>
+        <translation>Show the BITCORN Core help message to get a list with possible BITCORN command-line options</translation>
     </message>
     <message>
-        <source>BITCORN client</source>
-        <translation>BITCORN client</translation>
+        <source>BITCORN Core client</source>
+        <translation>BITCORN Core client</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to BITCORN network</source>
@@ -1184,16 +1184,16 @@ Address: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About BITCORN</source>
-        <translation>About BITCORN</translation>
+        <source>About BITCORN Core</source>
+        <translation>About BITCORN Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1239,16 +1239,16 @@ Address: %4
         <translation>Welcome</translation>
     </message>
     <message>
-        <source>Welcome to BITCORN.</source>
-        <translation>Welcome to BITCORN.</translation>
+        <source>Welcome to BITCORN Core.</source>
+        <translation>Welcome to BITCORN Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BITCORN will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where BITCORN will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where BITCORN Core will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where BITCORN Core will store its data.</translation>
     </message>
     <message>
-        <source>BITCORN will download and store a copy of the BITCORN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>BITCORN will download and store a copy of the BITCORN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>BITCORN Core will download and store a copy of the BITCORN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BITCORN Core will download and store a copy of the BITCORN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1259,8 +1259,8 @@ Address: %4
         <translation>Use a custom data directory:</translation>
     </message>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1544,32 +1544,32 @@ Please check the address and try again.</translation>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BITCORN</source>
-        <translation>Use 2 separate masternodes to mix funds up to 10000 BITCORN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 CORN</source>
+        <translation>Use 2 separate masternodes to mix funds up to 10000 CORN</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BITCORN</source>
-        <translation>Use 8 separate masternodes to mix funds up to 10000 BITCORN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 CORN</source>
+        <translation>Use 8 separate masternodes to mix funds up to 10000 CORN</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BITCORN to anonymize 10000 BITCORN</source>
-        <translation>This option is the quickest and will cost about ~0.025 BITCORN to anonymize 10000 BITCORN</translation>
+        <source>This option is the quickest and will cost about ~0.025 CORN to anonymize 10000 CORN</source>
+        <translation>This option is the quickest and will cost about ~0.025 CORN to anonymize 10000 CORN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BITCORN to anonymize 10000 BITCORN</source>
-        <translation>This option is moderately fast and will cost about 0.05 BITCORN to anonymize 10000 BITCORN</translation>
+        <source>This option is moderately fast and will cost about 0.05 CORN to anonymize 10000 CORN</source>
+        <translation>This option is moderately fast and will cost about 0.05 CORN to anonymize 10000 CORN</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 BITCORN per 10000 BITCORN you anonymize.</source>
-        <translation>0.1 BITCORN per 10000 BITCORN you anonymize.</translation>
+        <source>0.1 CORN per 10000 CORN you anonymize.</source>
+        <translation>0.1 CORN per 10000 CORN you anonymize.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1927,8 +1927,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>Obfuscation Balance:</translation>
     </message>
     <message>
-        <source>0 BITCORN / 0 Rounds</source>
-        <translation>0 BITCORN / 0 Rounds</translation>
+        <source>0 CORN / 0 Rounds</source>
+        <translation>0 CORN / 0 Rounds</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2792,8 +2792,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>UTXO Size:</translation>
     </message>
     <message>
-        <source>0 BITCORN</source>
-        <translation>0 BITCORN</translation>
+        <source>0 CORN</source>
+        <translation>0 CORN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2840,12 +2840,12 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>Confirmation time:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBITCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBITCORNs in fee,&lt;br /&gt;while "at least" pays 1000 uBITCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uBITCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBITCORNs in fee,&lt;br /&gt;while "at least" pays 1000 uBITCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCORNs in fee,&lt;br /&gt;while "at least" pays 1000 uCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCORNs in fee,&lt;br /&gt;while "at least" pays 1000 uCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBITCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBITCORNs in fee,&lt;br /&gt;while "total at least" pays 1000 uBITCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uBITCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBITCORNs in fee,&lt;br /&gt;while "total at least" pays 1000 uBITCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCORNs in fee,&lt;br /&gt;while "total at least" pays 1000 uCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCORNs in fee,&lt;br /&gt;while "total at least" pays 1000 uCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for BITCORN transactions than the network can process.</source>
@@ -3126,8 +3126,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BITCORN is shutting down...</source>
-        <translation>BITCORN is shutting down...</translation>
+        <source>BITCORN Core is shutting down...</source>
+        <translation>BITCORN Core is shutting down...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3276,8 +3276,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3292,8 +3292,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The BITCORN developers</source>
-        <translation>The BITCORN developers</translation>
+        <source>The BITCORN Core developers</source>
+        <translation>The BITCORN Core developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3840,8 +3840,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 BITCORN.</source>
-        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 BITCORN.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CORN.</source>
+        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 CORN.</translation>
     </message>
 </context>
 <context>
@@ -3910,8 +3910,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. BITCORN is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. BITCORN is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. BITCORN Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. BITCORN Core is probably already running.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3974,12 +3974,12 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in BITCORN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in BITCORN/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in CORN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in CORN/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BITCORN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in BITCORN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in CORN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in CORN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4106,20 +4106,20 @@ for example: alertnotify=echo %%s | mail -s "BITCORN Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. BITCORN is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. BITCORN is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. BITCORN Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. BITCORN Core is probably already running.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BITCORN.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BITCORN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CORN.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CORN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BITCORN.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 BITCORN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CORN.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 CORN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4134,8 +4134,8 @@ for example: alertnotify=echo %%s | mail -s "BITCORN Alert" admin@foo.com
         <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BITCORN will not work properly.</source>
-        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong BITCORN will not work properly.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BITCORN Core will not work properly.</source>
+        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong BITCORN Core will not work properly.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4282,8 +4282,8 @@ for example: alertnotify=echo %%s | mail -s "BITCORN Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The BITCORN Developers</source>
-        <translation>Copyright (C) 2015-%i The BITCORN Developers</translation>
+        <source>Copyright (C) 2015-%i The BITCORN Core Developers</source>
+        <translation>Copyright (C) 2015-%i The BITCORN Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4354,8 +4354,8 @@ for example: alertnotify=echo %%s | mail -s "BITCORN Alert" admin@foo.com
         <translation>Error loading wallet.dat: Wallet corrupted</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of BITCORN</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of BITCORN</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of BITCORN Core</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of BITCORN Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4406,8 +4406,8 @@ for example: alertnotify=echo %%s | mail -s "BITCORN Alert" admin@foo.com
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in BITCORN/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in BITCORN/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in CORN/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in CORN/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4466,8 +4466,8 @@ for example: alertnotify=echo %%s | mail -s "BITCORN Alert" admin@foo.com
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. BITCORN is shutting down.</source>
-        <translation>Initialization sanity check failed. BITCORN is shutting down.</translation>
+        <source>Initialization sanity check failed. BITCORN Core is shutting down.</source>
+        <translation>Initialization sanity check failed. BITCORN Core is shutting down.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4578,8 +4578,8 @@ for example: alertnotify=echo %%s | mail -s "BITCORN Alert" admin@foo.com
         <translation>Enable staking functionality (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Keep N BITCORN anonymized (default: %u)</source>
-        <translation>Keep N BITCORN anonymized (default: %u)</translation>
+        <source>Keep N CORN anonymized (default: %u)</source>
+        <translation>Keep N CORN anonymized (default: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -5086,8 +5086,8 @@ for example: alertnotify=echo %%s | mail -s "BITCORN Alert" admin@foo.com
         <translation>Wallet is locked.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart BITCORN to complete</source>
-        <translation>Wallet needed to be rewritten: restart BITCORN to complete</translation>
+        <source>Wallet needed to be rewritten: restart BITCORN Core to complete</source>
+        <translation>Wallet needed to be rewritten: restart BITCORN Core to complete</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -1,2 +1,3 @@
 usr/local/bin/bitcornd usr/bin
 usr/local/bin/bitcorn-cli usr/bin
+debian/examples/bitcorn.conf etc/bitcorn

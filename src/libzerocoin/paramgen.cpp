@@ -9,8 +9,7 @@
  * @copyright  Copyright 2013 Ian Miers, Christina Garman and Matthew Green
  * @license    This project is released under the MIT license.
  **/
-// Copyright (c) 2017 The PIVX developers
-
+// Copyright (c) 2017-2018 The BITCORN developers
 
 #include <string>
 #include <iostream>
@@ -22,8 +21,6 @@
 #define DEFAULT_MODULUS_SIZE    3072
 #define MIN_MODULUS_SIZE        1026
 
-using namespace std;
-using namespace libzerocoin;
 
 void
 PrintWarning()

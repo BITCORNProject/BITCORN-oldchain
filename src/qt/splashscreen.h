@@ -5,7 +5,6 @@
 #ifndef BITCOIN_QT_SPLASHSCREEN_H
 #define BITCOIN_QT_SPLASHSCREEN_H
 
-#include <QLabel>
 #include <QSplashScreen>
 
 class NetworkStyle;
@@ -24,7 +23,6 @@ public:
     explicit SplashScreen(Qt::WindowFlags f, const NetworkStyle* networkStyle);
     ~SplashScreen();
 
-
 protected:
     void paintEvent(QPaintEvent* event);
     void closeEvent(QCloseEvent* event);
@@ -41,10 +39,6 @@ private:
     void subscribeToCoreSignals();
     /** Disconnect core signals to splash screen */
     void unsubscribeFromCoreSignals();
-
-    bool walletloaded = false;
-    bool animended = false;
-    int curframe = 0;
 
     QPixmap pixmap;
     QString curMessage;

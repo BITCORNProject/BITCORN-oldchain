@@ -14,6 +14,7 @@
 #include "coins.h"
 #include "primitives/transaction.h"
 #include "sync.h"
+#include "random.h"
 
 class CAutoFile;
 
@@ -128,6 +129,7 @@ public:
     void removeForBlock(const std::vector<CTransaction>& vtx, unsigned int nBlockHeight, std::list<CTransaction>& conflicts);
     void clear();
     void queryHashes(std::vector<uint256>& vtxid);
+    void getTransactions(std::set<uint256>& setTxid);
     void pruneSpent(const uint256& hash, CCoins& coins);
     unsigned int GetTransactionsUpdated() const;
     void AddTransactionsUpdated(unsigned int n);

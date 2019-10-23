@@ -1,0 +1,8 @@
+/usr/bin/bitcorn-cli		--	gen_context(system_u:object_r:bitcorn_exec_t,s0)
+/usr/sbin/bitcornd		--	gen_context(system_u:object_r:bitcorn_exec_t,s0)
+/usr/lib(64)?/bitcorn/bitcornd		--	gen_context(system_u:object_r:bitcorn_exec_t,s0)
+
+/etc/bitcorn(/.*)?		gen_context(system_u:object_r:bitcorn_conf_t,s0)
+/var/lib/bitcorn(/.*)?		gen_context(system_u:object_r:bitcorn_var_lib_t,s0)
+
+(/var)?/run/bitcornd(/.*)?   gen_context(system_u:object_r:bitcorn_var_run_t,s0)

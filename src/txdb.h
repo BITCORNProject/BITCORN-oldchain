@@ -10,7 +10,7 @@
 
 #include "leveldbwrapper.h"
 #include "main.h"
-#include "primitives/zerocoin.h"
+#include "zcorn/zerocoin.h"
 
 #include <map>
 #include <string>
@@ -55,10 +55,9 @@ private:
 
 public:
     bool WriteBlockIndex(const CDiskBlockIndex& blockindex);
+    bool WriteBatchSync(const std::vector<std::pair<int, const CBlockFileInfo*> >& fileInfo, int nLastFile, const std::vector<const CBlockIndex*>& blockinfo);
     bool ReadBlockFileInfo(int nFile, CBlockFileInfo& fileinfo);
-    bool WriteBlockFileInfo(int nFile, const CBlockFileInfo& fileinfo);
     bool ReadLastBlockFile(int& nFile);
-    bool WriteLastBlockFile(int nFile);
     bool WriteReindexing(bool fReindex);
     bool ReadReindexing(bool& fReindex);
     bool ReadTxIndex(const uint256& txid, CDiskTxPos& pos);
@@ -70,6 +69,7 @@ public:
     bool LoadBlockIndexGuts();
 };
 
+/** Zerocoin database (zerocoin/) */
 class CZerocoinDB : public CLevelDBWrapper
 {
 public:
@@ -80,12 +80,17 @@ private:
     void operator=(const CZerocoinDB&);
 
 public:
-    bool WriteCoinMint(const libzerocoin::PublicCoin& pubCoin, const uint256& txHash);
+    /** Write zCORN mints to the zerocoinDB in a batch */
+    bool WriteCoinMintBatch(const std::vector<std::pair<libzerocoin::PublicCoin, uint256> >& mintInfo);
     bool ReadCoinMint(const CBigNum& bnPubcoin, uint256& txHash);
-    bool WriteCoinSpend(const CBigNum& bnSerial, const uint256& txHash);
+    bool ReadCoinMint(const uint256& hashPubcoin, uint256& hashTx);
+    /** Write zCORN spends to the zerocoinDB in a batch */
+    bool WriteCoinSpendBatch(const std::vector<std::pair<libzerocoin::CoinSpend, uint256> >& spendInfo);
     bool ReadCoinSpend(const CBigNum& bnSerial, uint256& txHash);
+    bool ReadCoinSpend(const uint256& hashSerial, uint256 &txHash);
     bool EraseCoinMint(const CBigNum& bnPubcoin);
     bool EraseCoinSpend(const CBigNum& bnSerial);
+    bool WipeCoins(std::string strType);
     bool WriteAccumulatorValue(const uint32_t& nChecksum, const CBigNum& bnValue);
     bool ReadAccumulatorValue(const uint32_t& nChecksum, CBigNum& bnValue);
     bool EraseAccumulatorValue(const uint32_t& nChecksum);

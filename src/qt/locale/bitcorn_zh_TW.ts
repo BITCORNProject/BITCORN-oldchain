@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出BitCorn幣的位址</translation>
+        <translation>選擇要匯出BITCORN幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收BitCorn幣的位址</translation>
+        <translation>選擇要接收BITCORN幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -164,16 +164,16 @@
         <translation>錢包確認加密</translation>
     </message>
     <message>
-        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
-        <translation>BITCORN 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 BITCORN 幣被可疑軟體或病毒偷走的風險.</translation>
+        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CORNs from being stolen by malware infecting your computer.</source>
+        <translation>BITCORN 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 CORN 幣被可疑軟體或病毒偷走的風險.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>確定要加密你的錢包?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCORN&lt;/b&gt;!</source>
-        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(BITCORN)&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CORN&lt;/b&gt;!</source>
+        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(CORN)&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -217,6 +217,9 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -227,16 +230,8 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>輸入你想 BIP 38 加密的 BITCORN 位址, 輸入密碼在中間欄, 按下加密按鈕來產生加密私鑰.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>位址:</translation>
-    </message>
-    <message>
-        <source>The BITCORN address to sign the message with</source>
-        <translation>對訊息簽名的 BITCORN 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,16 +262,8 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BITCORN address</source>
-        <translation>使用簽章來證明你是該  BITCORN 位址的擁有者,</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>加密 &amp;鑰匙</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>重設所有已簽章訊息</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -287,20 +274,8 @@
         <translation>&amp;BIP 38 解密</translation>
     </message>
     <message>
-        <source>The BITCORN address the message was signed with</source>
-        <translation>此訊息之 BITCORN 位址已簽章於</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
-        <translation>驗證訊息以確保該  BITCORN 位址已被簽章</translation>
-    </message>
-    <message>
         <source>Decrypt &amp;Key</source>
         <translation>解密 &amp;鑰匙</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>重設所有驗證訊息的欄位</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -582,8 +557,8 @@
         <translation>Tabs 工具列</translation>
     </message>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>Send coins to a BITCORN address</source>
@@ -602,12 +577,12 @@
         <translation>瀏覽 Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About BITCORN</source>
-        <translation>&amp;關於 BITCORN</translation>
+        <source>&amp;About BITCORN Core</source>
+        <translation>&amp;關於 BITCORN Core</translation>
     </message>
     <message>
-        <source>Show information about BITCORN</source>
-        <translation>顯示 BITCORN 相關資訊</translation>
+        <source>Show information about BITCORN Core</source>
+        <translation>顯示 BITCORN Core 相關資訊</translation>
     </message>
     <message>
         <source>Modify configuration options for BITCORN</source>
@@ -651,7 +626,7 @@
     </message>
     <message>
         <source>Open a BITCORN: URI or payment request</source>
-        <translation>打開BitCorn: 位址或付款請求 </translation>
+        <translation>打開BITCORN: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -662,12 +637,12 @@
         <translation>區塊鏈瀏覽視窗</translation>
     </message>
     <message>
-        <source>Show the BITCORN help message to get a list with possible BITCORN command-line options</source>
-        <translation>顯示 BITCORN 幫助訊息以取得 BITCORN 命令列表選項</translation>
+        <source>Show the BITCORN Core help message to get a list with possible BITCORN command-line options</source>
+        <translation>顯示 BITCORN Core 幫助訊息以取得 BITCORN 命令列表選項</translation>
     </message>
     <message>
-        <source>BITCORN client</source>
-        <translation>BITCORN 客戶端</translation>
+        <source>BITCORN Core client</source>
+        <translation>BITCORN Core 客戶端</translation>
     </message>
     </context>
 <context>
@@ -694,17 +669,20 @@
     <name>FreespaceChecker</name>
     </context>
 <context>
+    <name>GovernancePage</name>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     </context>
 <context>
@@ -724,9 +702,13 @@
         <source>Address:</source>
         <translation>位址:</translation>
     </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(沒有標記)</translation>
+    </message>
     </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MultisigDialog</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -761,9 +743,20 @@
         <source>Alt+P</source>
         <translation>Alt+P</translation>
     </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>文字標籤</translation>
+    </message>
+    </context>
+<context>
+    <name>ProposalFrame</name>
     </context>
 <context>
     <name>QObject</name>
+    <message>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
+    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -794,6 +787,10 @@
     <message>
         <source>Label</source>
         <translation>標記</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>位址</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -907,8 +904,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     </context>
 <context>
@@ -971,7 +968,7 @@
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZCornControlDialog</name>
     </context>
 <context>
     <name>bitcorn-core</name>

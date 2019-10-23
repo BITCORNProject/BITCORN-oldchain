@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>전송할 주소를 선택해주세요.</translation>
+        <translation>송금할 주소를 선택해주세요.</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>전송 받을 주소를 선택해주세요.</translation>
+        <translation>입금 받을 주소를 선택해주세요.</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -59,15 +59,15 @@
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation>받는 주소</translation>
+        <translation>받을 주소</translation>
     </message>
     <message>
         <source>These are your BITCORN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>이 주소들은 전송할 BITCORN 주소입니다. 송금하기 전 항상 금액과 전송할 주소를 확인해주세요.</translation>
+        <translation>이 주소들은 송금할 BITCORN 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
     </message>
     <message>
         <source>These are your BITCORN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>이 주소들은 전송 받을 BITCORN 주소입니다. 각 트랜잭션별로 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
+        <translation>이 주소들은 입금 받을 BITCORN 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -136,8 +136,8 @@
         <translation>운영체제 계정이 손상되었을 때 일반적인 송금을 비활성화 합니다. 실질적인 보안을 제공하지 않습니다.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>익명화 및 스테이킹 전용</translation>
+        <source>For anonymization, automint, and staking only</source>
+        <translation>익명성 스테이킹 전용 모드</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -176,16 +176,16 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
-        <translation>BitCorn는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 BITCORNs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CORNs from being stolen by malware infecting your computer.</source>
+        <translation>BITCORN는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 CORNs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCORN&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 BITCORN를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CORN&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 CORN를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -229,6 +229,17 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    <message>
+        <source>IP/Netmask</source>
+        <translation>IP/Netmask</translation>
+    </message>
+    <message>
+        <source>Banned Until</source>
+        <translation>까지 제한됨</translation>
+    </message>
+</context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -239,16 +250,16 @@
         <translation>&amp;BIP 38 암호화</translation>
     </message>
     <message>
-        <source>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38을 사용하여 암호화 할 BITCORN 주소를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 암호화를 누르면 암호화된 개인 키가 계산됩니다.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>주소:</translation>
     </message>
     <message>
-        <source>The BITCORN address to sign the message with</source>
-        <translation>메세지를 서명하기 위한 BITCORN 주소</translation>
+        <source>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38 알고리즘으로 암호화할 BITCORN 지갑 주소를 입력. 중간박스에 암호구절 입력. 암호화된 개인키를 계산하시려면 암호화 클릭</translation>
+    </message>
+    <message>
+        <source>The BITCORN address to encrypt</source>
+        <translation>암호화할 BITCORN 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,16 +290,24 @@
         <translation>현재 서명을 시스템 클립 보드에 복사</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BITCORN address</source>
-        <translation>이 BITCORN 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
+        <source>Encrypt the private key for this BITCORN address</source>
+        <translation>이 BITCORN 주소의 개인키 암호화</translation>
+    </message>
+    <message>
+        <source>Reset all fields</source>
+        <translation>리셋</translation>
+    </message>
+    <message>
+        <source>The encrypted private key</source>
+        <translation>암호화된 개인키</translation>
+    </message>
+    <message>
+        <source>Decrypt the entered key using the passphrase</source>
+        <translation>암호구절을 사용하여 입력 한 키 암호 해독</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
         <translation>암호화 &amp; 키</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>모든 서명 메세지 입력 지우기</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -303,20 +322,8 @@
         <translation>BIP 38 암호화 된 개인 키를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 키를 암호해제 후 '주소 가져오기'를 클릭하면 개인 키가 지갑에 추가됩니다.</translation>
     </message>
     <message>
-        <source>The BITCORN address the message was signed with</source>
-        <translation>메세지에 서명된 BITCORN 주소</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
-        <translation>메세지가 지정된 BITCORN 주소로 서명되었는지 확인해주세요</translation>
-    </message>
-    <message>
         <source>Decrypt &amp;Key</source>
         <translation>암호해제 &amp;키</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>모든 확인 메세지 영역 지우기</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -411,7 +418,7 @@
     </message>
     <message>
         <source>&amp;Send</source>
-        <translation>&amp;전송</translation>
+        <translation>&amp;보내기</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -419,11 +426,15 @@
     </message>
     <message>
         <source>&amp;Transactions</source>
-        <translation>&amp;트랜잭션</translation>
+        <translation>&amp;거래내역</translation>
     </message>
     <message>
         <source>Browse transaction history</source>
-        <translation>트랜잭션 내역 보기</translation>
+        <translation>겨래내역 보기</translation>
+    </message>
+    <message>
+        <source>Privacy Actions for zCORN</source>
+        <translation>zCORN 생성 및 관리</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -551,19 +562,43 @@
     </message>
     <message>
         <source>&amp;Sending addresses...</source>
-        <translation>&amp;주소 보내는중...</translation>
+        <translation>&amp;송금 주소</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation>전송 된 주소 및 라벨 목록 표시</translation>
+        <translation>송금 주소 및 라벨 목록 표시</translation>
     </message>
     <message>
         <source>&amp;Receiving addresses...</source>
-        <translation>&amp;받는 주소...</translation>
+        <translation>&amp;입금 주소</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation>입금 된 주소 및 라벨 목록 표시</translation>
+        <translation>입금 주소 및 라벨 목록 표시</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature creation...</source>
+        <translation>&amp;멀티시그너쳐 생성...</translation>
+    </message>
+    <message>
+        <source>Create a new multisignature address and add it to this wallet</source>
+        <translation>신규 멀티시그너쳐 주소 생성 및 전송</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature spending...</source>
+        <translation>&amp;멀티시그너쳐 전송중...</translation>
+    </message>
+    <message>
+        <source>Spend from a multisignature address</source>
+        <translation>멀티시그너쳐 주소에서 전송</translation>
+    </message>
+    <message>
+        <source>&amp;Multisignature signing...</source>
+        <translation>&amp;멀티시그너쳐 서명중...</translation>
+    </message>
+    <message>
+        <source>Sign with a multisignature address</source>
+        <translation>멀티시그너쳐 주소로 서명</translation>
     </message>
     <message>
         <source>Open &amp;URI...</source>
@@ -573,13 +608,21 @@
         <source>&amp;Command-line options</source>
         <translation>&amp;명령행 옵션</translation>
     </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>트랜잭션 기록의 %n 블록을 처리함</numerusform></translation>
-    </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
         <translation>추가 데이터 동기화: %p%</translation>
+    </message>
+    <message>
+        <source>%1 behind. Scanning block %2</source>
+        <translation>%1 남음. %2 블록 스캔중...</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonymization and staking only</source>
+        <translation>현재 지갑은 &lt;b&gt;암호화&lt;/b&gt; 되어 &lt;b&gt;잠긴&lt;/b&gt; 상태로 스테이킹 전용모드로 안전하게 구동중입니다.</translation>
+    </message>
+    <message>
+        <source>Tor is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
+        <translation>토큰은 &lt;b&gt;입니다 .&lt;/b&gt; : %1</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -602,12 +645,12 @@
         <translation>탭 도구 모음</translation>
     </message>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>Send coins to a BITCORN address</source>
-        <translation>BITCORN 주소로 전송하기</translation>
+        <translation>BITCORN 주소로 입금하기</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and bitcorn: URIs)</source>
@@ -618,10 +661,6 @@
         <translation>&amp;프라이버시</translation>
     </message>
     <message>
-        <source>Privacy Action for zCORN and Obfuscation</source>
-        <translation>zCORN와 난독화를 위한 프라이버스 작업</translation>
-    </message>
-    <message>
         <source>&amp;Masternodes</source>
         <translation>&amp;마스터노드</translation>
     </message>
@@ -630,16 +669,16 @@
         <translation>마스터노드 검색</translation>
     </message>
     <message>
-        <source>&amp;About BITCORN</source>
-        <translation>BITCORN &amp;정보</translation>
+        <source>&amp;About BITCORN Core</source>
+        <translation>BITCORN Core &amp;정보</translation>
     </message>
     <message>
-        <source>Show information about BITCORN</source>
-        <translation>BITCORN에 대한 정보 표시</translation>
+        <source>Show information about BITCORN Core</source>
+        <translation>BITCORN Core에 대한 정보 표시</translation>
     </message>
     <message>
         <source>Modify configuration options for BITCORN</source>
-        <translation>BitCorn에 대한 구성 옵션 수정</translation>
+        <translation>BITCORN에 대한 구성 옵션 수정</translation>
     </message>
     <message>
         <source>Sign messages with your BITCORN addresses to prove you own them</source>
@@ -679,7 +718,7 @@
     </message>
     <message>
         <source>Open a BITCORN: URI or payment request</source>
-        <translation>BitCorn: URI 또는 ​​결제 요청 열기</translation>
+        <translation>BITCORN: URI 또는 ​​결제 요청 열기</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +729,12 @@
         <translation>블록 탐색 창</translation>
     </message>
     <message>
-        <source>Show the BITCORN help message to get a list with possible BITCORN command-line options</source>
-        <translation>BITCORN 도움말 메세지를 표시하여 사용 가능한 BITCORN 명령행 옵션 목록 표시</translation>
+        <source>Show the BITCORN Core help message to get a list with possible BITCORN command-line options</source>
+        <translation>BITCORN Core 도움말 메세지를 표시하여 사용 가능한 BITCORN 명령행 옵션 목록 표시</translation>
     </message>
     <message>
-        <source>BITCORN client</source>
-        <translation>BITCORN 클라이언트</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to BITCORN network</source>
-        <translation><numerusform>%n 개 BITCORN 네트웍에 연결</numerusform></translation>
+        <source>BITCORN Core client</source>
+        <translation>BITCORN Core 클라이언트</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -721,29 +756,9 @@
         <source>Up to date</source>
         <translation>최신</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n 시간</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n 일</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n 주</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 그리고 %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n 년</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 남음</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -771,15 +786,15 @@
     </message>
     <message>
         <source>Sent transaction</source>
-        <translation>보낸 트랜잭션</translation>
+        <translation>보낸 내역</translation>
     </message>
     <message>
         <source>Incoming transaction</source>
-        <translation>받은 트랜잭션</translation>
+        <translation>받은 내역</translation>
     </message>
     <message>
         <source>Sent MultiSend transaction</source>
-        <translation>다중 트랜잭션 전송</translation>
+        <translation>다중 보내기 방식으로 보냄</translation>
     </message>
     <message>
         <source>Date: %1
@@ -801,7 +816,7 @@ Address: %4
     </message>
     <message>
         <source>Active</source>
-        <translation>활성</translation>
+        <translation>누적 활성 시간</translation>
     </message>
     <message>
         <source>Not Active</source>
@@ -814,18 +829,22 @@ Address: %4
 다중전송: %1</translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>현재 지갑은 &lt;b&gt;암호화되어 &lt;b&gt;잠금해제되었습니다.</translation>
+        <source>AutoMint is currently enabled and set to </source>
+        <translation>자동 생성기능이 현재 작동중 그리고 </translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>지갑은 &lt;b&gt;암호화&lt;/b&gt;되어 있으며 현재 익명화 및 스테이킹만을 위해 &lt;b&gt;잠금해제&lt;/b&gt; 되었습니다.</translation>
+        <source>AutoMint is disabled</source>
+        <translation>자동생성이 비활성화 되었습니다.</translation>
+    </message>
+    <message>
+        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
+        <translation>현재 지갑은 &lt;b&gt;암호화되어 &lt;b&gt;잠금해제되었습니다.</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>지갑은 &lt;b&gt;암호화&lt;/ b&gt;되어 있으며 현재 &lt;b&gt;잠겨 있습니다&lt;/ b&gt;.</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -861,7 +880,7 @@ Address: %4
     <name>ClientModel</name>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
-        <translation>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</translation>
+        <translation>전체 : %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / 미확인: %5)</translation>
     </message>
     <message>
         <source>Network Alert</source>
@@ -876,7 +895,7 @@ Address: %4
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>바이트:</translation>
     </message>
     <message>
         <source>Amount:</source>
@@ -900,7 +919,7 @@ Address: %4
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>이후 수수료:</translation>
+        <translation>최종 금액:</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -939,6 +958,10 @@ Address: %4
         <translation>수신 된 주소</translation>
     </message>
     <message>
+        <source>Type</source>
+        <translation>분류</translation>
+    </message>
+    <message>
         <source>Date</source>
         <translation>날짜</translation>
     </message>
@@ -948,7 +971,7 @@ Address: %4
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>확정</translation>
+        <translation>확정됨</translation>
     </message>
     <message>
         <source>Priority</source>
@@ -992,7 +1015,7 @@ Address: %4
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation>Bytes 복사</translation>
+        <translation>바이트 복사</translation>
     </message>
     <message>
         <source>Copy priority</source>
@@ -1012,43 +1035,39 @@ Address: %4
     </message>
     <message>
         <source>highest</source>
-        <translation>최고</translation>
+        <translation>9 최고</translation>
     </message>
     <message>
         <source>higher</source>
-        <translation>매우 높음</translation>
+        <translation>8 매우 높음</translation>
     </message>
     <message>
         <source>high</source>
-        <translation>높음</translation>
+        <translation>7 높음</translation>
     </message>
     <message>
         <source>medium-high</source>
-        <translation>중간 높음</translation>
-    </message>
-    <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>입력당 +/- %1 금액(s)을 변경할 수 있습니다.</translation>
+        <translation>6 약간 높음</translation>
     </message>
     <message>
         <source>medium</source>
-        <translation>중간</translation>
+        <translation>5 중간</translation>
     </message>
     <message>
         <source>low-medium</source>
-        <translation>중간 낮음</translation>
+        <translation>4 낮은 중간</translation>
     </message>
     <message>
         <source>low</source>
-        <translation>낮음</translation>
+        <translation>3 낮음</translation>
     </message>
     <message>
         <source>lower</source>
-        <translation>매우 낮음</translation>
+        <translation>2 매우 낮음</translation>
     </message>
     <message>
         <source>lowest</source>
-        <translation>최저</translation>
+        <translation>1 최저</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
@@ -1091,6 +1110,10 @@ Address: %4
         <translation>받는 사람이 %1 보다 작은 금액을 받으면 라벨이 빨간색으로 변경됩니다.</translation>
     </message>
     <message>
+        <source>Can vary +/- %1 ucorn per input.</source>
+        <translation>Can vary +/- %1 ucorn per input.</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(라벨 없음)</translation>
     </message>
@@ -1131,7 +1154,7 @@ Address: %4
     </message>
     <message>
         <source>New sending address</source>
-        <translation>새로운 발신 주소</translation>
+        <translation>새로운 보내는 주소</translation>
     </message>
     <message>
         <source>Edit receiving address</source>
@@ -1182,22 +1205,33 @@ Address: %4
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Form</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
         <translation>버전</translation>
     </message>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About BITCORN</source>
-        <translation>BITCORN 정보</translation>
+        <source>About BITCORN Core</source>
+        <translation>BITCORN Core 정보</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1277,16 @@ Address: %4
         <translation>환영합니다</translation>
     </message>
     <message>
-        <source>Welcome to BITCORN.</source>
-        <translation>BITCORN에 오신 것을 환영합니다.</translation>
+        <source>Welcome to BITCORN Core.</source>
+        <translation>BITCORN Core에 오신 것을 환영합니다.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where BITCORN will store its data.</source>
-        <translation>이 프로그램이 처음 실행되었으므로 BITCORN가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
+        <source>As this is the first time the program is launched, you can choose where BITCORN Core will store its data.</source>
+        <translation>이 프로그램이 처음 실행되었으므로 BITCORN Core가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
     </message>
     <message>
-        <source>BITCORN will download and store a copy of the BITCORN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>BITCORN는 BITCORN 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
+        <source>BITCORN Core will download and store a copy of the BITCORN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BITCORN Core는 BITCORN 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,8 +1297,8 @@ Address: %4
         <translation>사용자 지정 데이터 디렉토리 사용:</translation>
     </message>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1290,8 +1324,8 @@ Address: %4
         <translation>Form</translation>
     </message>
     <message>
-        <source>My Masternodes</source>
-        <translation>나의 마스터노드</translation>
+        <source>MASTERNODES</source>
+        <translation>마스터노드</translation>
     </message>
     <message>
         <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
@@ -1299,7 +1333,7 @@ Address: %4
     </message>
     <message>
         <source>Alias</source>
-        <translation>별명</translation>
+        <translation>이름</translation>
     </message>
     <message>
         <source>Address</source>
@@ -1315,11 +1349,11 @@ Address: %4
     </message>
     <message>
         <source>Active</source>
-        <translation>활성</translation>
+        <translation>누적 활성 시간</translation>
     </message>
     <message>
         <source>Last Seen (UTC)</source>
-        <translation>최근 본 (UTC)</translation>
+        <translation>최근 업데이트 (UTC)</translation>
     </message>
     <message>
         <source>Pubkey</source>
@@ -1327,7 +1361,7 @@ Address: %4
     </message>
     <message>
         <source>S&amp;tart alias</source>
-        <translation>별명 시&amp;작</translation>
+        <translation>마스트노드 시&amp;작</translation>
     </message>
     <message>
         <source>Start &amp;all</source>
@@ -1335,7 +1369,7 @@ Address: %4
     </message>
     <message>
         <source>Start &amp;MISSING</source>
-        <translation>시작 &amp;종료</translation>
+        <translation>누락된 마스트노드 시&amp;작</translation>
     </message>
     <message>
         <source>&amp;Update status</source>
@@ -1343,7 +1377,7 @@ Address: %4
     </message>
     <message>
         <source>Status will be updated automatically in (sec):</source>
-        <translation>상태가 (초) 단위로 자동 업데이트됩니다:</translation>
+        <translation>마스터노드 상태는 자동 업데이트됩니다:</translation>
     </message>
     <message>
         <source>0</source>
@@ -1351,7 +1385,7 @@ Address: %4
     </message>
     <message>
         <source>Start alias</source>
-        <translation>별명 시작</translation>
+        <translation>선택 시작</translation>
     </message>
     <message>
         <source>Confirm masternode start</source>
@@ -1455,6 +1489,14 @@ MultiSend will not be activated unless you have clicked Activate</source>
         <translation>주소:</translation>
     </message>
     <message>
+        <source>Label:</source>
+        <translation>Label:</translation>
+    </message>
+    <message>
+        <source>Enter a label for this address to add it to your address book</source>
+        <translation>주소록에 추가하려면 이 주소의 라벨을 입력해주세요.</translation>
+    </message>
+    <message>
         <source>Delete Address From MultiSend Vector</source>
         <translation>다중전송 벡터에서 주소 삭제</translation>
     </message>
@@ -1487,109 +1529,183 @@ MultiSend will not be activated unless you have clicked Activate</source>
         <translation>마스터노드 보상 전송</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>입력된 주소:
-</translation>
-    </message>
-    <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>올바르지 않습니다.
-주소를 확인하고 다시 시도해주세요.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>다중전송 벡터의 총 금액이 스테이크 보상 금액의 100 % 이상입니다
-</translation>
+        <source>(no label)</source>
+        <translation>(라벨 없음)</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>퍼센트로 1 - 100을 입력하십시오.</translation>
     </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>다중전송 벡터
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>제거됨</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>주소를 찾을 수 없습니다
-</translation>
-    </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MultisigDialog</name>
     <message>
-        <source>Configure Obfuscation</source>
-        <translation>난독화 구성</translation>
+        <source>Multisignature Address Interactions</source>
+        <translation>멀티 서명 주소 상호 작용</translation>
     </message>
     <message>
-        <source>Basic Privacy</source>
-        <translation>기본 익명</translation>
+        <source>Create MultiSignature &amp;Address</source>
+        <translation>&amp;멀티시그너쳐 주소 생성</translation>
     </message>
     <message>
-        <source>High Privacy</source>
-        <translation>높은 익명</translation>
+        <source>How many people must sign to verify a transaction</source>
+        <translation>얼마나 많은 사람들이 거래를 확인하기 위해 서명해야합니까?</translation>
     </message>
     <message>
-        <source>Maximum Privacy</source>
-        <translation>최고 익명</translation>
+        <source>Enter the minimum number of signatures required to sign transactions</source>
+        <translation>거래에 서명하는 데 필요한 최소 서명 수를 입력하십시오.</translation>
     </message>
     <message>
-        <source>Please select a privacy level.</source>
-        <translation>익명화 레벨을 선택해주세요.</translation>
+        <source>Address Label:</source>
+        <translation>주소 이름:</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BITCORN</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 BITCORN 를 섞을 수 있습니다.</translation>
+        <source>Add another address that could sign to verify a transaction from the multisig address.</source>
+        <translation>multisig 주소에서 트랜잭션을 확인하기 위해 서명 할 수있는 다른 주소를 추가하십시오.</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BITCORN</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 BITCORN 를 섞을 수 있습니다.</translation>
+        <source>&amp;Add Address / Key</source>
+        <translation>&amp;주소 / 키 추가</translation>
     </message>
     <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>16개의 개별 마스터노드를 사용</translation>
+        <source>Local addresses or public keys that can sign:</source>
+        <translation>서명 할 수있는 로컬 주소 또는 공개 키 :</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BITCORN to anonymize 10000 BITCORN</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 BITCORN 익명화에 약 ~0.025 BITCORN의 비용이 들어갑니다.</translation>
+        <source>Create a new multisig address</source>
+        <translation>신규 멀티시그 주소 생성</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BITCORN to anonymize 10000 BITCORN</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 BITCORN 익명화에 약 0.05 BITCORN의 비용이 들어갑니다.</translation>
+        <source>C&amp;reate</source>
+        <translation>&amp;생성</translation>
     </message>
     <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
+        <source>Status:</source>
+        <translation>상태:</translation>
     </message>
     <message>
-        <source>0.1 BITCORN per 10000 BITCORN you anonymize.</source>
-        <translation>10000 BITCORN 익명화에 0.1 BITCORN 가 듭니다.</translation>
+        <source>Use below to quickly import an address by its redeem. Don't forget to add a label before clicking import!
+Keep in mind, the wallet will rescan the blockchain to find transactions containing the new address.
+Please be patient after clicking import.</source>
+        <translation>아래 주소를 사용하여 주소를 신속하게 가져옵니다. 가져 오기를 클릭하기 전에 레이블을 추가하는 것을 잊지 마십시오!
+지갑은 블록 체인을 다시 스캔하여 새 주소가 포함 된 거래를 찾습니다 .
+가져 오기를 클릭 한 후 기다려주십시오.</translation>
     </message>
     <message>
-        <source>Obfuscation Configuration</source>
-        <translation>난독화 구성</translation>
+        <source>&amp;Import Redeem</source>
+        <translation>&amp;리딤코드 가져오기</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening BITCORN's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) BITCORN의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <source>&amp;Create MultiSignature Tx</source>
+        <translation>맺음말 Tx 만들기 (&amp; A)</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening BITCORN's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) BITCORN의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <source>Inputs:</source>
+        <translation>입력:</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening BITCORN's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) BITCORN의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <source>Coin Control</source>
+        <translation>코인 설정</translation>
+    </message>
+    <message>
+        <source>Quantity Selected:</source>
+        <translation>선택된 수량 :</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Amount:</source>
+        <translation>금액:</translation>
+    </message>
+    <message>
+        <source>Add an input to fund the outputs</source>
+        <translation>출력을위한 입력을 추가하십시오.</translation>
+    </message>
+    <message>
+        <source>Add a Raw Input</source>
+        <translation> Raw 입력</translation>
+    </message>
+    <message>
+        <source>Address / Amount:</source>
+        <translation>주소 / 금액:</translation>
+    </message>
+    <message>
+        <source>Add destinations to send CORN to</source>
+        <translation>CORN를 보낼 목적지 추가</translation>
+    </message>
+    <message>
+        <source>Add &amp;Destination</source>
+        <translation>추가 및 대상</translation>
+    </message>
+    <message>
+        <source>Create a transaction object using the given inputs to the given outputs</source>
+        <translation>주어진 출력에 주어진 입력을 사용하여 트랜잭션 객체를 만듭니다.</translation>
+    </message>
+    <message>
+        <source>Cr&amp;eate</source>
+        <translation>&amp;생성</translation>
+    </message>
+    <message>
+        <source>&amp;Sign MultiSignature Tx</source>
+        <translation>멀티 시그니처 Tx 서명 (&amp; S)</translation>
+    </message>
+    <message>
+        <source>Transaction Hex:</source>
+        <translation>Transaction Hex:</translation>
+    </message>
+    <message>
+        <source>Sign the transaction from this wallet or from provided private keys</source>
+        <translation>이 지갑이나 제공된 개인 키에서 거래에 서명하십시오.</translation>
+    </message>
+    <message>
+        <source>S&amp;ign</source>
+        <translation>&amp;서명</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISABLED until transaction has been signed enough times.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>거래가 충분히 서명 될 때까지 1234DISABLED</translation>
+    </message>
+    <message>
+        <source>Co&amp;mmit</source>
+        <translation>Co&amp;mmit</translation>
+    </message>
+    <message>
+        <source>Add private keys to sign the transaction with</source>
+        <translation>개인 키를 추가하여 다음을 사용하여 트랜잭션에 서명하십시오.</translation>
+    </message>
+    <message>
+        <source>Add Private &amp;Key</source>
+        <translation>&amp;개인키 추가</translation>
+    </message>
+    <message>
+        <source>Sign with only private keys (Not Recommened)</source>
+        <translation>개인 키만 사용하여 서명 (권장하지 않음)</translation>
+    </message>
+    <message>
+        <source>Invalid Tx Hash.</source>
+        <translation>맞지 않는 Tx Hash.</translation>
+    </message>
+    <message>
+        <source>Vout position must be positive.</source>
+        <translation>Vout 위치는 양수 여야합니다.</translation>
+    </message>
+    <message>
+        <source>Maximum possible addresses reached. (15)</source>
+        <translation>가능한 주소 최대치 입니다. (15)</translation>
+    </message>
+    <message>
+        <source>Vout Position: </source>
+        <translation>Vout 포지션 :</translation>
+    </message>
+    <message>
+        <source>Amount: </source>
+        <translation>금액:</translation>
+    </message>
+    <message>
+        <source>Maximum (15)</source>
+        <translation>최대 (15)</translation>
     </message>
 </context>
 <context>
@@ -1716,20 +1832,32 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Percentage of incoming BITCORN which get automatically converted to zCORN via Zerocoin Protocol (min: 10%)</source>
-        <translation>BITCORN수신시 자동변환 zCORN 퍼센트 (최소값:10%)</translation>
+        <source>Enable automatic minting of CORN units to zCORN</source>
+        <translation>보상받은 CORN를 zCORN로 자동변환 활성화</translation>
+    </message>
+    <message>
+        <source>Enable zCORN Automint</source>
+        <translation>zCORN 자동생성 활성화</translation>
+    </message>
+    <message>
+        <source>Percentage of incoming CORN which get automatically converted to zCORN via Zerocoin Protocol (min: 10%)</source>
+        <translation>CORN수신시 자동변환 zCORN 비율 (최소값:10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zCORN</source>
-        <translation>자동 변환되는 zCORN 퍼센트</translation>
+        <translation>자동 변환되는 zCORN 비율</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough BITCORN for this denomination is available</source>
-        <translation>이 디노미네이션의 BITCORN가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough CORN for this denomination is available</source>
+        <translation>이 디노미네이션의 CORN가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
         <source>Preferred Automint zCORN Denomination</source>
         <translation>선호하는 자동생성 zCORN 디노미네이션 </translation>
+    </message>
+    <message>
+        <source>Stake split threshold:</source>
+        <translation>Stake split threshold:</translation>
     </message>
     <message>
         <source>Connect to the BITCORN network through a SOCKS5 proxy.</source>
@@ -1784,16 +1912,16 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>사용자 인터페이스 테마:</translation>
     </message>
     <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;금액을 표시 할 단위:</translation>
-    </message>
-    <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>코인 전송시 인터페이스에 표시할 기본 세분화 단위를 선택해주세요.</translation>
     </message>
     <message>
         <source>Decimal digits</source>
         <translation>10진수</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>잔액 0 숨기기</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1824,8 +1952,8 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>&amp;취소</translation>
     </message>
     <message>
-        <source>I don't care</source>
-        <translation>없음</translation>
+        <source>Any</source>
+        <translation>어떤</translation>
     </message>
     <message>
         <source>default</source>
@@ -1855,6 +1983,14 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <source>The supplied proxy address is invalid.</source>
         <translation>프록시 주소가 잘못되었습니다.</translation>
     </message>
+    <message>
+        <source>The supplied proxy port is invalid.</source>
+        <translation>제공된 프록시 포트가 유효하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy settings are invalid.</source>
+        <translation>제공된 프록시 설정이 유효하지 않습니다.</translation>
+    </message>
 </context>
 <context>
     <name>OverviewPage</name>
@@ -1863,16 +1999,20 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>Form</translation>
     </message>
     <message>
-        <source>BITCORN Balances</source>
-        <translation>BITCORN 잔액</translation>
-    </message>
-    <message>
         <source>Available:</source>
         <translation>사용가능:</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
         <translation>현재 출금 가능한 잔액</translation>
+    </message>
+    <message>
+        <source>Total Balance, including all unavailable coins.</source>
+        <translation>전체 잔액, (현재 전송이 불가능한 코인 포함)</translation>
+    </message>
+    <message>
+        <source>CORN Balance</source>
+        <translation>CORN 잔액</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -1891,8 +2031,44 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>아직 완료되지 않은 스테이크 및 마스터노드 보상</translation>
     </message>
     <message>
+        <source>Current locked balance in watch-only addresses</source>
+        <translation>현재 보기전용 주소의 잠긴 잔액 </translation>
+    </message>
+    <message>
+        <source>Your current BITCORN balance, unconfirmed and immature transactions included</source>
+        <translation>현재 BITCORN 잔액, 미확정, 생성중인 코인 포함</translation>
+    </message>
+    <message>
+        <source>zCORN Balance</source>
+        <translation>zCORN 잔액</translation>
+    </message>
+    <message>
+        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
+These zCORN are spendable.</source>
+        <translation>성숙한 : 그것이 발행 된 후 같은 명칭의 20 개 이상의 확인 및 1 개 민트.
+이 zCORN는 쓸만합니다.</translation>
+    </message>
+    <message>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation>미확인 : 20 회 미만 확인
+미성숙 : 확인되었지만 발행 된 후 같은 종파 1 개 미만</translation>
+    </message>
+    <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BITCORN network after a connection is established, but this process has not completed yet.</source>
         <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 BITCORN 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>OVERVIEW</source>
+        <translation>개요</translation>
+    </message>
+    <message>
+        <source>Combined Balance (including unconfirmed and immature coins)</source>
+        <translation>전체 잔액 (미확정, 생성중인 코인 포함)</translation>
+    </message>
+    <message>
+        <source>Combined Balance</source>
+        <translation>전체 잔액</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1905,10 +2081,6 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
     <message>
         <source>Total:</source>
         <translation>총:</translation>
-    </message>
-    <message>
-        <source>Your current total balance</source>
-        <translation>현재 소지하고 있는 총 잔액</translation>
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
@@ -1927,24 +2099,20 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>출금 가능 액수:</translation>
     </message>
     <message>
-        <source>Combined Balances (including immature coins)</source>
-        <translation>전체 잔액 (대기중 코인 포함)</translation>
+        <source>Locked CORN or Masternode collaterals. These are excluded from zCORN minting.</source>
+        <translation>잠금 CORN 또는 Masternode collaterals. 이들은 zCORN minting에서 제외됩니다.</translation>
     </message>
     <message>
-        <source>BITCORN:</source>
-        <translation>BITCORN:</translation>
+        <source>Locked:</source>
+        <translation>잠김:</translation>
     </message>
     <message>
-        <source>zCORN:</source>
-        <translation>zCORN:</translation>
+        <source>Unconfirmed:</source>
+        <translation>미승인:</translation>
     </message>
     <message>
-        <source>0 %</source>
-        <translation>0 %</translation>
-    </message>
-    <message>
-        <source>Zerocoin Balance</source>
-        <translation>제로코인 잔액</translation>
+        <source>Your current zCORN balance, unconfirmed and immature zCORN included.</source>
+        <translation>zCORN 잔액, 미확정, 생성중인 zCORN 포함.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -1953,6 +2121,27 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
     <message>
         <source>out of sync</source>
         <translation>동기화되지 않음</translation>
+    </message>
+    <message>
+        <source>Current percentage of zCORN.
+If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
+</source>
+        <translation>현재 zCORN의 백분율 .
+자동 저장 기능이 활성화 된 경우이 비율은 구성된 자동 저장 비율 (기본값 = 10 %)을 기준으로 정해집니다.</translation>
+    </message>
+    <message>
+        <source>AutoMint is currently enabled and set to </source>
+        <translation>자동 생성기능이 현재 작동중 그리고 </translation>
+    </message>
+    <message>
+        <source>To disable AutoMint add 'enablezeromint=0' in bitcorn.conf.</source>
+        <translation>자동생성 기능을 사용하지 않으시려면, bitcorn.conf 화일에 enablezeromint=0 를 추가하세요.</translation>
+    </message>
+    <message>
+        <source>AutoMint is currently disabled.
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in bitcorn.conf</source>
+        <translation>자동 저장 기능이 현재 사용 중지되었습니다 .
+자동 변환을 사용하려면 cornotx.conf에서 'enablezeromint = 0'에서 'enablezeromint = 1'로 변경하십시오.</translation>
     </message>
 </context>
 <context>
@@ -1979,7 +2168,7 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
     </message>
     <message>
         <source>Cannot start bitcorn: click-to-pay handler</source>
-        <translation>BitCorn을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <translation>BITCORN을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid BITCORN address or malformed URI parameters.</source>
@@ -2064,24 +2253,12 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>BITCORN which were anonymized via Zerocin Protocol</source>
-        <translation>제로코인 프로토콜을 통해 익명화된 BITCORN</translation>
-    </message>
-    <message>
-        <source>Zerocoin BITCORN (zCORN)</source>
-        <translation>제로코인 BITCORN (zCORN)</translation>
-    </message>
-    <message>
         <source>Zerocoin Actions:</source>
         <translation>제로코인 관리:</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BITCORN network after a connection is established, but this process has not completed yet.</source>
         <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 BITCORN 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>zCORN로 변환할 BITCORN 수량을 입력하세요.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2096,32 +2273,12 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>zCORN</translation>
     </message>
     <message>
-        <source>Available for Minting:</source>
-        <translation>생성 가능한 수량 :</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 BITCORN</source>
-        <translation>0.000 000 00 BITCORN</translation>
-    </message>
-    <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
         <translation>제로코인 지갑 DB 재설정. 블록 체인에 포함시키지 않은 트랜잭션을 삭제합니다.</translation>
     </message>
     <message>
         <source>Reset</source>
         <translation>초기화</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>코인 컨트롤...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>수량:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>금액:</translation>
     </message>
     <message>
         <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
@@ -2136,12 +2293,16 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>마지막 발행 이후 상태나 메세지</translation>
     </message>
     <message>
-        <source>zPhr Control</source>
-        <translation>zCORN 설정</translation>
+        <source>PRIVACY</source>
+        <translation>프라이버시</translation>
     </message>
     <message>
-        <source>zPhr Selected:</source>
-        <translation>선택한 zCORN : </translation>
+        <source>zCORN Control</source>
+        <translation>zCORN 컨트롤</translation>
+    </message>
+    <message>
+        <source>zCORN Selected:</source>
+        <translation>선택된 zCORN :</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2156,24 +2317,24 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>제로코인 보내기</translation>
     </message>
     <message>
+        <source>Available (mature and spendable) zCORN for spending</source>
+        <translation>전송 가능한 zCORN</translation>
+    </message>
+    <message>
         <source>Available Balance:</source>
         <translation>가능한 잔액:</translation>
     </message>
     <message>
+        <source>Available (mature and spendable) zCORN for spending
+
+zCORN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>지출에 사용할 수있는 성숙한 소비재 zCORN
+
+zCORN는 성명서가 20 개 이상 있고 명칭이 동일하지 않은 2 개 이상의 민트가 작성되었을 때 성숙합니다.</translation>
+    </message>
+    <message>
         <source>0 zCORN</source>
         <translation>0 zCORN</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>제로코인 전송 시큐리티 레벨.  높을수록 좋지만, 시간과 많은 자원이 필요합니다.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>시큐리티 레벨:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>시큐리티 레벨 1 - 100 (기본값: 42)</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2181,7 +2342,7 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
     </message>
     <message>
         <source>The BITCORN address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>BITCORN를 전송할 BITCORN 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
+        <translation>CORN를 전송할 BITCORN 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2232,12 +2393,12 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>제로코인 상태 :</translation>
     </message>
     <message>
-        <source>Available Funds</source>
-        <translation>사용가는한 펀드</translation>
+        <source>Total Balance including unconfirmed and immature zCORN</source>
+        <translation>승인중이거나, 생성중인 제로코인도 포함된 전체 잔액입니다.</translation>
     </message>
     <message>
-        <source>Available Zerocoin  Balance:</source>
-        <translation>사용가능한 제로코인 잔액:</translation>
+        <source>Total Zerocoin  Balance:</source>
+        <translation>제로코인 잔액 :</translation>
     </message>
     <message>
         <source>Denominations with value 1:</source>
@@ -2246,6 +2407,74 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
     <message>
         <source>Denom. with value 1:</source>
         <translation>Denom. 값 1:</translation>
+    </message>
+    <message>
+        <source>Unconfirmed: less than 20 confirmations
+Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
+        <translation>미확인 : 20 회 미만 확인
+미성숙 : 확인되었지만 발행 된 후 같은 종파 1 개 미만</translation>
+    </message>
+    <message>
+        <source>Show the current status of automatic zCORN minting.
+
+To change the status (restart required):
+- enable: add 'enablezeromint=1' to bitcorn.conf
+- disable: add 'enablezeromint=0' to bitcorn.conf
+
+To change the percentage (no restart required):
+- menu Settings-&gt;Options-&gt;Percentage of autominted zCORN
+
+</source>
+        <translation>현재 zCORN 자동 생성 상태를 보여줍니다.
+
+자동생성 상태를 변경하시려면 (지갑 재시작 필요함):
+- 활성화: 'enablezeromint=1' 를 bitcorn.conf 파일에 추가
+- 비활성화: 'enablezeromint=0' 를 bitcorn.conf 파일에 추가
+
+자동 생성 비율 변경하시려면 (지갑 재시작 필요없음):
+- 메뉴 설정-&gt;옵션-&gt;zCORN 자동생성 비율
+
+</translation>
+    </message>
+    <message>
+        <source>AutoMint Status</source>
+        <translation>자동생성 상태</translation>
+    </message>
+    <message>
+        <source>Global Supply:</source>
+        <translation>총 공급량:</translation>
+    </message>
+    <message>
+        <source>Denom. 1:</source>
+        <translation>Denom. 1:</translation>
+    </message>
+    <message>
+        <source>Denom. 5:</source>
+        <translation>Denom. 5:</translation>
+    </message>
+    <message>
+        <source>Denom. 10:</source>
+        <translation>Denom. 10:</translation>
+    </message>
+    <message>
+        <source>Denom. 50:</source>
+        <translation>Denom. 50:</translation>
+    </message>
+    <message>
+        <source>Denom. 100:</source>
+        <translation>Denom. 100:</translation>
+    </message>
+    <message>
+        <source>Denom. 500:</source>
+        <translation>Denom. 500:</translation>
+    </message>
+    <message>
+        <source>Denom. 1000:</source>
+        <translation>Denom. 1000:</translation>
+    </message>
+    <message>
+        <source>Denom. 5000:</source>
+        <translation>Denom. 5000:</translation>
     </message>
     <message>
         <source>0 x</source>
@@ -2308,12 +2537,12 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>Denom. 값 5000:</translation>
     </message>
     <message>
-        <source>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</source>
-        <translation>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</translation>
-    </message>
-    <message>
         <source>Priority:</source>
         <translation>우선 순위:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>텍스트라벨</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -2329,7 +2558,7 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>바이트:</translation>
     </message>
     <message>
         <source>Insufficient funds!</source>
@@ -2337,11 +2566,11 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
     </message>
     <message>
         <source>Coins automatically selected</source>
-        <translation>코인 자동으로 선택됨</translation>
+        <translation>자동으로 선택됩니다.</translation>
     </message>
     <message>
         <source>medium</source>
-        <translation>중간</translation>
+        <translation>5 중간</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2361,7 +2590,7 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
     </message>
     <message>
         <source>Change:</source>
-        <translation>변경:</translation>
+        <translation>잔돈:</translation>
     </message>
     <message>
         <source>out of sync</source>
@@ -2372,48 +2601,106 @@ https://www.transifex.com/bitcorn-project/bitcorn-project-translations</translat
         <translation>생성 상태 : Okay</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>수량 복사</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>금액 복사</translation>
-    </message>
-    <message>
-        <source>Zerocoin functionality is not enabled on the BITCORN network yet.</source>
-        <translation>제로 코인 기능 상태가 BITCORN 네트워크 상에서 이루어지지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Error : 지갑이 잠겨있습니다. 먼저 지갑을 열어주세요.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Message: 0 이상의 수량을 입력하세요.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>생성중입니다.</translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>성공적으로 발행됨</translation>
-    </message>
-    <message>
-        <source> zCORN in </source>
-        <translation> zCORN in </translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation> 초. 사용된 디노미네이션:
-</translation>
-    </message>
-    <message>
         <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
 Please be patient...</source>
         <translation>제로코인 생성 초기화 진행중... : 전체 블록체인을 다시 검색합니다. 하드웨어에 따라 최대 30분이 걸릴수 있습니다.
 기다려주세요...</translation>
+    </message>
+    <message>
+        <source>zCORN Spend #: </source>
+        <translation>zCORN 전송 # :</translation>
+    </message>
+    <message>
+        <source>zCORN Mint</source>
+        <translation>zCORN 생성</translation>
+    </message>
+    <message>
+        <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
+        <translation> &lt;b&gt; 활성화됨 &lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source> &lt;b&gt;disabled&lt;/b&gt;.</source>
+        <translation> &lt;b&gt;비활성화됨&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source> Configured target percentage: &lt;b&gt;</source>
+        <translation> 구성된 목표 비율 : &lt;b&gt;</translation>
+    </message>
+    <message>
+        <source>zCORN is currently disabled due to maintenance.</source>
+        <translation>zCORN는 현재 점검중이라 사용하실수 없습니다.</translation>
+    </message>
+    <message>
+        <source>zCORN is currently undergoing maintenance.</source>
+        <translation>zCORN는 현재 점검중입니다.</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
+        <translation>Denom. 값 &lt;b&gt;1&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;5&lt;/b&gt;:</source>
+        <translation>Denom. 값 &lt;b&gt;5&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;10&lt;/b&gt;:</source>
+        <translation>Denom. 값 &lt;b&gt;10&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;50&lt;/b&gt;:</source>
+        <translation>Denom. 값 &lt;b&gt;50&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;100&lt;/b&gt;:</source>
+        <translation>Denom. 값 &lt;b&gt;100&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;500&lt;/b&gt;:</source>
+        <translation>Denom. 값 &lt;b&gt;500&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;1000&lt;/b&gt;:</source>
+        <translation>Denom. 값 &lt;b&gt;1000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. with value &lt;b&gt;5000&lt;/b&gt;:</source>
+        <translation>Denom. 값 &lt;b&gt;5000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>AutoMint Status:</source>
+        <translation>자동생성 상태:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;1&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;1&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;5&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;5&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;10&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;10&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;50&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;50&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;100&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;100&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;500&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;500&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;1000&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;1000&lt;/b&gt;:</translation>
+    </message>
+    <message>
+        <source>Denom. &lt;b&gt;5000&lt;/b&gt;:</source>
+        <translation>Denom. &lt;b&gt;5000&lt;/b&gt;:</translation>
     </message>
     <message>
         <source>Duration: </source>
@@ -2434,7 +2721,7 @@ Please be patient...</source>
         <translation>주소를 입력하지 않아, 신규 주소를 생성합니다.</translation>
     </message>
     <message>
-        <source>Invalid BITCORN Address</source>
+        <source>Invalid Bitcorn Address</source>
         <translation>잘못된 BITCORN 주소</translation>
     </message>
     <message>
@@ -2454,32 +2741,20 @@ Please be patient...</source>
         <translation>주소로</translation>
     </message>
     <message>
-        <source> to a newly generated (unused and therefor anonymous) local address &lt;br /&gt;</source>
+        <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
         <translation>새로 생성된 개인 지갑 주소(미사용된 익명의) &lt;br /&gt; 로</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>시큐리티 레벨</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
         <translation>코인 전송 확인</translation>
     </message>
     <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>제로코인 전송중입니다.
-시큐리티 레벨과 여러분의 하드웨어에 따라 수 분이 걸립니다.
-조금만 기다려주세요...</translation>
+        <source>Failed to fetch mint associated with serial hash</source>
+        <translation>Failed to fetch mint associated with serial hash</translation>
     </message>
     <message>
         <source>Spend Zerocoin failed with status = </source>
         <translation>제로코인 송금 실패 상태 =</translation>
-    </message>
-    <message>
-        <source>zPhr Spend #: </source>
-        <translation>zPhr 송금 #: </translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2502,10 +2777,6 @@ Please be patient...</source>
         <translation>주소:</translation>
     </message>
     <message>
-        <source>zPhr Mint</source>
-        <translation>zCORN 생성</translation>
-    </message>
-    <message>
         <source>Sending successful, return code: </source>
         <translation>성공 완료, 리턴 코드 :</translation>
     </message>
@@ -2518,6 +2789,9 @@ Please be patient...</source>
         <translation>수수료:</translation>
     </message>
 </context>
+<context>
+    <name>ProposalFrame</name>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -2568,7 +2842,11 @@ Please be patient...</source>
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -2703,8 +2981,16 @@ Please be patient...</source>
         <translation>&amp;피어</translation>
     </message>
     <message>
+        <source>Banned peers</source>
+        <translation>제한된 피어</translation>
+    </message>
+    <message>
         <source>Select a peer to view detailed information.</source>
         <translation>자세한 정보를 보기 위해 피어를 선택 하세요.</translation>
+    </message>
+    <message>
+        <source>Whitelisted</source>
+        <translation>화이트리스트</translation>
     </message>
     <message>
         <source>Direction</source>
@@ -2721,14 +3007,6 @@ Please be patient...</source>
     <message>
         <source>Services</source>
         <translation>서비스</translation>
-    </message>
-    <message>
-        <source>Starting Height</source>
-        <translation>시작 위치</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>동기화 위치</translation>
     </message>
     <message>
         <source>Ban Score</source>
@@ -2763,8 +3041,48 @@ Please be patient...</source>
         <translation>&amp;지갑 복구</translation>
     </message>
     <message>
+        <source>Delete local Blockchain Folders</source>
+        <translation>자신의 컴퓨터의 블록체인 폴더 삭제</translation>
+    </message>
+    <message>
         <source>Wallet In Use:</source>
         <translation>사용중인 지갑:</translation>
+    </message>
+    <message>
+        <source>Starting Block</source>
+        <translation>시작 블록</translation>
+    </message>
+    <message>
+        <source>Synced Headers</source>
+        <translation>동기화된 헤더</translation>
+    </message>
+    <message>
+        <source>Synced Blocks</source>
+        <translation>동기화된 블록</translation>
+    </message>
+    <message>
+        <source>The duration of a currently outstanding ping.</source>
+        <translation>현재 미해결 ping의 지속 시간.</translation>
+    </message>
+    <message>
+        <source>Ping Wait</source>
+        <translation>핑 대기</translation>
+    </message>
+    <message>
+        <source>Time Offset</source>
+        <translation>타임 오프셋</translation>
+    </message>
+    <message>
+        <source>Custom Backup Path:</source>
+        <translation>맞춤 백업 경로 :</translation>
+    </message>
+    <message>
+        <source>Custom zCORN Backup Path:</source>
+        <translation>맞춤 zCORN 백업 경로 :</translation>
+    </message>
+    <message>
+        <source>Custom Backups Threshold:</source>
+        <translation>맞춤 백업 역치(threshold) : </translation>
     </message>
     <message>
         <source>Salvage wallet</source>
@@ -2808,6 +3126,14 @@ Please be patient...</source>
         <translation>현재 blk000??.dat로 부터 블록체인 인덱스 재작성</translation>
     </message>
     <message>
+        <source>-resync:</source>
+        <translation>-resync:</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>블록체인을 재동기화를 위해 모든 블록체인 폴더 삭제</translation>
+    </message>
+    <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
         <translation>아래 버튼들은 지갑을 고치기 위한 명령어 옵션들로 실행시 지갑을 재시작합니다, 손상된 블록체인 파일 또는 누락되었거나 오래된 트랜잭션들에 대한 문제를 해결합니다.</translation>
     </message>
@@ -2836,8 +3162,52 @@ Please be patient...</source>
         <translation>BITCORN RPC 콘솔에 오신 것을 환영합니다.</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>위 아래 화살표를 사용하여 기록을 탐색하고 &lt;b&gt;Ctrl-L&lt;/b&gt; 화면을 지웁니다.</translation>
+        <source>&amp;Disconnect Node</source>
+        <translation>&amp; 연결이 끊어진 노드</translation>
+    </message>
+    <message>
+        <source>Ban Node for</source>
+        <translation>제한된 노드</translation>
+    </message>
+    <message>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;시간</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>1 &amp;일</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>1 &amp;주일</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>1 &amp;년</translation>
+    </message>
+    <message>
+        <source>&amp;Unban Node</source>
+        <translation>&amp;제한 해지된 노드</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>그러면 로컬 블록 체인 폴더가 삭제되고 Wallet은 전체 Blockchain을 처음부터 동기화합니다.</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>이것은 상당한 시간을 필요로하며 많은 양의 데이터를 다운로드합니다.</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>다운로드가 완료되면 거래와 자금이 다시 표시됩니다 .12</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>계속 진행하겠습니까?&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>블록체인 동기화를 다시 하시겠습니까?</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
@@ -2860,6 +3230,10 @@ Please be patient...</source>
         <translation>%1 GB</translation>
     </message>
     <message>
+        <source>(node id: %1)</source>
+        <translation>(노드 id: %1)</translation>
+    </message>
+    <message>
         <source>via %1</source>
         <translation>via %1</translation>
     </message>
@@ -2876,12 +3250,16 @@ Please be patient...</source>
         <translation>아웃바운드</translation>
     </message>
     <message>
-        <source>Unknown</source>
-        <translation>Unknown</translation>
+        <source>Yes</source>
+        <translation>Yes</translation>
     </message>
     <message>
-        <source>Fetching...</source>
-        <translation>가져오는 중...</translation>
+        <source>No</source>
+        <translation>No</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Unknown</translation>
     </message>
 </context>
 <context>
@@ -2903,8 +3281,16 @@ Please be patient...</source>
         <translation>새로운 수신 주소와 연결할 선택적 라벨.</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>금&amp;액:</translation>
+    </message>
+    <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BITCORN network.</source>
         <translation>요청이 열릴 때 표시되는 결제 요청에 첨부할 선택적 메세지 입니다. 참고: BITCORN 네트워크를 통한 결제는 메세지가 전송되지 않습니다.</translation>
+    </message>
+    <message>
+        <source>RECEIVE</source>
+        <translation>받기</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the BITCORN network.</source>
@@ -2921,10 +3307,6 @@ Please be patient...</source>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation>요청할 선택적 금액. 이 금액을 비워두거나 특정 금액을 요청하지 않으려면 0으로 두세요.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;금액:</translation>
     </message>
     <message>
         <source>&amp;Request payment</source>
@@ -2969,6 +3351,10 @@ Please be patient...</source>
     <message>
         <source>Copy amount</source>
         <translation>금액 복사</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>주소 복사</translation>
     </message>
 </context>
 <context>
@@ -3041,6 +3427,10 @@ Please be patient...</source>
         <translation>메세지</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>주소</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>금액</translation>
     </message>
@@ -3064,6 +3454,10 @@ Please be patient...</source>
         <translation>코인 전송 </translation>
     </message>
     <message>
+        <source>SEND</source>
+        <translation>보내기</translation>
+    </message>
+    <message>
         <source>Coin Control Features</source>
         <translation>코인 제어 기능</translation>
     </message>
@@ -3077,7 +3471,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <translation>바이트:</translation>
     </message>
     <message>
         <source>Amount:</source>
@@ -3089,7 +3483,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>medium</source>
-        <translation>중간</translation>
+        <translation>5 중간</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -3105,11 +3499,11 @@ Please be patient...</source>
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>이후 수수료:</translation>
+        <translation>최종 금액:</translation>
     </message>
     <message>
         <source>Change:</source>
-        <translation>변경:</translation>
+        <translation>잔돈:</translation>
     </message>
     <message>
         <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
@@ -3132,12 +3526,12 @@ Please be patient...</source>
         <translation>UTXO 크기:</translation>
     </message>
     <message>
-        <source>0 BITCORN</source>
-        <translation>0 BITCORN</translation>
+        <source>0 CORN</source>
+        <translation>0 CORN</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
-        <translation>트랜잭션 수수료:</translation>
+        <translation>거래 수수료:</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -3149,7 +3543,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Minimize</source>
-        <translation>최소화</translation>
+        <translation>닫기</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -3172,24 +3566,28 @@ Please be patient...</source>
         <translation>(스마트 수수료가 아직 초기화 되지 않았습니다. 일반적으로 몇 블록이 지나야됩니다...)</translation>
     </message>
     <message>
+        <source>SwiftX</source>
+        <translation>SwiftX</translation>
+    </message>
+    <message>
         <source>Confirmation time:</source>
         <translation>승인 시간:</translation>
     </message>
     <message>
         <source>Open Coin Control...</source>
-        <translation>코인 설정 열기...</translation>
+        <translation>코인 설정 열기</translation>
     </message>
     <message>
         <source>Coins automatically selected</source>
-        <translation>코인 자동으로 선택됨</translation>
+        <translation>자동으로 선택됩니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBITCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBITCORNs in fee,&lt;br /&gt;while "at least" pays 1000 uBITCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uBITCORNs로 설정되고,&lt;br /&gt;1000 uBITCORNs 안에는 최소 "킬로바이트당" 250 uBITCORNs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCORNs in fee,&lt;br /&gt;while "at least" pays 1000 uCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uCORNs로 설정되고,&lt;br /&gt;1000 uCORNs 안에는 최소 "킬로바이트당" 250 uCORNs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBITCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBITCORNs in fee,&lt;br /&gt;while "total at least" pays 1000 uBITCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uBITCORNs로 설정되고,&lt;br /&gt;1000 uBITCORNs 안에는 전체에서 최소 "킬로바이트당" 250 uBITCORNs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uCORNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCORNs in fee,&lt;br /&gt;while "total at least" pays 1000 uCORNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uCORNs로 설정되고,&lt;br /&gt;1000 uCORNs 안에는 전체에서 최소 "킬로바이트당" 250 uCORNs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for BITCORN transactions than the network can process.</source>
@@ -3240,12 +3638,8 @@ Please be patient...</source>
         <translation>&amp;받는 사람 추가</translation>
     </message>
     <message>
-        <source>Anonymized BITCORN</source>
-        <translation>익명화 BITCORN</translation>
-    </message>
-    <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
+        <source>Anonymized CORN</source>
+        <translation>익명화된 CORN</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3269,7 +3663,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Copy bytes</source>
-        <translation>bytes 복사</translation>
+        <translation>바이트 복사</translation>
     </message>
     <message>
         <source>Copy priority</source>
@@ -3292,24 +3686,8 @@ Please be patient...</source>
         <translation>분할 블록 도구는 여러 주소에서 작동하지 않습니다. 다시 시도하십시오.</translation>
     </message>
     <message>
-        <source>using</source>
-        <translation>사용</translation>
-    </message>
-    <message>
-        <source>anonymous funds</source>
-        <translation>익명 자금</translation>
-    </message>
-    <message>
         <source>Warning: Invalid BITCORN address</source>
         <translation>경고: 잘못된 BITCORN 주소</translation>
-    </message>
-    <message>
-        <source>any available funds (not recommended)</source>
-        <translation>사용 가능한 자금 (권장하지 않음)</translation>
-    </message>
-    <message>
-        <source>and SwiftTX</source>
-        <translation>그리고 SwiftTX</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -3321,7 +3699,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>are added as transaction fee</source>
-        <translation>트랜잭션 수수료가 추가됩니다</translation>
+        <translation>거래 수수료가 추가됩니다</translation>
     </message>
     <message>
         <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
@@ -3335,13 +3713,13 @@ Please be patient...</source>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
         <translation>KB당 %1보다 %2배 많은 수수료는 너무 높은 수수료입니다.</translation>
     </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>%n 블록이내에서 컨펌이 시작될것 같습니다.</numerusform></translation>
-    </message>
     <message>
         <source>The recipient address is not valid, please recheck.</source>
         <translation>수신자 주소가 유효하지 않습니다. 다시 확인해주세요.</translation>
+    </message>
+    <message>
+        <source>using SwiftX</source>
+        <translation>SwiftX 사용</translation>
     </message>
     <message>
         <source> split into %1 outputs using the UTXO splitter.</source>
@@ -3408,7 +3786,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>The BITCORN address to send the payment to</source>
-        <translation>전송할 BITCORN 주소</translation>
+        <translation>보낼 BITCORN 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3456,7 +3834,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Pay To:</source>
-        <translation>지불 대상:</translation>
+        <translation>보낼 주소:</translation>
     </message>
     <message>
         <source>Memo:</source>
@@ -3474,8 +3852,8 @@ Please be patient...</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>BITCORN is shutting down...</source>
-        <translation>BITCORN가 종료됩니다...</translation>
+        <source>BITCORN Core is shutting down...</source>
+        <translation>BITCORN Core가 종료됩니다...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3624,8 +4002,8 @@ Please be patient...</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3640,8 +4018,8 @@ Please be patient...</source>
         <translation>Dash Core 개발자</translation>
     </message>
     <message>
-        <source>The BITCORN developers</source>
-        <translation>BITCORN 개발자</translation>
+        <source>The BITCORN Core developers</source>
+        <translation>BITCORN Core 개발자</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3657,10 +4035,6 @@ Please be patient...</source>
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>%n 이상의 블록 열기</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>%1까지 열기</translation>
@@ -3668,18 +4042,6 @@ Please be patient...</source>
     <message>
         <source>conflicted</source>
         <translation>충돌됨</translation>
-    </message>
-    <message>
-        <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/오프라인 (swifttx를 통해 확인 됨)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/확인 됨 (swifttx를 통해 확인 됨)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 확인 (swifttx를 통해 확인 됨)</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -3694,24 +4056,36 @@ Please be patient...</source>
         <translation>%1 확인</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/오프라인 (swifttx를 통해 확인 됨)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/확인 됨 (swifttx를 통해 확인 됨)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 확인 (swifttx를 통해 확인 됨)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
         <translation>%1/오프라인 (SwiftTX 확인 진행 중 - %2 중 %3 서명)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
         <translation>%1/확인 됨 (SwiftTX 확인 진행 중 - %2 중 %3 서명)</translation>
     </message>
     <message>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
         <translation>%1 확인 (SwiftTX 확인 진행 중 - %2 중 %3 서명)</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification failed)</source>
+        <source>%1/offline (SwiftX verification failed)</source>
         <translation>%1/오프라인 (SwiftTX 확인 실패)
 </translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
+        <source>%1/confirmed (SwiftX verification failed)</source>
         <translation>%1/확인 됨 (SwiftTX 확인 실패)</translation>
     </message>
     <message>
@@ -3721,10 +4095,6 @@ Please be patient...</source>
     <message>
         <source>, has not been successfully broadcast yet</source>
         <translation>, 아직 성공적으로 브로드캐스트되지 않았습니다</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, %n 개 노드를 통해 브로드캐스트됩니다.</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -3765,10 +4135,6 @@ Please be patient...</source>
     <message>
         <source>Credit</source>
         <translation>크레딧</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>%n 개 이상의 블록에서 생성됩니다.</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -3868,10 +4234,6 @@ Please be patient...</source>
         <source>Address</source>
         <translation>주소</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>%n 이상의 블록 열기</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>%1까지 열기</translation>
@@ -3882,7 +4244,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Unconfirmed</source>
-        <translation>미확인 됨</translation>
+        <translation>미확인됨</translation>
     </message>
     <message>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
@@ -3894,7 +4256,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Conflicted</source>
-        <translation>충돌 됨</translation>
+        <translation>충돌됨</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
@@ -3906,7 +4268,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Received with</source>
-        <translation>수신 됨</translation>
+        <translation>수신됨</translation>
     </message>
     <message>
         <source>Masternode Reward</source>
@@ -3919,6 +4281,14 @@ Please be patient...</source>
     <message>
         <source>Received via Obfuscation</source>
         <translation>난독화를 통해 수신 됨</translation>
+    </message>
+    <message>
+        <source>CORN Stake</source>
+        <translation>CORN stake</translation>
+    </message>
+    <message>
+        <source>zCORN Stake</source>
+        <translation>zCORN stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3937,6 +4307,34 @@ Please be patient...</source>
         <translation>난독화 표시 만들기</translation>
     </message>
     <message>
+        <source>Converted CORN to zCORN</source>
+        <translation>CORN를 zCORN로 변환</translation>
+    </message>
+    <message>
+        <source>Spent zCORN</source>
+        <translation>zCORN 사용</translation>
+    </message>
+    <message>
+        <source>Received CORN from zCORN</source>
+        <translation>zCORN를 CORN로 받음</translation>
+    </message>
+    <message>
+        <source>Minted Change as zCORN from zCORN Spend</source>
+        <translation>zCORN 전송후 남은 zCORN로 잔돈 생성</translation>
+    </message>
+    <message>
+        <source>Converted zCORN to CORN</source>
+        <translation>zCORN를 CORN로 변환</translation>
+    </message>
+    <message>
+        <source>Anonymous (zCORN Transaction)</source>
+        <translation>Anonymous (zCORN 거래)</translation>
+    </message>
+    <message>
+        <source>Anonymous (zCORN Stake)</source>
+        <translation>Anonymous (zCORN 스테이킹)</translation>
+    </message>
+    <message>
         <source>Sent to</source>
         <translation>대상 전송</translation>
     </message>
@@ -3949,10 +4347,6 @@ Please be patient...</source>
         <translation>자신에게 지불</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>발행</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>채굴</translation>
     </message>
@@ -3961,32 +4355,8 @@ Please be patient...</source>
         <translation>난독화</translation>
     </message>
     <message>
-        <source>Converted Phr to zPhr</source>
-        <translation>zCORN로 변환된 BITCORN</translation>
-    </message>
-    <message>
-        <source>Spent zPhr</source>
-        <translation>전송된 zCORN</translation>
-    </message>
-    <message>
-        <source>Received Phr from zPhr</source>
-        <translation>zCORN로 전송받은 BITCORN</translation>
-    </message>
-    <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>zCORN 전송후 남은 잔돈 zCORN 생성됨</translation>
-    </message>
-    <message>
-        <source>Converted zPhr to Phr</source>
-        <translation>zPhr에서 Phr로 변환됨</translation>
-    </message>
-    <message>
         <source>watch-only</source>
         <translation>읽기 전용</translation>
-    </message>
-    <message>
-        <source>zPhr Accumulator</source>
-        <translation>zPhr 누산기</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4053,31 +4423,11 @@ Please be patient...</source>
     </message>
     <message>
         <source>Received with</source>
-        <translation>수신 됨</translation>
+        <translation>수신됨</translation>
     </message>
     <message>
         <source>Sent to</source>
         <translation>대상 전송</translation>
-    </message>
-    <message>
-        <source>Obfuscated</source>
-        <translation>난독화</translation>
-    </message>
-    <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>난독화로 보증 입력</translation>
-    </message>
-    <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>난독화 표시 만들기</translation>
-    </message>
-    <message>
-        <source>Obfuscation Denominate</source>
-        <translation>난독화 표시</translation>
-    </message>
-    <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>난독화 보증 결제 </translation>
     </message>
     <message>
         <source>To yourself</source>
@@ -4096,20 +4446,12 @@ Please be patient...</source>
         <translation>마스터노드 보상 </translation>
     </message>
     <message>
-        <source>Received Phr from zPhr</source>
-        <translation>zCORN로 전송받은 BITCORN</translation>
-    </message>
-    <message>
         <source>Zerocoin Mint</source>
         <translation>제로코인 생성</translation>
     </message>
     <message>
         <source>Zerocoin Spend</source>
         <translation>제로코인 전송</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>제로코인 전송, 잔돈은 zCORN</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4161,7 +4503,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>확정</translation>
+        <translation>확정됨</translation>
     </message>
     <message>
         <source>Watch-only</source>
@@ -4200,6 +4542,14 @@ Please be patient...</source>
         <translation>내보내기 성공</translation>
     </message>
     <message>
+        <source>Received CORN from zCORN</source>
+        <translation>zCORN를 CORN로 받음</translation>
+    </message>
+    <message>
+        <source>Zerocoin Spend, Change in zCORN</source>
+        <translation>제로코인 전송, 잔돈은 zCORN</translation>
+    </message>
+    <message>
         <source>The transaction history was successfully saved to %1.</source>
         <translation>트랜잭션 기록이 %1에 성공적으로 저장되었습니다.</translation>
     </message>
@@ -4233,12 +4583,16 @@ Please be patient...</source>
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 BITCORN.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 BITCORN로 제한됩니다.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CORN.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 CORN로 제한됩니다.</translation>
     </message>
 </context>
 <context>
     <name>WalletView</name>
+    <message>
+        <source>HISTORY</source>
+        <translation>거래내역</translation>
+    </message>
     <message>
         <source>&amp;Export</source>
         <translation>&amp;내보내기</translation>
@@ -4259,28 +4613,12 @@ Please be patient...</source>
         <source>Wallet Data (*.dat)</source>
         <translation>지갑 데이터 (*.dat)</translation>
     </message>
-    <message>
-        <source>Backup Failed</source>
-        <translation>백업 실패하였습니다</translation>
-    </message>
-    <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>%1에 지갑 데이터를 저장하는 동안 오류가 발생하였습니다.</translation>
-    </message>
-    <message>
-        <source>Backup Successful</source>
-        <translation>백업 성공하였습니다</translation>
-    </message>
-    <message>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation>지갑 데이터가 %1에 성공적으로 저장되었습니다.</translation>
-    </message>
 </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZCornControlDialog</name>
     <message>
-        <source>Select zPhr to Spend</source>
-        <translation>전송할 zCORN 선택</translation>
+        <source>Select zCORN to Spend</source>
+        <translation>사용할 zCORN 선택</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4291,18 +4629,14 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zPhr</translation>
+        <source>zCORN</source>
+        <translation>zCORN</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
         <translation>전체 선택 / 해제</translation>
     </message>
-    <message>
-        <source>Is Spendable</source>
-        <translation>전송가능합니다.</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>bitcorn-core</name>
     <message>
@@ -4312,10 +4646,6 @@ Please be patient...</source>
     <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
         <translation>지정된 소스에서 JSON-RPC 연결을 허용하십시오. 단일 IP (예 : 1.2.3.4), 네트워크/넷마스크 (예 : 1.2.3.4/255.255.255.0) 또는 네트워크 / CIDR (예 : 1.2.3.4/24)에 대해 &lt;ip&gt; 가 유효합니다. 이 옵션은 여러번 지정할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation>수신을 위한 RPC 주소 %s 포트 %u설정 도중 오류가 발생했습니다: %s</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -4334,8 +4664,8 @@ Please be patient...</source>
         <translation>계산된 누산기 체크포인트는 블록 인덱스에 의해 기록되는 것이 아닙니다.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. BITCORN is probably already running.</source>
-        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. BITCORN는 이미 실행 중입니다.</translation>
+        <source>Cannot obtain a lock on data directory %s. BITCORN Core is probably already running.</source>
+        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. BITCORN Core는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4354,20 +4684,28 @@ Please be patient...</source>
         <translation>지갑의 모든 트랜잭션들을 삭제하고 오직 블록체인을 통한 트랜잭션 부분들만 복구합니다 -시작 시 다시 스캔</translation>
     </message>
     <message>
-        <source>Disable all BITCORN specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>BitCorn의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
+        <translation>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>MIT 소프트웨어 라이센스에 따라 배포, 첨부 파일 COPYING 또는 &lt;http://www.opensource.org/licenses/mit-license.php&gt; 를 참조하십시오.</translation>
     </message>
     <message>
-        <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>올바른 개인키로 spork 관리 기능을 사용 가능</translation>
+        <source>Enable automatic wallet backups triggered after each zCORN minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each zCORN minting (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>swiftTX 활성화, 잠긴 트랜잭션들에 대한 확인 표시 (bool, 기본값: %s)</translation>
+        <source>Enable or disable staking functionality for CORN inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for CORN inputs (0-1, default: %u)</translation>
+    </message>
+    <message>
+        <source>Enable or disable staking functionality for zCORN inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for zCORN inputs (0-1, default: %u)</translation>
+    </message>
+    <message>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>올바른 개인키로 spork 관리 기능을 사용 가능</translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
@@ -4376,6 +4714,10 @@ Please be patient...</source>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>오류: 오는 연결들을 수신하는데 실패했습니다.(수신 중 오류 반환됨 %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
+        <translation>Error: 트랜젝션의 크기가 혀용된 크기를 넘었습니다.</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -4394,20 +4736,16 @@ Please be patient...</source>
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in BITCORN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (BITCORN/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in CORN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (CORN/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BITCORN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (BITCORN/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in CORN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (CORN/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
         <translation>메모리 풀에서 디스크로 매 &lt;n&gt; 메가바이트만큼 데이터베이스 활동 플러쉬를 기록합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>미확인 표시된 출력들을 찾고 계속하기 위한 확인을 받기 전까지 기다립니다.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -4416,6 +4754,10 @@ Please be patient...</source>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
         <translation>이 모드에서 -genproclimit는 즉시 생성되는 블록 수를 제어합니다.</translation>
+    </message>
+    <message>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>확정 된 자금이 불충분하거나 부족한 경우 몇 분 후에 다시 시도하십시오.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
@@ -4458,6 +4800,10 @@ Please be patient...</source>
         <translation>DNS 검색을 통한 피어 주소 쿼리, 주소가 부족할 경우 (-connect 아닌 이상 기본값:1)</translation>
     </message>
     <message>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>모든 프록시 연결마다 자격 증명 무작위화. 이렇게하면 Tor 스트림을 격리할수 있습니다. (기본값 : %u)</translation>
+    </message>
+    <message>
         <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
         <translation>무료 또는 낮은 수수료 트랜잭션를 중계하는데 높은 우선 순위가 필요합니다 (기본값: %u)</translation>
     </message>
@@ -4486,52 +4832,24 @@ Please be patient...</source>
         <translation>bloom필터를 사용한 블록 및 트랜잭션 필터링 지원 (기본값 : %u)</translation>
     </message>
     <message>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX는 최소 6회 확인이 필요한 입력으로 몇 분 후에 다시 시도해야 할 수 있습니다.</translation>
-    </message>
-    <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>이 제품은 OpenSSL이 개발한 Open SSL 툴킷 &lt;https://www.openssl.org/&gt; 에서 사용하기 위한 프로젝트 소프트웨어, Eric Young이 개발한 암호화 소프트웨어, Thomas Bernard가 개발한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
     </message>
     <message>
-        <source>To use bitcornd, or the -server option to bitcorn-qt, you must set an rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=bitcornrpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "BITCORN Alert" admin@foo.com
-</source>
-        <translation>BitCornd 또는 BITCORN-qt에 대한 -server 옵션 파일을 사용하려면 configuration 파일에서 rpcpassword를 설정해야 합니다:
-%s
-다음 무작위 암호를 사용하는 것을 추천합니다:
-rpcuser=BitCornpc
-rpcpassword=%s
-(이 비밀번호는 기억할 필요가 없습니다)
-유저 이름과 비밀번호는 반드시 달라야 합니다.
-파일이 존재하지 않는다면 작성자만 읽기 가능한 권한으로 파일을 생성하십시오.
-또한 문제 발생 알림을 받을려면 alertnotify를 설정하는 것을 추천합니다.
-예시: alertnotify=echo %%s | mail -s "BITCORN Alert" admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer. BITCORN is probably already running.</source>
-        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. BITCORN는 이미 실행 중입니다.</translation>
+        <source>Unable to bind to %s on this computer. BITCORN Core is probably already running.</source>
+        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. BITCORN Core는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BITCORN.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 BITCORN과 일치하지 않음.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CORN.</source>
+        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 CORN과 일치하지 않음.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BITCORN.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 BITCORN와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 CORN.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 CORN와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4546,7 +4864,7 @@ rpcpassword=%s
         <translation>경고 : -paytxfee가 매우 높게 설정되었습니다! 이것은 전송할 경우 지불 할 트랜잭션 수수료입니다.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BITCORN will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong BITCORN Core will not work properly.</source>
         <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 BITCORN 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
     </message>
     <message>
@@ -4606,20 +4924,12 @@ rpcpassword=%s
         <translation>공개 REST 요청 수락(기본값: %u)</translation>
     </message>
     <message>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation>허용되는 암호 (기본값: %s)</translation>
-    </message>
-    <message>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>연결할 노드를 추가하고 계속해서 연결을 유지하십시오.</translation>
     </message>
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>-addnode, -seednode, -connect을 위해 DNS 조회를 허용하십시오.</translation>
-    </message>
-    <message>
-        <source>Already have that input.</source>
-        <translation>이미 연결 중입니다.</translation>
     </message>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
@@ -4642,18 +4952,6 @@ rpcpassword=%s
         <translation>누락된 누산기 계산중...</translation>
     </message>
     <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>표시할 수 없음: 남아있는 호환된 연결이 없습니다.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>임의의 마스터노드를 찾을 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>동기화가 진행 중일 때에는 믹싱을 할 수 없습니다.</translation>
-    </message>
-    <message>
         <source>Cannot downgrade wallet</source>
         <translation>지갑을 다운그레이드 할 수 없습니다.</translation>
     </message>
@@ -4672,10 +4970,6 @@ rpcpassword=%s
     <message>
         <source>Cannot write default address</source>
         <translation>기본 주소를 사용할 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Collateral이 유효하지 않습니다.</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>
@@ -4702,16 +4996,12 @@ rpcpassword=%s
         <translation>Copyright (C) 2014-%i The Dash Core 개발자들</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The BITCORN Developers</source>
-        <translation>Copyright (C) 2015-%i The BITCORN 개발자</translation>
+        <source>Copyright (C) 2015-%i The BITCORN Core Developers</source>
+        <translation>Copyright (C) 2015-%i The BITCORN Core 개발자</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>손상된 블록 데이터베이스가 발견되었습니다</translation>
-    </message>
-    <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>-rpcbind 값 %s 를 네트워크 주소로 분석할 수 없습니다</translation>
     </message>
     <message>
         <source>Could not parse masternode.conf</source>
@@ -4720,6 +5010,10 @@ rpcpassword=%s
     <message>
         <source>Debugging/Testing options:</source>
         <translation>디버깅/테스팅 옵션:</translation>
+    </message>
+    <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>블록 체인 폴더 삭제 및 처음부터 다시 동기화</translation>
     </message>
     <message>
         <source>Disable OS notifications for incoming transactions (default: %u)</source>
@@ -4750,16 +5044,16 @@ rpcpassword=%s
         <translation>자동 제로코인 생성 (0-1, 기본값: %u)</translation>
     </message>
     <message>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>&lt;address&gt; 에서 해시 전송 게시 가능 (SwiftTX로 설정된)</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>&lt;address&gt;에서 Raw 트랜잭션 게시 지원 (SwiftTX를 통해 잠겨진)</translation>
+    </message>
+    <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation>클라이언트가 마스터노드로 작동하는 것을 활성화 (0-1, 기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>항목이 가득 찼습니다.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Masternode에 연결하는 중 오류가 발생했습니다.</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -4782,7 +5076,7 @@ rpcpassword=%s
         <translation>wallet.dat을 불러오는 중 오류가 발생했습니다: 지갑 손상됨</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of BITCORN</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of BITCORN Core</source>
         <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 BITCORN 코어가 필요합니다.</translation>
     </message>
     <message>
@@ -4798,16 +5092,16 @@ rpcpassword=%s
         <translation>공개 키를 복구하는 중 오류가 발생했습니다.</translation>
     </message>
     <message>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>디스크에 zerocoinDB 쓰기 오류</translation>
+    </message>
+    <message>
         <source>Error</source>
         <translation>에러</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>오류 : 내부에서 치명적인 오류가 발생했습니다. 자세한 내용은 debug.log를 참조하십시오</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>오류 : 현재 표시된 입력을 선택할 수 없습니다</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -4822,36 +5116,28 @@ rpcpassword=%s
         <translation>오류 : 지갑이 잠겼습니다, 트랜잭션을 생성할 수 없습니다!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>오류 : 이미 난독화 그룹에 보류중인 항목들이 있습니다.</translation>
+        <source>Failed to calculate accumulator checkpoint</source>
+        <translation>축 압기 체크 포인트를 계산하지 못했습니다.</translation>
     </message>
     <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>어떠한 포트에서도 수신하는 것에 실패했습니다. 원하신다면 -listen=0 을 사용하십시오.</translation>
     </message>
     <message>
+        <source>Failed to parse host:port string</source>
+        <translation>호스트 : 포트 문자열을 구문 분석하지 못했습니다.</translation>
+    </message>
+    <message>
         <source>Failed to read block</source>
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in BITCORN/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (BITCORN/kB) (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>트랜잭션 완료.</translation>
+        <source>Fee (in CORN/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (CORN/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
         <translation>강제 안전 모드 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>충분한 사용자를 찾았습니다, 서명 중 ( %s 기다리는 중 )</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>충분한 사용자를 찾았습니다, 서명 중 ...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -4878,14 +5164,6 @@ rpcpassword=%s
         <translation>디버그 출력에 IP 주소를 포함합니다 (기본값: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>호환되지 않는 모드.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>호환되지 않는 버전.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>잘못되었거나 블록을 찾지 못하였습니다. 네트워크에 대한 잘못된 데이터 디렉토리 문제?</translation>
     </message>
@@ -4894,12 +5172,8 @@ rpcpassword=%s
         <translation>정보</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. BITCORN is shutting down.</source>
-        <translation>초기화 정확성 검사에 실패 했습니다. BITCORN가 종료됩니다.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>입력이 올바르지 않습니다.</translation>
+        <source>Initialization sanity check failed. BITCORN Core is shutting down.</source>
+        <translation>초기화 정확성 검사에 실패 했습니다. BITCORN Core가 종료됩니다.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -4912,10 +5186,6 @@ rpcpassword=%s
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
         <translation>잘못된 -onion 주소거나 호스트네임 : '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>잘못된 -proxy 주소거나 호스트네입 : '%s'</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -4962,8 +5232,28 @@ rpcpassword=%s
         <translation>유효하지 않은 개인 키입니다.</translation>
     </message>
     <message>
-        <source>Invalid script detected.</source>
-        <translation>유효하지 않은 스크립트가 발견되었습니다.</translation>
+        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
+        <translation>자동생성 zCORN 비율  (1-100, default: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the CORN and zCORN money supply statistics</source>
+        <translation>CORN 및 zCORN 공급량 다시 색인</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin database...</source>
+        <translation>제로코인 데이타베이스 재색인</translation>
+    </message>
+    <message>
+        <source>Reindexing zerocoin failed</source>
+        <translation>제로코인 재 인덱싱 실패</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>지불대상보다 적은 코인 선택됨</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX 옵션:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -4986,6 +5276,14 @@ rpcpassword=%s
 </translation>
     </message>
     <message>
+        <source>Disable all BITCORN specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>BITCORN의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>swiftTX 활성화, 잠긴 트랜잭션들에 대한 확인 표시 (bool, 기본값: %s)</translation>
+    </message>
+    <message>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>에러 : 거래가 거부되었습니다. 예를 들어 다른 사본 wallet.dat에서 코인을 사용했다면 2중 사용으로 인식될수 있습니다. 혹은, 일부가 이미 소비 된 경우에 이런 일이 발생할 수 있습니다.</translation>
     </message>
@@ -4998,8 +5296,32 @@ rpcpassword=%s
         <translation>에러 : 지원하지않는 argument -checklevel 발견된.  Checklevel는 레벨 4이어야 합니다.</translation>
     </message>
     <message>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Failed to find coin set amongst held coins with less than maxNumber of Spends</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</translation>
+    </message>
+    <message>
         <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
         <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any automatic zCORN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic zCORN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX는 최소 6회 확인이 필요한 입력으로 몇 분 후에 다시 시도해야 할 수 있습니다.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -5008,6 +5330,10 @@ rpcpassword=%s
     <message>
         <source>Attempt to force blockchain corruption recovery</source>
         <translation>블록체인 손상 복구 시도</translation>
+    </message>
+    <message>
+        <source>CoinSpend: Accumulator witness does not verify</source>
+        <translation>CoinSpend: 누산기가 제대로 작동하지 않았습니다.</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
@@ -5022,20 +5348,12 @@ rpcpassword=%s
         <translation>&lt;address&gt; 에서 해시 블록 게시 가능</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>&lt;address&gt; 에서 해시 전송 게시 가능 (SwiftTX로 설정된)</translation>
-    </message>
-    <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
         <translation>&lt;address&gt; 에서 해시 불록 게시 가능</translation>
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
         <translation>&lt;address&gt;에서 Raw 블록 게시 가능</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에서 Raw 트랜잭션 게시 지원 (SwiftTX를 통해 잠겨진)</translation>
     </message>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
@@ -5046,20 +5364,36 @@ rpcpassword=%s
         <translation>스테이킹 기능 사용 (0-1, 기본값: %u)</translation>
     </message>
     <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Error: 치명적 에러 발생 log 파일을 확인해주세요.</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Error: 유효하지 않는 utxo!</translation>
+    </message>
+    <message>
+        <source>Failed to create mint</source>
+        <translation>생성 실패</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>wallet.dat 에서 제로코인을 인식 실패</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>제로코인 선택 실패</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>제로코인 DB 삭제 실패</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>지갑에 코인 시리얼 번호 작성 실패</translation>
+    </message>
+    <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>메모리에서 연결 불가능한 트랜잭션을 &lt;n&gt;개까지 유지하십시오. (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>최근에 마지막으로 난독화를 진행했습니다.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>최근에 마지막으로 성공한 난독화 작업이 있습니다.</translation>
-    </message>
-    <message>
-        <source>Less than 3 mints added, unable to create spend</source>
-        <translation>3 미만 추가, 송금 불가능함</translation>
     </message>
     <message>
         <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
@@ -5110,12 +5444,16 @@ rpcpassword=%s
         <translation>지갑을 불러오는 중…</translation>
     </message>
     <message>
-        <source>Lock is already in place.</source>
-        <translation>이미 올바르게 잠겨있습니다.</translation>
+        <source>Location of the auth cookie (default: data dir)</source>
+        <translation>auth 쿠기 위치 (default: data dir)</translation>
     </message>
     <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation>마스터노드 구성 파일에서 마스터노드를 잠급니다. (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>Lookup(): Invalid -proxy address or hostname: '%s'</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
@@ -5126,14 +5464,6 @@ rpcpassword=%s
         <translation>마스터노드 옵션:</translation>
     </message>
     <message>
-        <source>Masternode queue is full.</source>
-        <translation>마스터노드 대기열이 가득 찼습니다.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>마스터노드:</translation>
-    </message>
-    <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>연결 당 최대 수신 버퍼, &lt;n&gt;*1000 바이트 (기본값: %u)</translation>
     </message>
@@ -5142,68 +5472,32 @@ rpcpassword=%s
         <translation>연결 당 최대 전송 버퍼, &lt;n&gt;*1000 바이트 (기본값: %u)</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>트랜잭션 정보 입력에 누락된 부분이 있습니다.</translation>
+        <source>Mint did not make it into blockchain</source>
+        <translation>코인생성이 블록체인에 기록되지 않았습니다.</translation>
     </message>
     <message>
-        <source>Mixing in progress...</source>
-        <translation>믹싱이 진행 중입니다...</translation>
+        <source>Need address because change is not exact</source>
+        <translation>잔돈을 받을 주소가 필요합니다.</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>-whitebind: '%s' 의 포트를 지정해야 합니다</translation>
     </message>
     <message>
-        <source>No Masternodes detected.</source>
-        <translation>마스터노드가 발견되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>호환되는 마스터노드가 발견되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>분류가 필요한 자금이 발견되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>믹싱에 대한 일치하는 표기를 찾을 수 없습니다.</translation>
-    </message>
-    <message>
         <source>Node relay options:</source>
         <translation>노드 중계 옵션:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>비 표준 공개 키가 감지되었습니다.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>기존 트랜잭션과 호환되지 않습니다.</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>사용 가능한 파일 디스크립터가 충분하지 않습니다.</translation>
     </message>
     <message>
-        <source>Not in the Masternode list.</source>
-        <translation>마스터노드 목록에 없습니다.</translation>
-    </message>
-    <message>
         <source>Number of automatic wallet backups (default: 10)</source>
         <translation>자동 지갑 백업 횟수 (기본값: 10)</translation>
     </message>
     <message>
-        <source>Obfuscation is idle.</source>
-        <translation>난독화는 유휴상태입니다.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>난독화 요청 완료:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>난독화 요청 미완료:</translation>
+        <source>Number of custom location backups to retain (default: %d)</source>
+        <translation>Number of custom location backups to retain (default: %d)</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -5222,8 +5516,12 @@ rpcpassword=%s
         <translation>JSON-RPC 연결 비밀번호</translation>
     </message>
     <message>
-        <source>Percentage of automatically minted Zerocoin  (10-100, default: %u)</source>
-        <translation>자동 생성 제로코인 퍼센트 (10-100, 기본값: %u)</translation>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid(): Invalid -proxy address or hostname: '%s'</translation>
+    </message>
+    <message>
+        <source>Preparing for resync...</source>
+        <translation>재동기화 준비중...</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
@@ -5234,16 +5532,8 @@ rpcpassword=%s
         <translation>버전 출력후 종료</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL 옵션: (SSL 설치 안내는 비트코인 위키를 참조하십시오)</translation>
-    </message>
-    <message>
         <source>RPC server options:</source>
         <translation>RPC 서버 옵션:</translation>
-    </message>
-    <message>
-        <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation>HTTP 지속 연결에 관한 RPC 지원 (기본값: %d)</translation>
     </message>
     <message>
         <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
@@ -5260,6 +5550,10 @@ rpcpassword=%s
     <message>
         <source>Receive and display P2P network alerts (default: %u)</source>
         <translation>P2P 네크워크로 부터 경고를 받고 보여줍니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Reindex the accumulator database</source>
+        <translation>누적 기 데이터베이스 다시 색인화</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -5298,18 +5592,6 @@ rpcpassword=%s
         <translation>무료 수수료 트랜잭션이 가능할 경우 무료 수수료로 트랜잭션을 전송합니다 (기본값: %u)</translation>
     </message>
     <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>서버 인증서 파일 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>서버 개인 키 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>세션이 완료되지 않았습니다!</translation>
-    </message>
-    <message>
         <source>Session timed out.</source>
         <translation>세션이 만료되었습니다.</translation>
     </message>
@@ -5332,6 +5614,10 @@ rpcpassword=%s
     <message>
         <source>Set minimum block size in bytes (default: %u)</source>
         <translation>최소 블록 크기를 바이트 단위로 설정합니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Set the Maximum reorg depth (default: %u)</source>
+        <translation>최대 재구성 깊이 설정 (기본값 : %u)</translation>
     </message>
     <message>
         <source>Set the masternode private key</source>
@@ -5394,6 +5680,10 @@ rpcpassword=%s
         <translation>자신의 공용 주소를 지정</translation>
     </message>
     <message>
+        <source>Spend Valid</source>
+        <translation>유효한 지출</translation>
+    </message>
+    <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
         <translation>트랜잭션 전송시 승인되지 않은 변경사항을 전송합니다 (기본값: %u)</translation>
     </message>
@@ -5404,22 +5694,6 @@ rpcpassword=%s
     <message>
         <source>Stop running after importing blocks from disk (default: %u)</source>
         <translation>디스크에서 블록을 가져오면 실행 중지 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>마스터노드에 다음 항목들을 제출했습니다: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>마스터노드에 제출했습니다, 남은 항목들 기다리는중 ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>마스터노드에 제출했습니다, 대기열을 기다리는 중 %s</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>SwiftTX 옵션:</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -5450,6 +5724,18 @@ rpcpassword=%s
         <translation>sporks와 동기화 중입니다...</translation>
     </message>
     <message>
+        <source>Syncing zCORN wallet...</source>
+        <translation>zCORN 지갑 동기화중...</translation>
+    </message>
+    <message>
+        <source>The coin spend has been used</source>
+        <translation>전송이 이미 되었습니다.</translation>
+    </message>
+    <message>
+        <source>The transaction did not verify</source>
+        <translation>거래가 확인되지 않았습니다.</translation>
+    </message>
+    <message>
         <source>This help message</source>
         <translation>도움말 메시지입니다</translation>
     </message>
@@ -5462,12 +5748,12 @@ rpcpassword=%s
         <translation>이것은 리그레션 테스팅 및 앱 개발을 위해 만들어졌습니다.</translation>
     </message>
     <message>
-        <source>This is not a Masternode.</source>
-        <translation>마스터노드가 아닙니다.</translation>
-    </message>
-    <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
         <translation>제대로 동작하지 않는 피어와 연결을 끊을 임계값 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Too many spends needed</source>
+        <translation>너무 많은 지출이 필요함</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -5478,24 +5764,20 @@ rpcpassword=%s
         <translation>onion 활성화되었을 경우 사용할 Tor 코트롤 포트 (기본값: %s)</translation>
     </message>
     <message>
+        <source>Transaction Created</source>
+        <translation>트랜잭션 취소됨</translation>
+    </message>
+    <message>
+        <source>Transaction Mint Started</source>
+        <translation>트랜잭션 생성 시작됨</translation>
+    </message>
+    <message>
         <source>Transaction amount too small</source>
         <translation>트랜잭션 금액이 너무 적습니다</translation>
     </message>
     <message>
         <source>Transaction amounts must be positive</source>
         <translation>트랜잭션 금액에 반드시 양수값이 들어가야 합니다</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>트랜잭션이 성공적으로 생성되었습니다.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>트랜잭션 수수료가 너무 높습니다.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>올바르지 않은 트랜잭션입니다.</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
@@ -5506,8 +5788,8 @@ rpcpassword=%s
         <translation>트랜잭션이 너무 큽니다</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>최종 트랜잭션를 전송 중입니다.</translation>
+        <source>Trying to spend an already spent serial #, try again.</source>
+        <translation>이미 전송된 리얼 번호를 보내려고 했습니다. 다시 시도하십시오.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
@@ -5518,20 +5800,16 @@ rpcpassword=%s
         <translation>스포크 메시지를 인증할 수 없습니다, 키를 확인해주세요</translation>
     </message>
     <message>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation>HTTP 서버를 시작할수 없습니다. log 파일을 확인해주세요.</translation>
+    </message>
+    <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>-onlynet: '%s' 에 알 수 없는 네트워크가 지정되었습니다</translation>
     </message>
     <message>
-        <source>Unknown state: id = %u</source>
-        <translation>알 수없는 상태: id = %u</translation>
-    </message>
-    <message>
         <source>Upgrade wallet to latest format</source>
         <translation>지갑을 최신 포맷으로 업그레이드합니다</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>JSON-RPC 연결에 OpenSSL (https)를 사용합니다</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
@@ -5542,6 +5820,10 @@ rpcpassword=%s
         <translation>수신 포트를 매핑하려면 UPnP를 사용하십시오 (기본값: 1 수신 상태일 때)</translation>
     </message>
     <message>
+        <source>Use a custom max chain reorganization depth (default: %u)</source>
+        <translation>맞춤 최대 체인 재구성 깊이 사용 (기본값 : %u)</translation>
+    </message>
+    <message>
         <source>Use the test network</source>
         <translation>테스트 네트워크를 사용합니다</translation>
     </message>
@@ -5550,8 +5832,8 @@ rpcpassword=%s
         <translation>JSON-RPC 연결 사용자 이름</translation>
     </message>
     <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>난독화 풀의 최대 허용 값보다 높습니다.</translation>
+        <source>Value is below the smallest available denomination (= 1) of zCORN</source>
+        <translation>Value is below the smallest available denomination (= 1) of zCORN</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5566,11 +5848,7 @@ rpcpassword=%s
         <translation>지갑 %s 가 데이터 디렉토리 외부에 존재합니다 %s</translation>
     </message>
     <message>
-        <source>Wallet is locked.</source>
-        <translation>지갑이 잠겼습니다.</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart BITCORN to complete</source>
+        <source>Wallet needed to be rewritten: restart BITCORN Core to complete</source>
         <translation>지갑을 다시 작성해야 합니다: 완료하려면 BITCORN 코어를 재시작해야 합니다</translation>
     </message>
     <message>
@@ -5598,20 +5876,12 @@ rpcpassword=%s
         <translation>경고 : 지원하지 않는 인수 -debugnet 무시됨 -debug=net를 사용하십시오.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>다시 시도합니다...</translation>
+        <source>You don't have enough Zerocoins in your wallet</source>
+        <translation>지갑에 zCORN 가 부족합니다.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>-treindex를 변경하려면 -reindex를 사용하여 데이터베이스를 다시 빌드해야합니다.</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>항목이 성공적으로 추가되었습니다.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>트랜잭션이 풀로 접수되었습니다!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -5624,10 +5894,6 @@ rpcpassword=%s
     <message>
         <source>Zerocoin options:</source>
         <translation>제로코인 옵션:</translation>
-    </message>
-    <message>
-        <source>failed to validate zerocoin</source>
-        <translation>제로코인 검증을 못했습니다.</translation>
     </message>
     <message>
         <source>on startup</source>

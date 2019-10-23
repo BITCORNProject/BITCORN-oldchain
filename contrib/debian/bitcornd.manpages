@@ -1,2 +1,2 @@
-debian/manpages/bitcornd.1
-debian/manpages/bitcorn.conf.5
+doc/man/bitcornd.1
+doc/man/bitcorn-cli.1

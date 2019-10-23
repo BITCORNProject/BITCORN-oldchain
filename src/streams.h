@@ -16,6 +16,7 @@
 #include <map>
 #include <set>
 #include <stdint.h>
+#include <stdio.h>
 #include <string.h>
 #include <string>
 #include <utility>
@@ -224,6 +225,11 @@ public:
         }
         memcpy(pch, &vch[nReadPos], nSize);
         nReadPos = nReadPosNext;
+        return (*this);
+    }
+
+    CDataStream& movePos(size_t nSize){
+        nReadPos = nReadPos + nSize;
         return (*this);
     }
 

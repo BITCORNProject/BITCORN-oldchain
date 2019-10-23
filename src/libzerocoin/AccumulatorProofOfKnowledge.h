@@ -9,7 +9,7 @@
  * @copyright  Copyright 2013 Ian Miers, Christina Garman and Matthew Green
  * @license    This project is released under the MIT license.
  **/
-// Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2017-2019 The BITCORN developers
 
 #ifndef ACCUMULATEPROOF_H_
 #define ACCUMULATEPROOF_H_
@@ -24,6 +24,7 @@ namespace libzerocoin {
  */
 class AccumulatorProofOfKnowledge {
 public:
+    AccumulatorProofOfKnowledge(){};
 	AccumulatorProofOfKnowledge(const AccumulatorAndProofParams* p);
 
 	/** Generates a proof that a commitment to a coin c was accumulated
@@ -32,7 +33,7 @@ public:
 	 * @param witness The witness to the accumulation of the coin
 	 * @param a
 	 */
-	AccumulatorProofOfKnowledge(const AccumulatorAndProofParams* p, const Commitment& commitmentToCoin, const AccumulatorWitness& witness, Accumulator& a);
+    AccumulatorProofOfKnowledge(const AccumulatorAndProofParams* p, const Commitment& commitmentToCoin, const AccumulatorWitness& witness);
 	/** Verifies that  a commitment c is accumulated in accumulated a
 	 */
 	bool Verify(const Accumulator& a,const CBigNum& valueOfCommitmentToCoin) const;

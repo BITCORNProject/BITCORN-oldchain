@@ -1,1 +1,2 @@
 contrib/bitcornd.bash-completion	bitcornd
+contrib/bitcorn-cli.bash-completion bitcorn-cli

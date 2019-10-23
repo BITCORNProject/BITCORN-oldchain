@@ -1,0 +1,81 @@
+policy_module(bitcorn, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type bitcorn_t;
+type bitcorn_exec_t;
+init_daemon_domain(bitcorn_t, bitcorn_exec_t)
+
+permissive bitcorn_t;
+
+type bitcorn_initrc_exec_t;
+init_script_file(bitcorn_initrc_exec_t)
+
+type bitcorn_conf_t;
+files_type(bitcorn_conf_t)
+
+type bitcorn_var_lib_t;
+files_type(bitcorn_var_lib_t)
+
+type bitcorn_var_run_t;
+files_type(bitcorn_var_run_t)
+
+type bitcorn_port_t;
+corenet_port(bitcorn_port_t)
+
+########################################
+#
+# bitcorn local policy
+#
+allow bitcorn_t self:process { fork };
+
+allow bitcorn_t self:fifo_file rw_fifo_file_perms;
+allow bitcorn_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(bitcorn_t, bitcorn_conf_t, bitcorn_conf_t)
+manage_files_pattern(bitcorn_t, bitcorn_conf_t, bitcorn_conf_t)
+
+manage_dirs_pattern(bitcorn_t, bitcorn_var_lib_t, bitcorn_var_lib_t)
+manage_files_pattern(bitcorn_t, bitcorn_var_lib_t, bitcorn_var_lib_t)
+files_var_lib_filetrans(bitcorn_t, bitcorn_var_lib_t, { dir file })
+
+manage_dirs_pattern(bitcorn_t, bitcorn_var_run_t, bitcorn_var_run_t)
+manage_files_pattern(bitcorn_t, bitcorn_var_run_t, bitcorn_var_run_t)
+
+sysnet_dns_name_resolve(bitcorn_t)
+corenet_all_recvfrom_unlabeled(bitcorn_t)
+
+allow bitcorn_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(bitcorn_t)
+corenet_tcp_sendrecv_generic_node(bitcorn_t)
+corenet_tcp_sendrecv_all_ports(bitcorn_t)
+corenet_tcp_bind_generic_node(bitcorn_t)
+
+gen_require(`
+    type bitcorn_port_t;
+')
+allow bitcorn_t bitcorn_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type bitcorn_port_t;
+')
+allow bitcorn_t bitcorn_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(bitcorn_t)
+
+files_read_etc_files(bitcorn_t)
+
+miscfiles_read_localization(bitcorn_t)
+
+sysnet_dns_name_resolve(bitcorn_t)
+
+allow bitcorn_t bitcorn_exec_t:file execute_no_trans;
+allow bitcorn_t self:process setsched;
+corecmd_exec_ls(bitcorn_t)
+corenet_tcp_connect_http_port(bitcorn_t)
+dev_read_urand(bitcorn_t)
+fs_getattr_xattr_fs(bitcorn_t)
+kernel_read_system_state(bitcorn_t)

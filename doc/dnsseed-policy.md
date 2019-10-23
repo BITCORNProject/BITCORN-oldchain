@@ -1,24 +1,22 @@
 Expectations for DNS Seed operators
 ====================================
 
-BITCORN attempts to minimize the level of trust in DNS seeds,
+BITCORN Core attempts to minimize the level of trust in DNS seeds,
 but DNS seeds still pose a small amount of risk for the network.
 As such, DNS seeds must be run by entities which have some minimum
-level of trust within the BitCorn community.
+level of trust within the BITCORN community.
 
-Other implementations of BitCorn software may also use the same
-seeds and may be more exposed. In light of this exposure this
-document establishes some basic expectations for the expectations
-for the operation of dnsseeds.
+Other implementations of BITCORN software may also use the same
+seeds and may be more exposed. In light of this exposure, this
+document establishes some basic expectations for operating dnsseeds.
 
-0. A DNS seed operating organization or person is expected
-to follow good host security practices and maintain control of
-their serving infrastructure and not sell or transfer control of their
-DNS seed. Any hosting services contracted by the operator are
-equally expected to uphold these expectations.
+0. A DNS seed operating organization or person is expected to follow good
+host security practices, maintain control of applicable infrastructure,
+and not sell or transfer control of the DNS seed. Any hosting services
+contracted by the operator are equally expected to uphold these expectations.
 
 1. The DNS seed results must consist exclusively of fairly selected and
-functioning BitCorn nodes from the public network to the best of the
+functioning BITCORN nodes from the public network to the best of the
 operators understanding and capability.
 
 2. For the avoidance of doubt, the results may be randomized but must not
@@ -28,8 +26,8 @@ urgent technical necessity and disclosed.
 3. The results may not be served with a DNS TTL of less than one minute.
 
 4. Any logging of DNS queries should be only that which is necessary
-for the operation of the service or urgent health of the BitCorn
-network and must not be retained longer than necessary or disclosed
+for the operation of the service or urgent health of the BITCORN
+network and must not be retained longer than necessary nor disclosed
 to any third party.
 
 5. Information gathered as a result of the operators node-spidering
@@ -44,9 +42,9 @@ details of their operating practices.
 related to the DNS seed operation.
 
 If these expectations cannot be satisfied the operator should
-discontinue providing services and contact the active BitCorn
+discontinue providing services and contact the active BITCORN
 Core development team as well as posting on the
-[BitCorn Forum](https://bitcorncoin.com).
+[BITCORN Forum](https://forum.bitcorn.org).
 
 Behavior outside of these expectations may be reasonable in some
 situations but should be discussed in public in advance.

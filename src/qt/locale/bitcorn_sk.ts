@@ -136,10 +136,6 @@
         <translation>Slúži na zakázanie obyčajného odoslania peňazí, v prípade, že bol OS účet kompromitovaný. Neposkytuje žiadnu skutočnú bezpečnosť.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>Len pre anonymizáciu a staking</translation>
-    </message>
-    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Zadajte novú prístupovú frázu do peňaženky. &lt;br/&gt; Použite prístupovú frázu &lt;b&gt;, ktorá má desať alebo viac náhodných znakov &lt;/ b&gt; alebo &lt;b&gt; osem alebo viac slov &lt;/ b&gt;.</translation>
     </message>
@@ -176,16 +172,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BITCORNs from being stolen by malware infecting your computer.</source>
-        <translation>BITCORN sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše BITCORN pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>BITCORN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CORNs from being stolen by malware infecting your computer.</source>
+        <translation>BITCORN sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše CORN pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCORN&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY BITCORN &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CORN&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY CORN &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -229,6 +225,9 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -239,16 +238,8 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a BITCORN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu BITCORN, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
-    </message>
-    <message>
-        <source>The BITCORN address to sign the message with</source>
-        <translation>Adresa BITCORN, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,16 +270,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this BITCORN address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto BITCORN adresy</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>Zašifrovať kľúč</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Zmazať všetky polia správy</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -303,20 +286,8 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The BITCORN address the message was signed with</source>
-        <translation>BITCORN adresa, ktorou bola správa podpísaná</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified BITCORN address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou BITCORN adresou</translation>
-    </message>
-    <message>
         <source>Decrypt &amp;Key</source>
         <translation>Dešifrovať kľúč</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Zmazať všetky polia verifikácie správy</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -598,8 +569,8 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>Send coins to a BITCORN address</source>
@@ -618,12 +589,12 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About BITCORN</source>
-        <translation>O BITCORN</translation>
+        <source>&amp;About BITCORN Core</source>
+        <translation>O BITCORN Core</translation>
     </message>
     <message>
-        <source>Show information about BITCORN</source>
-        <translation>Zobraziť informácie o BITCORN</translation>
+        <source>Show information about BITCORN Core</source>
+        <translation>Zobraziť informácie o BITCORN Core</translation>
     </message>
     <message>
         <source>Modify configuration options for BITCORN</source>
@@ -678,12 +649,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the BITCORN help message to get a list with possible BITCORN command-line options</source>
-        <translation>Zobraziť pomocnú správu programu BITCORN a získajte zoznam možností príkazového riadka BITCORN</translation>
+        <source>Show the BITCORN Core help message to get a list with possible BITCORN command-line options</source>
+        <translation>Zobraziť pomocnú správu programu BITCORN Core a získajte zoznam možností príkazového riadka BITCORN</translation>
     </message>
     <message>
-        <source>BITCORN client</source>
-        <translation>BITCORN klient</translation>
+        <source>BITCORN Core client</source>
+        <translation>BITCORN Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -708,10 +679,6 @@
     <message>
         <source>%1 and %2</source>
         <translation>%1 a %2</translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 pozadu</translation>
     </message>
     <message>
         <source>Catching up...</source>
@@ -786,14 +753,10 @@ MultiSend: %1</translation>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/ b&gt; a momentálne je &lt;b&gt;odomknutá&lt;/ b&gt;</translation>
     </message>
     <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/ b&gt; a momentálne &lt;b&gt;odomknutá&lt;/ b&gt; iba na anonymizáciu a staking</translation>
-    </message>
-    <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/ b&gt; a momentálne je &lt;b&gt;zamknutá&lt;/ b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -902,17 +865,20 @@ MultiSend: %1</translation>
     <name>FreespaceChecker</name>
     </context>
 <context>
+    <name>GovernancePage</name>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -940,9 +906,17 @@ MultiSend: %1</translation>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(žiaden štítok)</translation>
+    </message>
     </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MultisigDialog</name>
+    <message>
+        <source>Amount:</source>
+        <translation>Suma:</translation>
+    </message>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -961,14 +935,6 @@ MultiSend: %1</translation>
     </context>
 <context>
     <name>PrivacyDialog</name>
-    <message>
-        <source>Quantity:</source>
-        <translation>Množstvo:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Suma:</translation>
-    </message>
     <message>
         <source>Choose previously used address</source>
         <translation>Vyberte predtým použitú adresu</translation>
@@ -990,6 +956,10 @@ MultiSend: %1</translation>
         <translation>Priorita:</translation>
     </message>
     <message>
+        <source>TextLabel</source>
+        <translation>TextLabel</translation>
+    </message>
+    <message>
         <source>Fee:</source>
         <translation>Poplatok:</translation>
     </message>
@@ -1001,16 +971,19 @@ MultiSend: %1</translation>
         <source>Change:</source>
         <translation>Zmena:</translation>
     </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Skopírovať sumu</translation>
-    </message>
+    </context>
+<context>
+    <name>ProposalFrame</name>
     </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Suma</translation>
+    </message>
+    <message>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     </context>
 <context>
@@ -1032,6 +1005,10 @@ MultiSend: %1</translation>
     <message>
         <source>Copy amount</source>
         <translation>Skopírovať sumu</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Skopírovať adresu</translation>
     </message>
 </context>
 <context>
@@ -1058,6 +1035,10 @@ MultiSend: %1</translation>
     <message>
         <source>Label</source>
         <translation>Štítok</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresa</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -1207,8 +1188,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>BITCORN</source>
-        <translation>BITCORN</translation>
+        <source>BITCORN Core</source>
+        <translation>BITCORN Core</translation>
     </message>
     </context>
 <context>
@@ -1303,7 +1284,7 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZCornControlDialog</name>
     </context>
 <context>
     <name>bitcorn-core</name>
