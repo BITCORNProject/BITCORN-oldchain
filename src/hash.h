@@ -64,6 +64,7 @@ GLOBAL sph_shabal512_context    z_shabal;
 GLOBAL sph_whirlpool_context    z_whirlpool;
 GLOBAL sph_sha512_context       z_sha2;
 GLOBAL sph_haval256_5_context   z_haval;
+GLOBAL sph_skein512_context     z_skein;
 
 #define fillz() do { \
     sph_blake512_init(&z_blake); \
@@ -83,6 +84,7 @@ GLOBAL sph_haval256_5_context   z_haval;
     sph_whirlpool_init(&z_whirlpool); \
     sph_sha512_init(&z_sha2); \
     sph_haval256_5_init(&z_haval); \
+    sph_skein512_init(&z_skein);   \
 } while (0) 
 
 #define ZBLAKE (memcpy(&ctx_blake, &z_blake, sizeof(z_blake)))
@@ -97,6 +99,7 @@ GLOBAL sph_haval256_5_context   z_haval;
 #define ZWHIRLPOOL (memcpy(&ctx_whirlpool, &z_whirlpool, sizeof(z_whirlpool)))
 #define ZSHA2 (memcpy(&ctx_sha2, &z_sha2, sizeof(z_sha2)))
 #define ZHAVAL (memcpy(&ctx_haval, &z_haval, sizeof(z_haval)))
+#define ZSKEIN (memcpy(&ctx_skein, &z_skein, sizeof(z_skein)))
 
 /** A hasher class for Bitcoin's 256-bit hash (double SHA-256). */
 class CHash256
@@ -528,4 +531,4 @@ inline uint256 XEVAN(const T1 pbegin, const T1 pend)
 
 void scrypt_hash(const char* pass, unsigned int pLen, const char* salt, unsigned int sLen, char* output, unsigned int N, unsigned int r, unsigned int p, unsigned int dkLen);
 
-#endif // BITCOIN_HASH_H
+#endif // XEVAN_H
