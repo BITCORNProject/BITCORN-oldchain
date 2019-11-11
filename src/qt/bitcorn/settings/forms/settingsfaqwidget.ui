@@ -513,7 +513,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent1">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;BITCORN is a form of digital online money using blockchain technology that can be easily trasnferred globally, INSTANTLY, PRIVATELY, and with NEAR ZERO fees. BITCORN incorporates market leading security &amp;amp; privacy technology and is also the first to implement a new consensus form called Proof of Idling (PoI), where Subscribers of CryptoTradersTV (&lt;a href=&quot;https://twitch.tv/CryptoTradersTV&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fcd688;&quot;&gt;https://twitch.tv/CryptoTradersTV&lt;/span&gt;&lt;/a&gt;) earn BITCORN PER MINUTE, just for idling in chat!&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;BITCORN also utilizes Proof of Staking (PoS) consensus system algorithm, allowing all owners of BITOCRN to participate in earning block REWARDS, while still securing the network with full node wallets, as well as running Masternodes, a form of Digital Oilrig!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;BITCORN is a form of digital online money using blockchain technology that can be easily trasnferred globally, INSTANTLY, PRIVATELY, and with NEAR ZERO fees. BITCORN incorporates market leading security &amp;amp; privacy technology and is also the first to implement a new consensus form called Proof of Idling (PoI), where Subscribers of CryptoTradersTV (&lt;a href=&quot;https://twitch.tv/CryptoTradersTV&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#fcd688;&quot;&gt;https://twitch.tv/CryptoTradersTV&lt;/span&gt;&lt;/a&gt;) earn BITCORN PER MINUTE, just for idling in chat!&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;BITCORN also utilizes Proof of Staking (PoS) consensus system algorithm, allowing all owners of BITCORN to participate in earning block REWARDS, while still securing the network with full node wallets, as well as running Masternodes, a form of Digital Oilrig!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -696,7 +696,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent3">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The masternode network is BITCORN's second layer network placed ON TOP of the blockchain, which enables our DAO to provide decentralized governance, teasury, and SwiftX transactions.&lt;/p&gt;
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The masternode network is BITCORN's second layer network placed ON TOP of the blockchain, which enables our DAO to provide decentralized governance, Treasury and SwiftX transactions.&lt;/p&gt;
 &lt;p&gt;A Masternode is a computer, usually a virtual private server (VPS), that helps maintain blockchain operations. They require a 10,000,000 BITCORN collateral per masternode, which is held IN YOUR DESKTOP WALLET!&lt;/p&gt;
 &lt;p&gt;In return, the masternode receives a REWARD for doing work on the blockchain.&lt;/p&gt;
 &lt;p&gt;Each BLOCK in the blockchain is worth 10,000 BITCORN each.&lt;/p&gt;

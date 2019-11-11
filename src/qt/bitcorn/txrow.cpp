@@ -59,7 +59,6 @@ void TxRow::setType(bool isLightTheme, int type, bool isConfirmed){
             css = "text-list-amount-send";
             break;
         case TransactionRecord::Generated:
-        case TransactionRecord::StakeZCORN:
         case TransactionRecord::MNReward:
         case TransactionRecord::StakeMint:
             path = "://ic-transaction-staked";
@@ -103,7 +102,7 @@ void TxRow::setType(bool isLightTheme, int type, bool isConfirmed){
         setConfirmStatus(true);
     }
     setCssProperty(ui->lblAmount, css);
-    ui->icon->setIcon(QIcon(path));
+	ui->icon->setIcon(QIcon(path));
 }
 
 TxRow::~TxRow(){

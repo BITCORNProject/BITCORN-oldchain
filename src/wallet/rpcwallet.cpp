@@ -2222,8 +2222,8 @@ UniValue setstakesplitthreshold(const UniValue& params, bool fHelp)
 
     uint64_t nStakeSplitThreshold = params[0].get_int();
 
-    if (nStakeSplitThreshold > 999999)
-        throw std::runtime_error("Value out of range, max allowed is 999999");
+    if (nStakeSplitThreshold > 99999999)
+        throw std::runtime_error("Value out of range, max allowed is 99999999");
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
     LOCK(pwalletMain->cs_wallet);

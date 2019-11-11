@@ -82,11 +82,12 @@ void SettingsBackupWallet::changePassphrase(){
     showHideOp(true);
     AskPassphraseDialog *dlg = nullptr;
     if (walletModel->getEncryptionStatus() == WalletModel::Unencrypted) {
-        dlg = new AskPassphraseDialog(AskPassphraseDialog::Mode::ChangePass, window,
-                                  walletModel, AskPassphraseDialog::Context::ChangePass);
-    } else {
         dlg = new AskPassphraseDialog(AskPassphraseDialog::Mode::Encrypt, window,
-                                      walletModel, AskPassphraseDialog::Context::Encrypt);
+			walletModel, AskPassphraseDialog::Context::Encrypt);
+	}
+	else {
+		dlg = new AskPassphraseDialog(AskPassphraseDialog::Mode::ChangePass, window,
+			walletModel, AskPassphraseDialog::Context::ChangePass);
     }
     dlg->adjustSize();
     emit execDialog(dlg);

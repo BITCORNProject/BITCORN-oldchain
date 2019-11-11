@@ -385,7 +385,7 @@ background:transparent;
                       </size>
                      </property>
                      <property name="text">
-                      <string>Collaterall tx id:</string>
+                      <string>Collateral tx id:</string>
                      </property>
                     </widget>
                    </item>
