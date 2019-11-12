@@ -68,7 +68,7 @@ endif()
 
 find_package(ZMQ)
 find_package(Miniupnp)
-find_package(Boost COMPONENTS system filesystem thread program_options REQUIRED)
+find_package(Boost COMPONENTS system filesystem thread program_options chrono REQUIRED)
 
 # run autogen.sh if missing header files from configure on Linux/Mac
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/configure")
