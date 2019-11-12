@@ -46,8 +46,6 @@ BITCORN is forked from the PIVX Blockchain and has the following specifications:
 
 Main Website: https://bitcornproject.com/
 
-Bitcorn Hub Dashboard: https://dashboard.bitcornproject.com
-
 BITCORN Discord: https://discord.gg/KnKDTqP
 
 Twitch Channel: https://www.twitch.tv/cryptotraderstv
@@ -69,3 +67,5 @@ BITCORN Faucet: https://bitcornfaucet.com/
 Masternode Installation Guide: https://github.com/BITCORNProject/BITCORN-Masternode-script/blob/master/README.md
 
 Bitcorn Multinode Script: https://github.com/BITCORNProject/BITCORN-Multinode
+
+BITCORN farms: https://bitcornfarms.com/
