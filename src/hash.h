@@ -64,6 +64,7 @@ GLOBAL sph_shabal512_context    z_shabal;
 GLOBAL sph_whirlpool_context    z_whirlpool;
 GLOBAL sph_sha512_context       z_sha2;
 GLOBAL sph_haval256_5_context   z_haval;
+GLOBAL sph_skein512_context     z_skein;
 
 #define fillz() do { \
     sph_blake512_init(&z_blake); \
@@ -83,6 +84,7 @@ GLOBAL sph_haval256_5_context   z_haval;
     sph_whirlpool_init(&z_whirlpool); \
     sph_sha512_init(&z_sha2); \
     sph_haval256_5_init(&z_haval); \
+    sph_skein512_init(&z_skein);   \
 } while (0) 
 
 #define ZBLAKE (memcpy(&ctx_blake, &z_blake, sizeof(z_blake)))
@@ -97,6 +99,7 @@ GLOBAL sph_haval256_5_context   z_haval;
 #define ZWHIRLPOOL (memcpy(&ctx_whirlpool, &z_whirlpool, sizeof(z_whirlpool)))
 #define ZSHA2 (memcpy(&ctx_sha2, &z_sha2, sizeof(z_sha2)))
 #define ZHAVAL (memcpy(&ctx_haval, &z_haval, sizeof(z_haval)))
+#define ZSKEIN (memcpy(&ctx_skein, &z_skein, sizeof(z_skein)))
 
 /** A hasher class for Bitcoin's 256-bit hash (double SHA-256). */
 class CHash256
@@ -154,36 +157,6 @@ public:
 		return *this;
 	}
 };
-
-#ifdef GLOBALDEFINED
-#define GLOBAL
-#else
-#define GLOBAL extern
-#endif
-
-GLOBAL sph_blake512_context z_blake;
-GLOBAL sph_bmw512_context z_bmw;
-GLOBAL sph_groestl512_context z_groestl;
-GLOBAL sph_jh512_context z_jh;
-GLOBAL sph_keccak512_context z_keccak;
-GLOBAL sph_skein512_context z_skein;
-
-#define fillz()                          \
-    do {                                 \
-        sph_blake512_init(&z_blake);     \
-        sph_bmw512_init(&z_bmw);         \
-        sph_groestl512_init(&z_groestl); \
-        sph_jh512_init(&z_jh);           \
-        sph_keccak512_init(&z_keccak);   \
-        sph_skein512_init(&z_skein);     \
-    } while (0)
-
-#define ZBLAKE (memcpy(&ctx_blake, &z_blake, sizeof(z_blake)))
-#define ZBMW (memcpy(&ctx_bmw, &z_bmw, sizeof(z_bmw)))
-#define ZGROESTL (memcpy(&ctx_groestl, &z_groestl, sizeof(z_groestl)))
-#define ZJH (memcpy(&ctx_jh, &z_jh, sizeof(z_jh)))
-#define ZKECCAK (memcpy(&ctx_keccak, &z_keccak, sizeof(z_keccak)))
-#define ZSKEIN (memcpy(&ctx_skein, &z_skein, sizeof(z_skein)))
 
 /* ----------- Bitcoin Hash ------------------------------------------------- */
 /** A hasher class for Bitcoin's 160-bit hash (SHA-256 + RIPEMD-160). */
@@ -558,4 +531,4 @@ inline uint256 XEVAN(const T1 pbegin, const T1 pend)
 
 void scrypt_hash(const char* pass, unsigned int pLen, const char* salt, unsigned int sLen, char* output, unsigned int N, unsigned int r, unsigned int p, unsigned int dkLen);
 
-#endif // BITCOIN_HASH_H
+#endif // XEVAN_H

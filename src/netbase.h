@@ -34,7 +34,6 @@ enum Network {
     NET_IPV4,
     NET_IPV6,
     NET_TOR,
-
     NET_MAX,
 };
 

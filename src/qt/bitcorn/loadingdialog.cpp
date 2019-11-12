@@ -10,7 +10,7 @@ void Worker::process(){
     try {
         if (runnable)
             runnable->run(type);
-    } catch (std::exception& e) {
+    } catch (const std::exception& e) {
         QString errorStr = QString::fromStdString(e.what());
         runnable->onError(errorStr, type);
         emit error(errorStr, type);
