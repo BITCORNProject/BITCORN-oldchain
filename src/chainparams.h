@@ -176,6 +176,7 @@ protected:
     unsigned int nBitcornBadBlocknBits;
     int nMasternodeCountDrift;
     int nMaturity;
+    int nMaturityNew;
     int nStakeMinDepth;
     int nFutureTimeDriftPoW;
     int nFutureTimeDriftPoS;
