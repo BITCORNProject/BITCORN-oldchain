@@ -78,9 +78,8 @@ public:
     int COINBASE_MATURITY(int Height) const { 
 		if (Height <= 501000) {
 			return nMaturity;
-		}
-		else {
-			return 120;
+		} else {
+			return nMaturityNew;
 		}
 	}
 
@@ -177,6 +176,7 @@ protected:
     unsigned int nBitcornBadBlocknBits;
     int nMasternodeCountDrift;
     int nMaturity;
+    int nMaturityNew;
     int nStakeMinDepth;
     int nFutureTimeDriftPoW;
     int nFutureTimeDriftPoS;
