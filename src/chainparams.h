@@ -75,7 +75,14 @@ public:
     int64_t TargetSpacing() const { return nTargetSpacing; }
 
     /** returns the coinbase maturity **/
-    int COINBASE_MATURITY() const { return nMaturity; }
+    int COINBASE_MATURITY(int Height) const { 
+		if (Height <= 501000) {
+			return nMaturity;
+		}
+		else {
+			return 120;
+		}
+	}
 
     /** returns the coinstake maturity (min depth required) **/
     int COINSTAKE_MIN_DEPTH() const { return nStakeMinDepth; }
