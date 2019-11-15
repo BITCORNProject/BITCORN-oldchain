@@ -207,15 +207,11 @@ public:
         assert(hashGenesisBlock == uint256("0x00000d2af7cb4cdfed2b0d6fdb988628d1e2031a3d33590e1875e24714d5e60c"));
         assert(genesis.hashMerkleRoot == uint256("0x1268caa1ae94b79c588718f465948e5eb11bf8eadd32f6930a5850cdd1e94514"));
 
-    	vSeeds.push_back(CDNSSeedData("149.28.159.236", "149.28.159.236"));
-        vSeeds.push_back(CDNSSeedData("149.28.164.188", "149.28.164.188"));
-        vSeeds.push_back(CDNSSeedData("45.76.141.47", "45.76.141.47"));
-    	vSeeds.push_back(CDNSSeedData("149.28.212.243", "149.28.212.243"));
-    	vSeeds.push_back(CDNSSeedData("5.32.16.143", "5.32.16.143"));
-    	vSeeds.push_back(CDNSSeedData("149.28.249.148", "149.28.249.148"));
-    	vSeeds.push_back(CDNSSeedData("95.179.232.36", "95.179.232.36"));
-    	vSeeds.push_back(CDNSSeedData("207.148.79.82", "207.148.79.82"));
-    	vSeeds.push_back(CDNSSeedData("104.156.239.134", "104.156.239.134"));
+    	vSeeds.push_back(CDNSSeedData("seed1", "seed1.bitcornproject.com"));
+    	vSeeds.push_back(CDNSSeedData("seed2", "seed2.bitcornproject.com"));
+    	vSeeds.push_back(CDNSSeedData("seed3", "seed3.bitcornproject.com"));
+    	vSeeds.push_back(CDNSSeedData("seed4", "seed4.bitcornproject.com"));
+    	vSeeds.push_back(CDNSSeedData("seed5", "seed5.bitcornproject.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 28); // C
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 60); // R
