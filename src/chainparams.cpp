@@ -57,14 +57,14 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	(3195, uint256("0x3e2d1259ef81b0c5cfc7b4002e1fc1c7cab2a01b9ca30551ed85b5701bc5fea0"))
 	(3196, uint256("0xcf5bd45b25f86f01cc585402eeb1d22c9c82d2b0589d3de2fb3c570a12b78960"))
 	(3197, uint256("0x1a82909f935510de903794da6fa9b3b9641c3934d2cc4207da842d1d43091783"))
-    (50103, uint256("0x777657e45ae4db2eacfd0168e4e9e8ce5602c75391b7320e53235bc09c08bc92"))
-    (169652, uint256("0x39616be4bff46c51a846c7d3411db70ae934f7582cfcde2c0fb9318bdafa6f6d"))
-    (231452, uint256("0x279716bf52e2d70d426f180bcc973dfadbdb614ddc8144c4d114fd9b3c047da5"))
-    (298415, uint256("0x669ce07e4ed7ef93ab1109fc41e496b7a15cda5fa26e350263ded8c84836bb1f"))
-    (349821, uint256("0xe3d01716bebd901aa0fc9b49a668107f97250b585fd9a75bb3f09f95b21edecb"))
-    (350483, uint256("0x0c4376f3d4c48a75b55594d72a91e1bdc13cb0cbdd4dd564131dfe965aab0605"))
-    (380421, uint256("0x40a721f58fd4e09b2284b64c7ff15b51472f848321ab36a356ec3067059fc67c"))
-    (399154, uint256("0xb3b310a931f12a3c35d254ced67ef0f66aea570769168baaec62234070a951dc"))
+        (50103, uint256("0x777657e45ae4db2eacfd0168e4e9e8ce5602c75391b7320e53235bc09c08bc92"))
+        (169652, uint256("0x39616be4bff46c51a846c7d3411db70ae934f7582cfcde2c0fb9318bdafa6f6d"))
+        (231452, uint256("0x279716bf52e2d70d426f180bcc973dfadbdb614ddc8144c4d114fd9b3c047da5"))
+        (298415, uint256("0x669ce07e4ed7ef93ab1109fc41e496b7a15cda5fa26e350263ded8c84836bb1f"))
+        (349821, uint256("0xe3d01716bebd901aa0fc9b49a668107f97250b585fd9a75bb3f09f95b21edecb"))
+        (350483, uint256("0x0c4376f3d4c48a75b55594d72a91e1bdc13cb0cbdd4dd564131dfe965aab0605"))
+        (380421, uint256("0x40a721f58fd4e09b2284b64c7ff15b51472f848321ab36a356ec3067059fc67c"))
+        (399154, uint256("0xb3b310a931f12a3c35d254ced67ef0f66aea570769168baaec62234070a951dc"))
 	(406012, uint256("0x59172fbb2cc82fe57db5996d53a4d63c9b2bc6579fc008fd48f6e66ce7886533"))
 	(464498, uint256("0x350667b41769e5780f6b35bcc33fa7b2d424ac78087a6d004cc78639ac18da32"))
 	(492865, uint256("0xb9472aab277ba813d84ba36245c68af3875575b651ef89b37c850f29daae21cd"))
@@ -73,6 +73,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	(494980, uint256("0xa91c7093d590b8eeb457e65be0a1c391554d2adc3415bcbe2f3f51fc6799c31c"))
 	(497953, uint256("0xe94372b085483cd98a674fe5d4d58a6f971a1f367e02ce84992109ce4550c166"))
 	(499087, uint256("0x4503d9c8c0e1c3eed4e723f773f5034e2b6d92a2c5c37bdbda3bc1bc457ad96c"))
+	(501311, uint256("0x6997fae425e70ff01675c184eee2a7c10ca1ba9a2f6c1e732d1d2d872065b590"))
     ;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -206,15 +207,11 @@ public:
         assert(hashGenesisBlock == uint256("0x00000d2af7cb4cdfed2b0d6fdb988628d1e2031a3d33590e1875e24714d5e60c"));
         assert(genesis.hashMerkleRoot == uint256("0x1268caa1ae94b79c588718f465948e5eb11bf8eadd32f6930a5850cdd1e94514"));
 
-    	vSeeds.push_back(CDNSSeedData("149.28.159.236", "149.28.159.236"));
-        vSeeds.push_back(CDNSSeedData("149.28.164.188", "149.28.164.188"));
-        vSeeds.push_back(CDNSSeedData("45.76.141.47", "45.76.141.47"));
-    	vSeeds.push_back(CDNSSeedData("149.28.212.243", "149.28.212.243"));
-    	vSeeds.push_back(CDNSSeedData("5.32.16.143", "5.32.16.143"));
-    	vSeeds.push_back(CDNSSeedData("149.28.249.148", "149.28.249.148"));
-    	vSeeds.push_back(CDNSSeedData("95.179.232.36", "95.179.232.36"));
-    	vSeeds.push_back(CDNSSeedData("207.148.79.82", "207.148.79.82"));
-    	vSeeds.push_back(CDNSSeedData("104.156.239.134", "104.156.239.134"));
+    	vSeeds.push_back(CDNSSeedData("seed1", "seed1.bitcornproject.com"));
+    	vSeeds.push_back(CDNSSeedData("seed2", "seed2.bitcornproject.com"));
+    	vSeeds.push_back(CDNSSeedData("seed3", "seed3.bitcornproject.com"));
+    	vSeeds.push_back(CDNSSeedData("seed4", "seed4.bitcornproject.com"));
+    	vSeeds.push_back(CDNSSeedData("seed5", "seed5.bitcornproject.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 28); // C
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 60); // R

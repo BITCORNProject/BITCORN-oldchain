@@ -68,7 +68,7 @@ endif()
 
 find_package(ZMQ)
 find_package(Miniupnp)
-find_package(Boost COMPONENTS system filesystem thread program_options REQUIRED)
+find_package(Boost COMPONENTS system filesystem thread program_options chrono REQUIRED)
 
 # run autogen.sh if missing header files from configure on Linux/Mac
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/configure")
@@ -368,6 +368,7 @@ set(BITCOIN_CRYPTO_SOURCES
         ./src/crypto/sha1.cpp
         ./src/crypto/sha256.cpp
         ./src/crypto/sha512.cpp
+        ./src/crypto/chacha20.cpp
         ./src/crypto/hmac_sha256.cpp
         ./src/crypto/rfc6979_hmac_sha256.cpp
         ./src/crypto/hmac_sha512.cpp
@@ -390,12 +391,23 @@ set(BITCOIN_CRYPTO_SOURCES
         ./src/crypto/sha1.h
         ./src/crypto/ripemd160.h
         ./src/crypto/sph_blake.h
+        ./src/crypto/sph_cubehash.h
         ./src/crypto/sph_bmw.h
+        ./src/crypto/sph_echo.h
         ./src/crypto/sph_groestl.h
         ./src/crypto/sph_jh.h
         ./src/crypto/sph_keccak.h
+        ./src/crypto/sph_hamsi.h
+        ./src/crypto/sph_haval.h
+        ./src/crypto/sph_luffa.h
         ./src/crypto/sph_skein.h
+        ./src/crypto/sph_simd.h
+        ./src/crypto/sph_sha2.h
+        ./src/crypto/sph_shavite.h
+        ./src/crypto/sph_shabal.h
+        ./src/crypto/sph_fugue.h
         ./src/crypto/sph_types.h
+        ./src/crypto/sph_whirlpool.h
         )
 add_library(BITCOIN_CRYPTO_A STATIC ${BITCOIN_CRYPTO_SOURCES})
 target_include_directories(BITCOIN_CRYPTO_A PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src ${OPENSSL_INCLUDE_DIR})
