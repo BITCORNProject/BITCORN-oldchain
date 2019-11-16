@@ -288,25 +288,30 @@ public:
         nStakeMinDepth = 100;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 43199500 * COIN;
-        nZerocoinStartHeight = 201576;
-        nZerocoinStartTime = 1524711188;
-        nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 9891737; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 9902850; //Start enforcing the invalid UTXO's
-        nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
-        nBlockZerocoinV2 = 444020; //!> The block that zerocoin v2 becomes active
+        nMaxMoneyOut = 10000000000 * COIN;
+        nLastPOWBlock = 500;
+        nBitcornBadBlockTime = 1743101801; // Skip nBit validation of Block 259201 per PR #915
+        nBitcornBadBlocknBits = 0x1c056dac; // Skip nBit validation of Block 259201 per PR #915
+        nModifierUpdateBlock = 999999999;
+        nZerocoinStartHeight = 999999999;
+        nZerocoinStartTime = 1743101801;
+        nBlockEnforceSerialRange = 1;
+        nBlockRecalculateAccumulators = ~1;
+        nBlockFirstFraudulent = ~1;
+        nBlockLastGoodCheckpoint = ~1;
+        nBlockEnforceInvalidUTXO = 999999999; //Start enforcing the invalid UTXO's
+        nInvalidAmountFiltered = 0*COIN; //Amount of invalid coins filtered through exchanges, that should be considered valid
+        nBlockZerocoinV2 = 999999999; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
+        nBlockDoubleAccumulated = 999999999;
         nEnforceNewSporkKey = 1566860400; //!> Sporks signed after Monday, August 26, 2019 11:00:00 PM GMT must use the new spork key
-        nRejectOldSporkKey = 1569538800; //!> Reject old spork key after Thursday, September 26, 2019 11:00:00 PM GMT
-        nBlockStakeModifierlV2 = 1214000;
+        nRejectOldSporkKey = 1569538800; //!> Fully reject old spork key after Thursday, September 26, 2019 11:00:00 PM GMT
+        nBlockStakeModifierlV2 = 500000;
         // Public coin spend enforcement
-        nPublicZCSpends = 1106100;
+        nPublicZCSpends = 1880000;
 
         // Fake Serial Attack
-        nFakeSerialBlockheightEnd = -1;
-        nSupplyBeforeFakeSerial = 0;
+        nFakeSerialBlockheightEnd = 999999999;
+        nSupplyBeforeFakeSerial = 0 * COIN;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1515616140;
