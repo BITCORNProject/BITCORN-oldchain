@@ -280,10 +280,10 @@ public:
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
         nTargetSpacing = 1 * 60;  // BITCORN: 1 minute
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 500;
         nBitcornBadBlockTime = 1489001494; // Skip nBit validation of Block 259201 per PR #915
         nBitcornBadBlocknBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
-        nMaturity = 15;
+        nMaturity = 120;
         nMaturityNew = 120;
         nStakeMinDepth = 100;
         nMasternodeCountDrift = 4;
