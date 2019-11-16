@@ -279,7 +279,7 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetSpacing = 1 * 60;  // BITCORN: 1 minute
+        nTargetSpacing = 1 * 30;  // 30 seconds (1/2 of mainnet)
         nLastPOWBlock = 500;
         nBitcornBadBlockTime = 1489001494; // Skip nBit validation of Block 259201 per PR #915
         nBitcornBadBlocknBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
